@@ -175,15 +175,16 @@ table#footer_table{
   	}
 }
 #KA_header_inner_container{
-
+	width: 100%;
+	height: 90px;
   	#header_logo_contrainer{
-  		width: 250px;
+  		width: 30%;
   	}
   	#header_content{
-    	width: 700px;
-    	color: white;
-    	text-align: right;
-    	vertical-align: bottom;
+	    	width: 70%;
+	    	color: white;
+	    	text-align: right;
+	    	vertical-align: middle;
   	}
   	#header_content_description{
   		font-size: 18px;
