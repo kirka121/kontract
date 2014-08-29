@@ -1,0 +1,34 @@
+<%= render 'admins/admin_subpages/tophalf' %>
+	<%
+		provide(:title,  " - create news")
+	%>
+<%= render 'admins/admin_subpages/news_headers' %>
+
+<script type="text/javascript">
+	$('.ckeditor').ckeditor({
+	  // optional config
+	});
+</script>
+
+<div class="edit_form">
+	<table class="information_edit_form">
+		<%= form_for @news do |f| %>
+			<tr>
+				<th colspan='2'><h3>Create News</h3></th>
+			</tr>
+			<tr>
+				<td class="label">Title:</td>
+				<td class="textfield"><%= f.text_field :title, :placeholder => "Title", :class => 'register_user_input'  %></td>
+			</tr>
+			<tr>
+				<td colspan='2'><%= f.text_area :content, :class => 'ckeditor' %></td>
+			</tr>
+			<tr>
+				<td colspan='2' class="button"><%= f.submit "Create", class: "btn btn-default btn-lg btn-block" %> </td>
+			</tr>
+			<%= f.hidden_field :author, :value => (kircapitalize(current_user.first_name)+ " " +kircapitalize(current_user.last_name))%>
+		<% end %>
+	</table>
+</div>
+
+<%= render 'admins/admin_subpages/bottomhalf' %>

@@ -1,0 +1,65 @@
+<script type="text/javascript">
+	$('.ckeditor').ckeditor({
+	  // optional config
+	});
+</script>
+
+<%= render 'admins/admin_subpages/tophalf' %>
+	<%
+		provide(:title,  " - settings")
+	%>
+	<%=  form_for @set do |f| %>
+		<table class="information_edit_form">
+			<tr>
+				<th colspan='2'><h3>Update website settings</h3></th>
+			</tr>
+			<tr>
+				<td class="label">Title:</td>
+				<td class="textfield"><%= f.text_field :title, :placeholder => "Title", :class => 'register_user_input' %></td>
+			</tr>
+			<tr>
+				<td class="label">Copyright:</td>
+				<td class="textfield"><%= f.text_field :copyright, :placeholder => "Copyright", :class => 'register_user_input' %></td>
+			</tr>
+			<tr>
+				<td class="label">Moto:</td>
+				<td class="textfield"><%= f.text_field :moto, :placeholder => "Moto (top right corner)", :class => 'register_user_input' %></td>
+			</tr>
+			<tr>
+				<td class="label">Admin Email: </td>
+				<td class="textfield"><%= f.text_field :admin_email, placeholder: "Admin Contact Email", class: 'register_user_input' %></td>
+			</tr>
+			<tr>
+				<td class="label">Developer Email: </td>
+				<td class="textfield"><%= f.text_field :developer_email, placeholder: "Developer Email", class: 'register_user_input' %></td>
+			</tr>
+			<tr>
+				<td class="label">Default "FROM" Email: </td>
+				<td class="textfield"><%= f.text_field :default_from_email, placeholder: "Default FROM Email", class: 'register_user_input' %></td>
+			</tr>
+			<tr>
+				<td class="label">Server URL: </td>
+				<td class="textfield"><%= f.text_field :server_url, placeholder: "Server URL without 'http://'", class: 'register_user_input' %></td>
+			</tr>
+			<tr>
+				<td class="label">Carousel Mode:</td>
+				<td class="textfield"><%= f.select :carousel_mode, [['Always ON', 0], ['Always OFF', 1], ['Home page ONLY', 2]], :class => 'reigster_user_input' %></td>
+			</tr>
+			<tr>
+				<td class="label">Registration Mode:</td>
+				<td class="textfield"><%= f.select :registration_mode, [['Open registration', 0], ['Email confirmation required', 1], ['Email invite only', 2], ['Admin confirmation required', 2]], :class => 'reigster_user_input' %></td>
+			</tr>
+			<tr>
+				<td class="label">Use FAQ:</td>
+				<td class="textfield"><%= f.select :display_faq, [['Yes', 0], ['No', 1]], :class => 'reigster_user_input' %></td>
+			</tr>
+			<tr>
+				<td class="label">Contact Us Mode:</td>
+				<td class="textfield"><%= f.select :contactus_mode, [['Everyone', 0], ['Users only', 1]], :class => 'reigster_user_input' %></td>
+			</tr>
+			<tr>
+				<td colspan='2' class="button"> <%= f.submit "Save changes", class: "btn btn-default btn-lg btn-block" %> </td>
+			</tr>
+		</table>
+	<% end %>
+<%= render 'admins/admin_subpages/bottomhalf' %>

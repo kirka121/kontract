@@ -1,4 +1,3 @@
-kontract
-========
+Creating the MCCM website from scratch using Rails 4.
 
-shopify-like website tailored to bootstrap constactor businesses
+Purpose; shits and giggles

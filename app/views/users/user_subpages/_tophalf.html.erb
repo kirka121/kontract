@@ -1,0 +1,9 @@
+<% 
+	provide(:title, "Control Panel - " + current_user.first_name) 
+%>
+
+<div class="cp_wholecontainer">
+	<div class="cp_container_left">
+		<%= render 'users/user_subpages/menu' %>
+	</div>
+	<div class="cp_container_right">

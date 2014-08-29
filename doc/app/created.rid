@@ -1,0 +1,14 @@
+Fri, 06 Jun 2014 14:01:33 -0400
+README.rdoc	Mon, 27 Jan 2014 10:59:46 -0500
+app/controllers/application_controller.rb	Fri, 06 Jun 2014 13:58:00 -0400
+app/controllers/sessions_controller.rb	Fri, 06 Jun 2014 13:58:00 -0400
+app/controllers/static_pages_controller.rb	Mon, 10 Feb 2014 13:38:08 -0500
+app/controllers/users_controller.rb	Fri, 06 Jun 2014 13:58:00 -0400
+app/helpers/application_helper.rb	Fri, 06 Jun 2014 13:58:00 -0400
+app/helpers/sessions_helper.rb	Fri, 06 Jun 2014 13:58:00 -0400
+app/helpers/static_pages_helper.rb	Mon, 27 Jan 2014 11:02:12 -0500
+app/helpers/user_subpages_helper.rb	Fri, 06 Jun 2014 13:58:00 -0400
+app/helpers/users_helper.rb	Fri, 06 Jun 2014 13:58:00 -0400
+app/models/news.rb	Fri, 06 Jun 2014 13:58:00 -0400
+app/models/settings.rb	Fri, 06 Jun 2014 13:58:00 -0400
+app/models/user.rb	Fri, 06 Jun 2014 13:58:00 -0400

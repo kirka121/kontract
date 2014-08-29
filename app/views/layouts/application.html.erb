@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= full_title(yield(:title)) %></title>
+	  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+	  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	  <%= csrf_meta_tags %>
+    <%= favicon_link_tag 'favicon.ico' %>
+	  <%= render 'layouts/shim' %>
+</head>
+
+  <body>
+  	<div id="wrap">
+		<%= render 'layouts/header' %> 
+  		<div class="container" id="main_application_container">
+        		<%= render 'layouts/carousel' %>
+        		<%= render 'layouts/flashes' %>
+			<div id="kirkontainer">
+				<div id="kirkontainer_header">
+					<%= yield(:title) %>
+				</div>
+				<div id="kirkontainer_padding">
+					<%= yield %>
+				</div>
+			</div>
+       			<%= debug(params) if Rails.env.development? %>
+		</div>
+		<div id="push"></div>
+	</div>
+  	<div id="footer">
+  		<%= render 'layouts/footer' %>
+	</div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- sample of a twitter bootstrap dropdown 
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <%= link_to "sample app", root_path, id: "logo" %>
+      <nav>
+        <ul class="nav pull-right">
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "Help", help_path %></li>
+          <% if signed_in? %>
+            <li><%= link_to "Users", '#' %></li>
+            <li id="fat-menu" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Account <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><%= link_to "Profile", current_user %></li>
+                <li><%= link_to "Settings", '#' %></li>
+                <li class="divider"></li>
+                <li>
+                  <%= link_to "Sign out", signout_path, method: "delete" %>
+                </li>
+              </ul>
+            </li>
+          <% else %>
+            <li><%= link_to "Sign in", signin_path %></li>
+          <% end %>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+-->
