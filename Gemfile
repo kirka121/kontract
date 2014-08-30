@@ -13,7 +13,7 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'sprockets', '2.11.0'
 gem 'ckeditor_rails'
-gem 'thin'
+#gem 'thin'
 gem 'paperclip', '~> 4.1'
 gem 'will_paginate', '~> 3.0.5'
 

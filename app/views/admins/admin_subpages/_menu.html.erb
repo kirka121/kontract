@@ -24,7 +24,14 @@
 		<td>
 			<%= link_to admin_subpages_users_path do %>
 				<div <% if controller?("admins") && action?("users", "createuser", "edituser") %> id="active" <% end %>> 
-					Manage Users
+					Clients
+				</div>
+			<% end %>
+		</td>
+		<td>
+			<%= link_to admin_subpages_members_path do %>
+				<div <% if controller?("admins") && action?("members", "createmember", "editmember") %> id="active" <% end %>> 
+					Members
 				</div>
 			<% end %>
 		</td>

@@ -10,13 +10,13 @@
 	});
 </script>
 
-<%= form_alert("Creating users using this form will bypass validation. Meaning you can input invalid data and bad parameters. Be Careful!") %>
+<%= form_alert("Creating clients using this form will bypass validation. Meaning you can input invalid data and bad parameters. Be Careful!") %>
 
 <div class="edit_form">
 	<table class="information_edit_form">
 		<%= form_for @createuser,  url: admin_createuser_path(id: @createuser.id)  do |f| %>
 			<tr>
-				<th colspan='2'><h3>Create User</h3></th>
+				<th colspan='2'><h3>Create Client</h3></th>
 			</tr>
 			<tr>
 				<td class="label">First Name:</td>
@@ -47,7 +47,7 @@
 				<td class="textfield"><%= f.file_field :avatar, :class => 'register_user_input' %></td>
 			</tr>
 			<tr>
-				<td colspan='2' class="button"><%= f.submit "Create User", class: "btn btn-default btn-lg btn-block"  %> </td>
+				<td colspan='2' class="button"><%= f.submit "Create", class: "btn btn-default btn-lg btn-block"  %> </td>
 			</tr>
 		<% end %>
 	</table>

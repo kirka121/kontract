@@ -1,0 +1,8 @@
+<%= render 'admins/admin_subpages/tophalf' %>
+	<%
+		provide(:title,  " - members")
+	%>
+	members
+
+	<%= link_to "Create Member", admin_subpages_createmember_path, class: "btn btn-default btn-lg btn-block" %>
+<%= render 'admins/admin_subpages/bottomhalf' %>

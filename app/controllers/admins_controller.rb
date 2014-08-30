@@ -29,6 +29,11 @@ class AdminsController < ApplicationController
 
 		@users = User.all
 	end
+	def members
+		@user = current_user
+
+		#@members = Member.all
+	end
 	def placeholder
 		@user = current_user
 	end	
@@ -141,6 +146,69 @@ class AdminsController < ApplicationController
 		flash.now[:form_success] = "User successfully deleted"
 
 		render  'admins/users'
+	end
+
+	def createmember
+		@member = current_user
+		@members = Memeber.all
+		@createmember = member.new
+
+		render 'admins/admin_subpages/_member_create'
+	end
+
+	def editmember
+		@member = current_user
+		@members = Memeber.all
+		@editmember = member.find(params[:id])
+
+		render 'admins/admin_subpages/_member_edit'
+	end
+
+	def docreatemember
+		@createmember = member.new
+		@members = Memeber.all
+		@createmember.attributes = member_params_withpw
+
+		if @createmember.save(validate: false)
+			flash[:form_success] = "member " + @createmember.first_name + " creates successfully."
+			redirect_to '/admin_subpages/members'
+		else
+			flash[:form_errors] = "Failure. Some parameters are invalid: <ul>"
+			@createmember.errors.full_messages.each do |error|
+				flash[:form_errors] += "<li>" + error + "</li>"
+			end
+			flash[:form_errors] += "</ul>"
+			render 'admins/admin_subpages/_member_edit'
+		end
+	end
+
+	def doeditmember
+		@editmember = member.find(params[:id])
+		@members = Memeber.all
+		@member = member.find(params[:id])
+    		@member.attributes = member_params
+
+		if @member.save(validate: false)
+			flash[:form_success] = "member " + @member.first_name + " updated successfully."
+			redirect_to '/admin_subpages/members'
+		else
+			flash[:form_errors] = "Failure. Some parameters are invalid: <ul>"
+			@member.errors.full_messages.each do |error|
+				flash[:form_errors] += "<li>" + error + "</li>"
+			end
+			flash[:form_errors] += "</ul>"
+			render 'admins/admin_subpages/_member_edit'
+		end
+	end
+
+	def dodeletemember
+		@members = Memeber.all
+		@member = member.find_by_id(params[:id])
+		@member.destroy
+
+		flash.now[:form_success] = "member successfully deleted"
+
+		render  'admins/members'
 	end
 
 	def inviteuser

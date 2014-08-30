@@ -50,6 +50,7 @@ Mccm::Application.routes.draw do
 	match '/admin_subpages/help', to: 'admins#help', via: 'get'
 	match '/admin_subpages/about', to: 'admins#about', via: 'get'
 	match '/admin_subpages/users', to: 'admins#users', via: 'get'
+	match '/admin_subpages/members', to: 'admins#members', via: 'get'
 	match '/admin_subpages/placeholder', to: 'admins#placeholder', via: 'get'
 	match '/admin_subpages/carouselimages', to: 'admins#carouselimages', via: 'get'
 	match '/admin_subpages/inviteusers', to: 'admins#inviteusers', via: 'get'
@@ -63,6 +64,12 @@ Mccm::Application.routes.draw do
 	match '/admin_subpages/deleteuser', to: 'admins#dodeleteuser', 	via: 'delete'
 	patch '/admin_subpages/edituser' => "admins#doedituser", :as => "admin_edituser"
 	post '/admin_subpages/createuser' => "admins#docreateuser", :as => "admin_createuser"
+
+	match '/admin_subpages/createmember', to: 'admins#createmember', via: 'get'
+	match '/admin_subpages/editmember', to: 'admins#editmember', via: 'get'
+	match '/admin_subpages/deletemember', to: 'admins#dodeletemember', 	via: 'delete'
+	patch '/admin_subpages/editmember' => "admins#doeditmember", :as => "admin_editmember"
+	post '/admin_subpages/createmember' => "admins#docreatemember", :as => "admin_createmember"
 
 	match '/admin_subpages/createcarouselimage', to: 'admins#createcarouselimage', via: 'get'
 	match '/admin_subpages/deletecarouselimage', to: 'admins#dodeletecarouselimage', via: 'delete'
