@@ -51,6 +51,8 @@ KONTRACT: a simple contractor solution to establish online presense, team commun
 			- clock in / clock out
 			- add comments to task lists
 			- comment on projects
+			- members have roles. aka marketers, runners, cutters, drivers. need to think of a way to allow dynamic setup of this
+				- e.g. supervisors could be allowed to accept projects, mark other members for task completion / quality, and clock-in/out times
 
 		- clients;
 			- book appointment for service
@@ -58,17 +60,19 @@ KONTRACT: a simple contractor solution to establish online presense, team commun
 			- fee defer a service, break into payments
 			- see status of service / project
 			- suggest projects and ask for custom price quote
-			- comment on projects
+			- comment on projects - feedback
 
 		- visitors;
 			- see prices and services available
 			- watch videos, tetimonials
 			- contact us
 			- blog / forum access read only
+			- see news, announcements
+			- subscribe for mailing list
 
 	Brainstorm Dump (optionals):
-		- use trello to trak tasks and todos
-		- charge max 20 bucks for basic. max 60 bucks on full blown features. make shit cheap.
+		- use trello.com to track tasks and todos
+		- charge max 20 bucks for basic plan. max 60 bucks for full plan. make cheaper service.
 
 		- coupon engine
 		- theme engine
