@@ -78,3 +78,4 @@ KONTRACT: a simple contractor solution to establish online presense, team commun
 		- theme engine
 		- referal program
 		- app store / plugin program
+		- think of supporting camping businesses, kids camps or kids extracurricular activity businesses (e.g. karate), church and aa groups, etc
