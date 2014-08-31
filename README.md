@@ -1,13 +1,10 @@
 KONTRACT: a simple contractor solution to establish online presense, team communication, simple accounting, and payroll.
 
-	Glossary:
-		- admin; 		the primary customer to whom Kontract caters. admin is the team lead, manager, business owner etc, who is paying for our service, and thus is receiving administrative priviledges on the website he has purchased.
-		- members; 	people who work directly under the admin. team members and employees who need to be managed by the admin and the website.
-		- clients; 		admin's and members' clients. these are the people who purchase services and goods from OUR client, the admin.
-		- visitors; 		potential clients, people who visit the website and stay on it longer than 10 seconds at a time. these are potential future customers.
-		- CRUD; 		create edit update delete; short form for a 4 set of functionality. e.g. registre a user = create. change user password = update / edit, delete is self explanatory.
-		- in-house payment system: either a paypal setup or credit debit card setup that allows to accept and send payments through the website interface
-	The vision: To allow a service ... ... ...
+	Implementation stack:
+		- rails 4
+		- nginx
+		- angular.js
+		- postgres sql
 
 	Key features (must have):
 		- admin;
@@ -79,3 +76,11 @@ KONTRACT: a simple contractor solution to establish online presense, team commun
 		- referal program
 		- app store / plugin program
 		- think of supporting camping businesses, kids camps or kids extracurricular activity businesses (e.g. karate), church and aa groups, etc
+
+	Glossary:
+		- admin; 		the primary customer to whom Kontract caters. admin is the team lead, manager, business owner etc, who is paying for our service, and thus is receiving administrative priviledges on the website he has purchased.
+		- members; 	people who work directly under the admin. team members and employees who need to be managed by the admin and the website.
+		- clients; 		admin's and members' clients. these are the people who purchase services and goods from OUR client, the admin.
+		- visitors; 		potential clients, people who visit the website and stay on it longer than 10 seconds at a time. these are potential future customers.
+		- CRUD; 		create edit update delete; short form for a 4 set of functionality. e.g. registre a user = create. change user password = update / edit, delete is self explanatory.
+		- in-house payment system: either a paypal setup or credit debit card setup that allows to accept and send payments through the website interface
