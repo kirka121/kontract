@@ -1,6 +1,7 @@
 Mccm::Application.routes.draw do
 	get "users/new"
 
+	resources :members, only: [:show, :index]
 	resources :news, only: [:new, :edit, :update, :delete, :show]
 	resources :videos, only: [:index, :show,:update, :delete]
 	resources :sessions, only: [:new, :create, :destroy]

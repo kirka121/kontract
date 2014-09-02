@@ -5,6 +5,7 @@ KONTRACT: a simple contractor solution to establish online presense, team commun
 		- nginx
 		- angular.js
 		- postgres sql
+		- karma testing framework
 
 	Key features (must have):
 		- admin;
