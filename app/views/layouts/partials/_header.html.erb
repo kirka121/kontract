@@ -1,0 +1,15 @@
+<% if controller_name != 'admin' %>
+<div id="main_header">
+	<div id="header_contrainer">
+		<div id="header_logo">
+			logo
+		</div>
+		<div id="header_menu">
+			<ul id="menu_links">
+				<li><%= link_to "Home", root_path %></li>
+				<li><%= link_to "Contact", contact_path %></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<% end %>

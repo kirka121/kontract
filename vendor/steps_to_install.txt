@@ -1,0 +1,5 @@
+- add gem pg
+- add gem devise
+- run rake db:create rake db:migrate
+- set config/environments/development.rb 
+	- config.ection_mailer.default_url_options = { host => 'www.urlhere.com' }
