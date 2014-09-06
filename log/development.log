@@ -10627,3 +10627,2515 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 15:54:22
 
 
 Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 15:54:22 -0400
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-09-06 15:57:29 -0400
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered admin/partials/_menu.html.erb (0.7ms)
+  Rendered admin/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 200ms (Views: 196.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/subpages" for 127.0.0.1 at 2014-09-06 15:57:30 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.5ms)
+  Rendered admin/subpages/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 181ms (Views: 179.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-06 15:57:38 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/partials/_header.html.erb (0.5ms)
+  Rendered layouts/partials/_footer.html.erb (0.2ms)
+Completed 200 OK in 191ms (Views: 190.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 15:57:39 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 15:57:39 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 15:57:39 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 15:57:39 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 15:57:39 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 15:57:39 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 15:57:39 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 15:57:39 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 15:57:39 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 15:57:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 15:57:39 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 15:57:39 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 15:57:39 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-06 15:57:43 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/partials/_header.html.erb (0.5ms)
+  Rendered layouts/partials/_footer.html.erb (0.2ms)
+Completed 200 OK in 227ms (Views: 226.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 15:57:43 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 15:57:43 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 15:57:43 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 15:57:43 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 15:57:43 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 15:57:43 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 15:57:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 15:57:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 15:57:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 15:57:43 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 15:57:43 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 15:57:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 15:57:43 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-06 15:57:48 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/partials/_header.html.erb (0.3ms)
+  Rendered layouts/partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 172ms (Views: 170.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 15:57:48 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 15:57:48 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 15:57:48 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 15:57:48 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 15:57:48 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 15:57:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 15:57:48 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 15:57:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 15:57:48 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 15:57:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 15:57:48 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 15:57:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 15:57:48 -0400
+
+
+Started GET "/admin/subpages" for 127.0.0.1 at 2014-09-06 15:58:05 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.7ms)
+  Rendered admin/subpages/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 164ms (Views: 162.4ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateSubpages (20140906195921)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateSubpages (20140906195921)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (66.5ms)[0m  [1mCREATE TABLE "subpages" ("id" serial primary key, "title" character varying(255), "user" integer, "content" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140906195921"]]
+  [1m[36m (15.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-06 16:03:55 -0400
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/partials/_header.html.erb (0.5ms)
+  Rendered layouts/partials/_footer.html.erb (0.2ms)
+Completed 200 OK in 191ms (Views: 190.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 16:03:56 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 16:03:56 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 16:03:56 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 16:03:56 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 16:03:56 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 16:03:56 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 16:03:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 16:03:56 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 16:03:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 16:03:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 16:03:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 16:03:56 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 16:03:56 -0400
+
+
+Started GET "/admin/subpages" for 127.0.0.1 at 2014-09-06 16:04:09 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (1.2ms)
+  [1m[36mSubpage Load (0.9ms)[0m  [1mSELECT "subpages".* FROM "subpages"[0m
+  Rendered admin/subpages/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 200ms (Views: 195.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 16:04:09 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 16:04:09 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 16:04:09 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 16:04:09 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 16:04:09 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 16:04:09 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 16:04:09 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 16:04:09 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 16:04:09 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 16:04:09 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 16:04:09 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 16:04:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 16:04:09 -0400
+
+
+Started GET "/admin/subpages" for 127.0.0.1 at 2014-09-06 16:08:10 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (1.1ms)
+  [1m[35mSubpage Load (0.4ms)[0m  SELECT "subpages".* FROM "subpages"
+  Rendered admin/subpages/index.html.erb within layouts/application (33.2ms)
+Completed 500 Internal Server Error in 49ms
+
+ActionView::Template::Error (Could not find the inverse association for user (:subpages in User)):
+     5: 		<% @subpages.each do |page| %>
+     6: 			<%= page.title %>
+     7: 			<%= page.content %>
+     8: 			<%= page.user %>
+     9: 		<% end %>
+    10: 	</div>
+    11: </div>
+  app/views/admin/subpages/index.html.erb:8:in `block in _app_views_admin_subpages_index_html_erb__662969024_92853790'
+  app/views/admin/subpages/index.html.erb:5:in `_app_views_admin_subpages_index_html_erb__662969024_92853790'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.5ms)
+
+
+Started GET "/admin/subpages" for 127.0.0.1 at 2014-09-06 16:10:42 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.7ms)
+  [1m[36mSubpage Load (0.3ms)[0m  [1mSELECT "subpages".* FROM "subpages"[0m
+  Rendered admin/subpages/index.html.erb within layouts/application (14.4ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (Could not find the inverse association for user (:subpages in User)):
+     5: 		<% @subpages.each do |page| %>
+     6: 			<%= page.title %>
+     7: 			<%= page.content %>
+     8: 			<%= page.user %>
+     9: 		<% end %>
+    10: 	</div>
+    11: </div>
+  app/views/admin/subpages/index.html.erb:8:in `block in _app_views_admin_subpages_index_html_erb__662969024_92853790'
+  app/views/admin/subpages/index.html.erb:5:in `_app_views_admin_subpages_index_html_erb__662969024_92853790'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateSubpages (20140906195921)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (2.4ms)[0m  DROP TABLE "subpages"
+  [1m[36mSQL (0.8ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20140906195921'[0m
+  [1m[35m (14.6ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateSubpages (20140906195921)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (70.6ms)[0m  [1mCREATE TABLE "subpages" ("id" serial primary key, "title" text, "user" character varying(255), "content" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140906195921"]]
+  [1m[36m (16.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/admin/subpages" for 127.0.0.1 at 2014-09-06 16:24:04 -0400
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.6ms)
+  [1m[36mSubpage Load (0.5ms)[0m  [1mSELECT "subpages".* FROM "subpages"[0m
+  Rendered admin/subpages/index.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 269ms (Views: 260.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 16:24:04 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 16:24:04 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 16:24:04 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 16:24:04 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 16:24:04 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 16:24:04 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 16:24:05 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 16:24:05 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 16:24:05 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 16:24:05 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 16:24:05 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 16:24:05 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 16:24:05 -0400
+
+
+Started GET "/admin/subpages" for 127.0.0.1 at 2014-09-06 16:24:36 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.7ms)
+  [1m[35mSubpage Load (0.4ms)[0m  SELECT "subpages".* FROM "subpages"
+  Rendered admin/subpages/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 182ms (Views: 180.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 16:24:36 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 16:24:36 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 16:24:36 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 16:24:36 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 16:24:36 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 16:24:36 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 16:24:36 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 16:24:36 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 16:24:36 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 16:24:36 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 16:24:36 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 16:24:36 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 16:24:36 -0400
+
+
+Started GET "/admin/subpages" for 127.0.0.1 at 2014-09-06 16:24:38 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.7ms)
+  [1m[36mSubpage Load (0.4ms)[0m  [1mSELECT "subpages".* FROM "subpages"[0m
+  Rendered admin/subpages/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 184ms (Views: 182.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 16:24:39 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 16:24:39 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 16:24:39 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 16:24:39 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 16:24:39 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 16:24:39 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 16:24:39 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 16:24:39 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 16:24:39 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 16:24:39 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 16:24:39 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 16:24:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 16:24:39 -0400
+
+
+Started GET "/admin/subpages" for 127.0.0.1 at 2014-09-06 16:24:59 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.6ms)
+  [1m[35mSubpage Load (0.4ms)[0m  SELECT "subpages".* FROM "subpages"
+  Rendered admin/subpages/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 216ms (Views: 214.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 16:25:00 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 16:25:00 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 16:25:00 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 16:25:00 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 16:25:00 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 16:25:00 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 16:25:00 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 16:25:00 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 16:25:00 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 16:25:00 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 16:25:00 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 16:25:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 16:25:00 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-06 16:25:53 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/partials/_header.html.erb (0.4ms)
+  Rendered layouts/partials/_footer.html.erb (0.2ms)
+Completed 200 OK in 169ms (Views: 168.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 16:25:53 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 16:25:53 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 16:25:53 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 16:25:53 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 16:25:53 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 16:25:53 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 16:25:53 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 16:25:53 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 16:25:53 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 16:25:53 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 16:25:53 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 16:25:53 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 16:25:53 -0400
+
+
+Started GET "/admin/subpages" for 127.0.0.1 at 2014-09-06 16:28:26 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.7ms)
+  [1m[36mSubpage Load (0.4ms)[0m  [1mSELECT "subpages".* FROM "subpages"[0m
+  Rendered admin/subpages/index.html.erb within layouts/application (17.7ms)
+Completed 500 Internal Server Error in 26ms
+
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"admin/subpages"} missing required keys: [:id]):
+     6: 			<%= page.title %>
+     7: 			<%= page.content %>
+     8: 			<%= page.user %>
+     9: 			<%= link_to "Edit" ,edit_admin_subpage_path %>
+    10: 			</br>
+    11: 		<% end %>
+    12: 	</div>
+  app/views/admin/subpages/index.html.erb:9:in `block in _app_views_admin_subpages_index_html_erb__662969024_91789870'
+  app/views/admin/subpages/index.html.erb:5:in `_app_views_admin_subpages_index_html_erb__662969024_91789870'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.2ms)
+
+
+Started GET "/admin/subpages" for 127.0.0.1 at 2014-09-06 16:28:50 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.7ms)
+  [1m[35mSubpage Load (0.3ms)[0m  SELECT "subpages".* FROM "subpages"
+  Rendered admin/subpages/index.html.erb within layouts/application (12.0ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"admin/subpages"} missing required keys: [:id]):
+     6: 			<%= page.title %>
+     7: 			<%= page.content %>
+     8: 			<%= page.user %>
+     9: 			<%= link_to "Edit" ,edit_admin_subpage_path[page.id] %>
+    10: 			</br>
+    11: 		<% end %>
+    12: 	</div>
+  app/views/admin/subpages/index.html.erb:9:in `block in _app_views_admin_subpages_index_html_erb__662969024_83923530'
+  app/views/admin/subpages/index.html.erb:5:in `_app_views_admin_subpages_index_html_erb__662969024_83923530'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.8ms)
+
+
+Started GET "/admin/subpages" for 127.0.0.1 at 2014-09-06 16:29:15 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.6ms)
+  [1m[36mSubpage Load (0.4ms)[0m  [1mSELECT "subpages".* FROM "subpages"[0m
+  Rendered admin/subpages/index.html.erb within layouts/application (21.0ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"admin/subpages"} missing required keys: [:id]):
+     6: 			<%= page.title %>
+     7: 			<%= page.content %>
+     8: 			<%= page.user %>
+     9: 			<%= link_to "Edit" ,edit_admin_subpage_path[page.id] %>
+    10: 			</br>
+    11: 		<% end %>
+    12: 	</div>
+  app/views/admin/subpages/index.html.erb:9:in `block in _app_views_admin_subpages_index_html_erb__662969024_83923530'
+  app/views/admin/subpages/index.html.erb:5:in `_app_views_admin_subpages_index_html_erb__662969024_83923530'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.2ms)
+
+
+Started GET "/admin/subpages" for 127.0.0.1 at 2014-09-06 16:29:52 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.7ms)
+  [1m[35mSubpage Load (0.3ms)[0m  SELECT "subpages".* FROM "subpages"
+  Rendered admin/subpages/index.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"admin/subpages"} missing required keys: [:id]):
+     6: 			<%= page.title %>
+     7: 			<%= page.content %>
+     8: 			<%= page.user %>
+     9: 			<%= link_to "Edit" ,edit_admin_subpage_path, id: page.id %>
+    10: 			</br>
+    11: 		<% end %>
+    12: 	</div>
+  app/views/admin/subpages/index.html.erb:9:in `block in _app_views_admin_subpages_index_html_erb__662969024_92261350'
+  app/views/admin/subpages/index.html.erb:5:in `_app_views_admin_subpages_index_html_erb__662969024_92261350'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.1ms)
+
+
+Started GET "/admin/subpages" for 127.0.0.1 at 2014-09-06 16:29:58 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.7ms)
+  [1m[36mSubpage Load (0.3ms)[0m  [1mSELECT "subpages".* FROM "subpages"[0m
+  Rendered admin/subpages/index.html.erb within layouts/application (13.5ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"admin/subpages"} missing required keys: [:id]):
+     6: 			<%= page.title %>
+     7: 			<%= page.content %>
+     8: 			<%= page.user %>
+     9: 			<%= link_to "Edit" ,edit_admin_subpage_path%>
+    10: 			</br>
+    11: 		<% end %>
+    12: 	</div>
+  app/views/admin/subpages/index.html.erb:9:in `block in _app_views_admin_subpages_index_html_erb__662969024_91529810'
+  app/views/admin/subpages/index.html.erb:5:in `_app_views_admin_subpages_index_html_erb__662969024_91529810'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.6ms)
+
+
+Started GET "/admin/subpages" for 127.0.0.1 at 2014-09-06 16:30:32 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (1.5ms)
+  [1m[35mSubpage Load (0.3ms)[0m  SELECT "subpages".* FROM "subpages"
+  Rendered admin/subpages/index.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"admin/subpages"} missing required keys: [:id]):
+     6: 			<%= page.title %>
+     7: 			<%= page.content %>
+     8: 			<%= page.user %>
+     9: 			<%= link_to "Edit" ,edit_admin_subpage_path, :id => 1%>
+    10: 			</br>
+    11: 		<% end %>
+    12: 	</div>
+  app/views/admin/subpages/index.html.erb:9:in `block in _app_views_admin_subpages_index_html_erb__662969024_83505830'
+  app/views/admin/subpages/index.html.erb:5:in `_app_views_admin_subpages_index_html_erb__662969024_83505830'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.6ms)
+
+
+Started GET "/admin/subpages/edit/1" for 127.0.0.1 at 2014-09-06 16:31:06 -0400
+
+ActionController::RoutingError (No route matches [GET] "/admin/subpages/edit/1"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.6ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.6ms)
+
+
+Started GET "/admin/subpages/1/edit" for 127.0.0.1 at 2014-09-06 16:31:17 -0400
+Processing by Admin::SubpagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 4ms
+
+ActionView::MissingTemplate (Missing template admin/subpages/edit, application/edit with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/kirka/web/kontract/app/views"
+  * "/home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/devise-3.2.4/app/views"
+):
+  actionview (4.1.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.1) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.1) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.1) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.6ms)
+
+
+Started GET "/admin/subpages/" for 127.0.0.1 at 2014-09-06 16:32:02 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.7ms)
+  [1m[36mSubpage Load (0.3ms)[0m  [1mSELECT "subpages".* FROM "subpages"[0m
+  Rendered admin/subpages/index.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"admin/subpages"} missing required keys: [:id]):
+     6: 			<%= page.title %>
+     7: 			<%= page.content %>
+     8: 			<%= page.user %>
+     9: 			<%= link_to "Edit" ,edit_admin_subpage_path, :id => 1%>
+    10: 			</br>
+    11: 		<% end %>
+    12: 	</div>
+  app/views/admin/subpages/index.html.erb:9:in `block in _app_views_admin_subpages_index_html_erb__662969024_83505830'
+  app/views/admin/subpages/index.html.erb:5:in `_app_views_admin_subpages_index_html_erb__662969024_83505830'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.8ms)
+
+
+Started GET "/admin/subpages/" for 127.0.0.1 at 2014-09-06 16:32:44 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.6ms)
+  [1m[35mSubpage Load (0.4ms)[0m  SELECT "subpages".* FROM "subpages"
+  Rendered admin/subpages/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 190ms (Views: 188.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 16:32:45 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 16:32:45 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 16:32:45 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 16:32:45 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 16:32:45 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 16:32:45 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 16:32:45 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 16:32:45 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 16:32:45 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 16:32:45 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 16:32:45 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 16:32:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 16:32:45 -0400
+
+
+Started GET "/admin/subpages/1/edit" for 127.0.0.1 at 2014-09-06 16:32:47 -0400
+Processing by Admin::SubpagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 4ms
+
+ActionView::MissingTemplate (Missing template admin/subpages/edit, application/edit with {:locale=>[:en], :formats=>[:html, :xml], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/kirka/web/kontract/app/views"
+  * "/home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/devise-3.2.4/app/views"
+):
+  actionview (4.1.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.1) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.1) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.1) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.7ms)
+
+
+Started GET "/admin/subpages/1/edit" for 127.0.0.1 at 2014-09-06 16:32:47 -0400
+Processing by Admin::SubpagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template admin/subpages/edit, application/edit with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/kirka/web/kontract/app/views"
+  * "/home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/devise-3.2.4/app/views"
+):
+  actionview (4.1.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.1) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.1) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.1) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.7ms)
+
+
+Started GET "/admin/subpages/2/edit" for 127.0.0.1 at 2014-09-06 16:32:50 -0400
+Processing by Admin::SubpagesController#edit as HTML
+  Parameters: {"id"=>"2"}
+Completed 500 Internal Server Error in 4ms
+
+ActionView::MissingTemplate (Missing template admin/subpages/edit, application/edit with {:locale=>[:en], :formats=>[:html, :xml], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/kirka/web/kontract/app/views"
+  * "/home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/devise-3.2.4/app/views"
+):
+  actionview (4.1.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.1) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.1) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.1) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.7ms)
+
+
+Started GET "/admin/subpages/2/edit" for 127.0.0.1 at 2014-09-06 16:32:51 -0400
+Processing by Admin::SubpagesController#edit as HTML
+  Parameters: {"id"=>"2"}
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template admin/subpages/edit, application/edit with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/kirka/web/kontract/app/views"
+  * "/home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/devise-3.2.4/app/views"
+):
+  actionview (4.1.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.1) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.1) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.1) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.8ms)
+
+
+Started GET "/admin/subpages/" for 127.0.0.1 at 2014-09-06 16:33:20 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.9ms)
+  [1m[36mSubpage Load (2.3ms)[0m  [1mSELECT "subpages".* FROM "subpages"[0m
+  Rendered admin/subpages/index.html.erb within layouts/application (62.8ms)
+Completed 500 Internal Server Error in 67ms
+
+ActionView::Template::Error (undefined method `delete_admin_subpage_path' for #<#<Class:0xb1a4d88>:0xb03f0ec>):
+     7: 			<%= page.content %>
+     8: 			<%= page.user %>
+     9: 			<%= link_to "Edit" ,edit_admin_subpage_path(page) %>
+    10: 			<%= link_to "Delete", delete_admin_subpage_path(page) %>
+    11: 			</br>
+    12: 		<% end %>
+    13: 	</div>
+  app/views/admin/subpages/index.html.erb:10:in `block in _app_views_admin_subpages_index_html_erb__662969024_92401650'
+  app/views/admin/subpages/index.html.erb:5:in `_app_views_admin_subpages_index_html_erb__662969024_92401650'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.3ms)
+
+
+Started GET "/admin/subpages/" for 127.0.0.1 at 2014-09-06 16:36:05 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.7ms)
+  [1m[35mSubpage Load (0.3ms)[0m  SELECT "subpages".* FROM "subpages"
+  Rendered admin/subpages/index.html.erb within layouts/application (27.1ms)
+Completed 500 Internal Server Error in 31ms
+
+ActionView::Template::Error (undefined method `subpage_path' for #<#<Class:0xb1a4d88>:0x9992830>):
+     7: 			<%= page.content %>
+     8: 			<%= page.user %>
+     9: 			<%= link_to "Edit" ,edit_admin_subpage_path(page) %>
+    10: 			<%= link_to "Destroy", page, :confirm => 'Are you sure?', :method => :delete %>
+    11: 			</br>
+    12: 		<% end %>
+    13: 	</div>
+  app/views/admin/subpages/index.html.erb:10:in `block in _app_views_admin_subpages_index_html_erb__662969024_80544370'
+  app/views/admin/subpages/index.html.erb:5:in `_app_views_admin_subpages_index_html_erb__662969024_80544370'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.2ms)
+
+
+Started GET "/admin/subpages/" for 127.0.0.1 at 2014-09-06 16:36:45 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.8ms)
+  [1m[36mSubpage Load (0.6ms)[0m  [1mSELECT "subpages".* FROM "subpages"[0m
+  Rendered admin/subpages/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 214ms (Views: 212.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 16:36:46 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 16:36:46 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 16:36:46 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 16:36:46 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 16:36:46 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 16:36:46 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 16:36:46 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 16:36:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 16:36:46 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 16:36:46 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 16:36:46 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 16:36:46 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 16:36:46 -0400
+
+
+Started GET "/admin/subpages/" for 127.0.0.1 at 2014-09-06 16:36:50 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.7ms)
+  [1m[35mSubpage Load (0.3ms)[0m  SELECT "subpages".* FROM "subpages"
+  Rendered admin/subpages/index.html.erb within layouts/application (33.0ms)
+Completed 500 Internal Server Error in 37ms
+
+ActionView::Template::Error (undefined method `subpage_path' for #<#<Class:0xb1a4d88>:0xabea514>):
+     7: 			<%= page.content %>
+     8: 			<%= page.user %>
+     9: 			<%= link_to "Edit" ,edit_admin_subpage_path(page) %>
+    10: 			<%= link_to "Destroy", page, :confirm => 'Are you sure?', :method => :delete %>
+    11: 			</br>
+    12: 		<% end %>
+    13: 	</div>
+  app/views/admin/subpages/index.html.erb:10:in `block in _app_views_admin_subpages_index_html_erb__662969024_90131000'
+  app/views/admin/subpages/index.html.erb:5:in `_app_views_admin_subpages_index_html_erb__662969024_90131000'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.2ms)
+
+
+Started GET "/admin/subpages/" for 127.0.0.1 at 2014-09-06 16:37:08 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.7ms)
+  [1m[36mSubpage Load (0.4ms)[0m  [1mSELECT "subpages".* FROM "subpages"[0m
+  Rendered admin/subpages/index.html.erb within layouts/application (34.8ms)
+Completed 500 Internal Server Error in 116ms
+
+ActionView::Template::Error (undefined method `subpage_path' for #<#<Class:0x977aa0c>:0x97d50ec>):
+     7: 			<%= page.content %>
+     8: 			<%= page.user %>
+     9: 			<%= link_to "Edit" ,edit_admin_subpage_path(page) %>
+    10: 			<%= link_to "Destroy", page, :confirm => 'Are you sure?', :method => :delete %>
+    11: 			</br>
+    12: 		<% end %>
+    13: 	</div>
+  app/views/admin/subpages/index.html.erb:10:in `block in _app_views_admin_subpages_index_html_erb__662969024_90131000'
+  app/views/admin/subpages/index.html.erb:5:in `_app_views_admin_subpages_index_html_erb__662969024_90131000'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.0ms)
+
+
+Started GET "/admin/subpages/" for 127.0.0.1 at 2014-09-06 16:38:51 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.7ms)
+  [1m[35mSubpage Load (0.3ms)[0m  SELECT "subpages".* FROM "subpages"
+  Rendered admin/subpages/index.html.erb within layouts/application (69.8ms)
+Completed 500 Internal Server Error in 73ms
+
+ActionView::Template::Error (undefined method `subpage_path' for #<#<Class:0x977aa0c>:0xaebe8bc>):
+     7: 			<%= page.content %>
+     8: 			<%= page.user %>
+     9: 			<%= link_to "Edit" ,edit_admin_subpage_path(page) %>
+    10: 			<%= link_to 'Destroy',  page,  method: :delete, data: { confirm: 'Are you sure?' } %>
+    11: 			</br>
+    12: 		<% end %>
+    13: 	</div>
+  app/views/admin/subpages/index.html.erb:10:in `block in _app_views_admin_subpages_index_html_erb__662969024_91613000'
+  app/views/admin/subpages/index.html.erb:5:in `_app_views_admin_subpages_index_html_erb__662969024_91613000'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.2ms)
+
+
+Started GET "/admin/subpages/" for 127.0.0.1 at 2014-09-06 16:39:07 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.5ms)
+  [1m[36mSubpage Load (0.3ms)[0m  [1mSELECT "subpages".* FROM "subpages"[0m
+  Rendered admin/subpages/index.html.erb within layouts/application (86.7ms)
+Completed 500 Internal Server Error in 92ms
+
+ActionView::Template::Error (undefined method `subpage_path' for #<#<Class:0xafb1cec>:0xafb147c>):
+     7: 			<%= page.content %>
+     8: 			<%= page.user %>
+     9: 			<%= link_to "Edit" ,edit_admin_subpage_path(page) %>
+    10: 			<%= link_to 'Destroy',  page,  method: :delete, data: { confirm: 'Are you sure?' } %>
+    11: 			</br>
+    12: 		<% end %>
+    13: 	</div>
+  app/views/admin/subpages/index.html.erb:10:in `block in _app_views_admin_subpages_index_html_erb__662969024_91613000'
+  app/views/admin/subpages/index.html.erb:5:in `_app_views_admin_subpages_index_html_erb__662969024_91613000'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.3ms)
+
+
+Started GET "/admin/subpages/" for 127.0.0.1 at 2014-09-06 16:40:56 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.6ms)
+  [1m[35mSubpage Load (0.3ms)[0m  SELECT "subpages".* FROM "subpages"
+  Rendered admin/subpages/index.html.erb within layouts/application (32.5ms)
+Completed 500 Internal Server Error in 36ms
+
+ActionView::Template::Error (undefined method `subpage_path' for #<#<Class:0xafb1cec>:0xab47224>):
+     7: 			<%= page.content %>
+     8: 			<%= page.user %>
+     9: 			<%= link_to "Edit" ,edit_admin_subpage_path(page) %>
+    10: 			<%= link_to 'Destroy',  subpage_path(page),  method: :delete, data: { confirm: 'Are you sure?' } %>
+    11: 			</br>
+    12: 		<% end %>
+    13: 	</div>
+  app/views/admin/subpages/index.html.erb:10:in `block in _app_views_admin_subpages_index_html_erb__662969024_89796760'
+  app/views/admin/subpages/index.html.erb:5:in `_app_views_admin_subpages_index_html_erb__662969024_89796760'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.4ms)
+
+
+Started GET "/admin/subpages/" for 127.0.0.1 at 2014-09-06 16:41:23 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.7ms)
+  [1m[36mSubpage Load (0.3ms)[0m  [1mSELECT "subpages".* FROM "subpages"[0m
+  Rendered admin/subpages/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 177ms (Views: 173.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 16:41:24 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 16:41:24 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 16:41:24 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 16:41:24 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 16:41:24 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 16:41:24 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 16:41:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 16:41:24 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 16:41:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 16:41:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 16:41:24 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 16:41:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 16:41:24 -0400
+
+
+Started DELETE "/admin/subpages/2" for 127.0.0.1 at 2014-09-06 16:41:27 -0400
+Processing by Admin::SubpagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mq1ZUX+VHAXY5+05BUvQuLY3HUkeSrxspUbXgOQG3Io=", "id"=>"2"}
+Completed 500 Internal Server Error in 3ms
+
+ActionView::MissingTemplate (Missing template admin/subpages/destroy, application/destroy with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/kirka/web/kontract/app/views"
+  * "/home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/devise-3.2.4/app/views"
+):
+  actionview (4.1.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.1) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.1) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.1) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.6ms)
+
+
+Started GET "/admin/subpages/2/edit" for 127.0.0.1 at 2014-09-06 16:41:37 -0400
+Processing by Admin::SubpagesController#edit as HTML
+  Parameters: {"id"=>"2"}
+Completed 500 Internal Server Error in 3ms
+
+ActionView::MissingTemplate (Missing template admin/subpages/edit, application/edit with {:locale=>[:en], :formats=>[:html, :xml], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/kirka/web/kontract/app/views"
+  * "/home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/devise-3.2.4/app/views"
+):
+  actionview (4.1.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.1) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.1) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.1) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.6ms)
+
+
+Started GET "/admin/subpages/2/edit" for 127.0.0.1 at 2014-09-06 16:41:37 -0400
+Processing by Admin::SubpagesController#edit as HTML
+  Parameters: {"id"=>"2"}
+Completed 500 Internal Server Error in 3ms
+
+ActionView::MissingTemplate (Missing template admin/subpages/edit, application/edit with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/kirka/web/kontract/app/views"
+  * "/home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/devise-3.2.4/app/views"
+):
+  actionview (4.1.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.1) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.1) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.1) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.6ms)
+
+
+Started GET "/admin/subpages/" for 127.0.0.1 at 2014-09-06 16:43:20 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.6ms)
+  [1m[35mSubpage Load (3.9ms)[0m  SELECT "subpages".* FROM "subpages"
+  Rendered admin/subpages/_menu.html.erb (7.5ms)
+  Rendered admin/subpages/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 218ms (Views: 212.6ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 16:43:21 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 16:43:21 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 16:43:21 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 16:43:21 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 16:43:21 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 16:43:21 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 16:43:21 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 16:43:21 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 16:43:21 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 16:43:21 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 16:43:21 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 16:43:21 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 16:43:21 -0400
+
+
+Started GET "/admin/subpages/1/edit" for 127.0.0.1 at 2014-09-06 16:43:39 -0400
+Processing by Admin::SubpagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendered admin/partials/_menu.html.erb (0.6ms)
+  Rendered admin/subpages/_menu.html.erb (1.8ms)
+  Rendered admin/subpages/edit.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 49ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @subpages.each do |page| %>
+    2: 	<%= page.title %>
+    3: 	<%= page.content %>
+    4: 	<%= page.user %>
+  app/views/admin/subpages/_menu.html.erb:1:in `_app_views_admin_subpages__menu_html_erb__638881691__622712168'
+  app/views/admin/subpages/edit.html.erb:5:in `_app_views_admin_subpages_edit_html_erb__743733162__622700728'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.7ms)
+
+
+Started GET "/admin/subpages/1/edit" for 127.0.0.1 at 2014-09-06 16:43:39 -0400
+Processing by Admin::SubpagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendered admin/partials/_menu.html.erb (2.5ms)
+  Rendered admin/subpages/_menu.html.erb (1.0ms)
+  Rendered admin/subpages/edit.html.erb within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @subpages.each do |page| %>
+    2: 	<%= page.title %>
+    3: 	<%= page.content %>
+    4: 	<%= page.user %>
+  app/views/admin/subpages/_menu.html.erb:1:in `_app_views_admin_subpages__menu_html_erb__638881691_90261630'
+  app/views/admin/subpages/edit.html.erb:5:in `_app_views_admin_subpages_edit_html_erb__743733162_93486850'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.9ms)
+
+
+Started GET "/admin/subpages/1/edit" for 127.0.0.1 at 2014-09-06 16:43:59 -0400
+Processing by Admin::SubpagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendered admin/partials/_menu.html.erb (0.6ms)
+  Rendered admin/subpages/_menu.html.erb (0.9ms)
+  Rendered admin/subpages/edit.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @subpages.each do |page| %>
+    2: 	<%= page.title %>
+    3: 	<%= page.content %>
+    4: 	<%= page.user %>
+  app/views/admin/subpages/_menu.html.erb:1:in `_app_views_admin_subpages__menu_html_erb__638881691_90261630'
+  app/views/admin/subpages/edit.html.erb:5:in `_app_views_admin_subpages_edit_html_erb__743733162_93486850'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.0ms)
+
+
+Started GET "/admin/subpages/1/edit" for 127.0.0.1 at 2014-09-06 16:44:11 -0400
+Processing by Admin::SubpagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendered admin/partials/_menu.html.erb (0.7ms)
+  [1m[36mSubpage Load (0.4ms)[0m  [1mSELECT "subpages".* FROM "subpages"[0m
+  Rendered admin/subpages/_menu.html.erb (10.7ms)
+  Rendered admin/subpages/edit.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 189ms (Views: 184.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 16:44:11 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 16:44:11 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 16:44:11 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 16:44:11 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 16:44:11 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 16:44:11 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 16:44:11 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 16:44:11 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 16:44:11 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 16:44:11 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 16:44:11 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 16:44:11 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 16:44:11 -0400
+
+
+Started GET "/admin/subpages/1/edit" for 127.0.0.1 at 2014-09-06 16:45:09 -0400
+Processing by Admin::SubpagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubpage Load (0.1ms)[0m  SELECT  "subpages".* FROM "subpages"  WHERE "subpages"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (0.6ms)
+  [1m[36mSubpage Load (5.6ms)[0m  [1mSELECT "subpages".* FROM "subpages"[0m
+  Rendered admin/subpages/_menu.html.erb (15.1ms)
+  Rendered admin/subpages/edit.html.erb within layouts/application (44.6ms)
+Completed 500 Internal Server Error in 79ms
+
+ActionView::Template::Error (undefined local variable or method `subpage_to_edit' for #<#<Class:0xafe2234>:0xafe1514>):
+    4: 	<div id="admin_content">
+    5: 		<%= render 'admin/subpages/menu' %>
+    6: 
+    7: 		edit: <%= subpage_to_edit %>
+    8: 	</div>
+    9: </div>
+  app/views/admin/subpages/edit.html.erb:7:in `_app_views_admin_subpages_edit_html_erb__743733162_92209390'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.1ms)
+
+
+Started GET "/admin/subpages/1/edit" for 127.0.0.1 at 2014-09-06 16:45:15 -0400
+Processing by Admin::SubpagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubpage Load (0.3ms)[0m  SELECT  "subpages".* FROM "subpages"  WHERE "subpages"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (0.7ms)
+  [1m[36mSubpage Load (0.3ms)[0m  [1mSELECT "subpages".* FROM "subpages"[0m
+  Rendered admin/subpages/_menu.html.erb (2.1ms)
+  Rendered admin/subpages/edit.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 162ms (Views: 159.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 16:45:15 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 16:45:15 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 16:45:15 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 16:45:15 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 16:45:15 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 16:45:15 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 16:45:15 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 16:45:15 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 16:45:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 16:45:15 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 16:45:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 16:45:15 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 16:45:15 -0400
+
+
+Started GET "/admin/subpages/1/edit" for 127.0.0.1 at 2014-09-06 16:45:24 -0400
+Processing by Admin::SubpagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubpage Load (0.2ms)[0m  SELECT  "subpages".* FROM "subpages"  WHERE "subpages"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (0.6ms)
+  [1m[36mSubpage Load (0.5ms)[0m  [1mSELECT "subpages".* FROM "subpages"[0m
+  Rendered admin/subpages/_menu.html.erb (4.3ms)
+  Rendered admin/subpages/edit.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 281ms (Views: 278.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 16:45:24 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 16:45:24 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 16:45:24 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 16:45:24 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 16:45:24 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 16:45:24 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 16:45:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 16:45:24 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 16:45:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 16:45:24 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 16:45:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 16:45:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 16:45:24 -0400
+
+
+Started GET "/admin/subpages/1/edit" for 127.0.0.1 at 2014-09-06 16:45:40 -0400
+Processing by Admin::SubpagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubpage Load (0.2ms)[0m  SELECT  "subpages".* FROM "subpages"  WHERE "subpages"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (0.8ms)
+  [1m[36mSubpage Load (0.3ms)[0m  [1mSELECT "subpages".* FROM "subpages"[0m
+  Rendered admin/subpages/_menu.html.erb (9.4ms)
+  Rendered admin/subpages/edit.html.erb within layouts/application (122.7ms)
+Completed 500 Internal Server Error in 135ms
+
+ActionView::Template::Error (undefined local variable or method `subpage_to_edit' for #<#<Class:0x9fffd80>:0x9fff1f0>):
+    4: 	<div id="admin_content">
+    5: 		<%= render 'admin/subpages/menu' %>
+    6: 
+    7: 		edit: <%= subpage_to_edit.title %>
+    8: 	</div>
+    9: </div>
+  app/views/admin/subpages/edit.html.erb:7:in `_app_views_admin_subpages_edit_html_erb__743733162_83882280'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.0ms)
+
+
+Started GET "/admin/subpages/1/edit" for 127.0.0.1 at 2014-09-06 16:46:51 -0400
+Processing by Admin::SubpagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubpage Load (0.2ms)[0m  SELECT  "subpages".* FROM "subpages"  WHERE "subpages"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (0.6ms)
+  [1m[36mSubpage Load (0.3ms)[0m  [1mSELECT "subpages".* FROM "subpages"[0m
+  Rendered admin/subpages/_menu.html.erb (14.6ms)
+  Rendered admin/subpages/edit.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 182ms (Views: 174.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 16:46:52 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 16:46:52 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 16:46:52 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 16:46:52 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 16:46:52 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 16:46:52 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 16:46:52 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 16:46:52 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 16:46:52 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 16:46:52 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 16:46:52 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 16:46:52 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 16:46:52 -0400
+
+
+Started DELETE "/admin/subpages/1" for 127.0.0.1 at 2014-09-06 16:47:00 -0400
+Processing by Admin::SubpagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mq1ZUX+VHAXY5+05BUvQuLY3HUkeSrxspUbXgOQG3Io=", "id"=>"1"}
+Completed 500 Internal Server Error in 7ms
+
+ActionView::MissingTemplate (Missing template admin/subpages/destroy, application/destroy with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/kirka/web/kontract/app/views"
+  * "/home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/devise-3.2.4/app/views"
+):
+  actionview (4.1.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.1) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.1) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.1) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kirka/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.7ms)
+
+
+Started GET "/admin/subpages" for 127.0.0.1 at 2014-09-06 16:47:05 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.6ms)
+  [1m[35mSubpage Load (0.9ms)[0m  SELECT "subpages".* FROM "subpages"
+  Rendered admin/subpages/_menu.html.erb (2.5ms)
+  Rendered admin/subpages/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 161ms (Views: 158.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-09-06 16:47:16 -0400
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered admin/partials/_menu.html.erb (0.6ms)
+  Rendered admin/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 184ms (Views: 159.0ms | ActiveRecord: 2.5ms)
