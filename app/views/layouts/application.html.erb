@@ -7,19 +7,21 @@
 	<%= csrf_meta_tags %>
 </head>
 <body>
-
-	<% if !(controller_name='session' && action_name='new') %>
+	<!-- TODO: \/ figure out a better way to filuter out control panel yield vs visitor / client yield -->
+	<% if (controller_name=='sessions' && action_name=='new') || controller_name=='admin' || controller_name=='subpages' %>
+		<%= yield %>
+		<%= debug(params) if Rails.env.development? %>
+	<% else %>
 		<%= render 'layouts/partials/header' %>
 		<div id="main_contrainer">
 			<%= notice %>
 			<%= alert %>
 			
 			<%= yield %>
+			<%= debug(params) if Rails.env.development? %>
 		</div>
 		<%= render 'layouts/partials/footer' %>
-	<% else %>
-		<%= yield %>
 	<% end %>
-
+	
 </body>
 </html>

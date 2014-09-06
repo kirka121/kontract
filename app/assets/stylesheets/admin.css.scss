@@ -2,9 +2,31 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#admin_menu{
-	border: 1px solid black;
-}
-#{
-	border: 1px solid blue;
+#admin_contrainer{
+	#admin_menu{
+		height: 100%;
+		width: 19%;
+		min-width: 300px;
+		border: 1px solid black;
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		ul{
+			list-style: none;
+			li{
+				margin-top: 5px;
+				margin-bottom: 5px;
+				margin-left: 10px;
+			}
+		}
+	}
+	#admin_content{
+		vertical-align: top;
+		height: 100%;
+		width: 80%;
+		display: inline-block;
+		border: 1px solid blue;
+		margin: 0;
+		padding: 0;
+	}
 }

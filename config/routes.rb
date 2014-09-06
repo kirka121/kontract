@@ -13,6 +13,11 @@ Rails.application.routes.draw do
 	get '/admin', to: 'admin#index', as: 'admin'
 	get '/contact', to: 'home#contact', as: 'contact'
 
+	namespace :admin do
+	     # Directs /admin/products/* to Admin::ProductsController
+	     # (app/controllers/admin/products_controller.rb)
+	     resources :subpages
+	end
 	# Example of regular route:
 	#   get 'products/:id' => 'catalog#view'
 
