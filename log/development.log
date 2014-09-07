@@ -20302,3 +20302,341 @@ Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 20:28:28 -0400
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 20:28:28 -0400
+
+
+Started GET "/services" for 127.0.0.1 at 2014-09-06 20:31:11 -0400
+Processing by HomeController#services as HTML
+  Rendered home/services.html.erb within layouts/application (0.1ms)
+  [1m[36mSetting Load (0.2ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.6ms)
+  Rendered layouts/partials/_header.html.erb (19.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.3ms)
+Completed 200 OK in 224ms (Views: 220.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-06 20:31:12 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.4ms)
+  Rendered layouts/partials/_header.html.erb (2.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 119ms (Views: 116.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/services" for 127.0.0.1 at 2014-09-06 20:31:14 -0400
+Processing by HomeController#services as HTML
+  Rendered home/services.html.erb within layouts/application (0.1ms)
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.4ms)
+  Rendered layouts/partials/_header.html.erb (2.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 116ms (Views: 115.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2014-09-06 20:31:15 -0400
+Processing by HomeController#contact as HTML
+  Rendered home/contact.html.erb within layouts/application (0.5ms)
+  [1m[36mSetting Load (1.5ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.6ms)
+  Rendered layouts/partials/_header.html.erb (4.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.0ms)
+Completed 200 OK in 122ms (Views: 119.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-06 20:31:16 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.4ms)
+  Rendered layouts/partials/_header.html.erb (3.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.9ms)
+Completed 200 OK in 218ms (Views: 217.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-06 20:31:19 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.4ms)
+  Rendered layouts/partials/_header.html.erb (2.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 120ms (Views: 118.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-07 07:17:05 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.4ms)
+  Rendered layouts/partials/_header.html.erb (9.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 161ms (Views: 160.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-07 07:17:06 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-07 07:17:06 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-07 07:17:06 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-07 07:17:06 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-07 07:17:06 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-07 07:17:06 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-07 07:17:06 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-07 07:17:06 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-07 07:17:06 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-07 07:17:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-07 07:17:06 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-07 07:17:06 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-07 07:17:06 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-07 07:46:47 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (11.2ms)
+  [1m[35mSetting Load (0.4ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (1.2ms)
+  Rendered layouts/partials/_header.html.erb (49.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (2.0ms)
+Completed 200 OK in 601ms (Views: 552.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-07 07:46:48 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-07 07:46:48 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-07 07:46:48 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-07 07:46:48 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-07 07:46:48 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-07 07:46:48 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-07 07:46:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-07 07:46:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-07 07:46:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-07 07:46:48 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-07 07:46:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-07 07:46:48 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-07 07:46:48 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/services" for 127.0.0.1 at 2014-09-07 07:47:16 -0400
+Processing by HomeController#services as HTML
+  Rendered home/services.html.erb within layouts/application (1.6ms)
+  [1m[35mSetting Load (0.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (1.1ms)
+  Rendered layouts/partials/_header.html.erb (24.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.8ms)
+Completed 200 OK in 345ms (Views: 311.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-07 07:47:17 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  [1m[35mSetting Load (0.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (2.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 152ms (Views: 150.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/services" for 127.0.0.1 at 2014-09-07 07:47:19 -0400
+Processing by HomeController#services as HTML
+  Rendered home/services.html.erb within layouts/application (0.1ms)
+  [1m[35mSetting Load (0.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.4ms)
+  Rendered layouts/partials/_header.html.erb (2.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 156ms (Views: 155.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2014-09-07 07:47:19 -0400
+Processing by HomeController#contact as HTML
+  Rendered home/contact.html.erb within layouts/application (0.5ms)
+  [1m[35mSetting Load (0.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (2.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.9ms)
+Completed 200 OK in 179ms (Views: 177.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-09-07 07:47:24 -0400
+Processing by AdminController#index as HTML
+Redirected to http://localhost/login
+Filter chain halted as :check_if_admin rendered or redirected
+Completed 302 Found in 17ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-09-07 07:47:24 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (314.5ms)
+Completed 200 OK in 643ms (Views: 560.5ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-09-07 07:47:39 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zQ5Gn0g37UtfAI1sSL7n+gRz8hmoKs7dlJPYDZcEEso=", "user"=>{"email"=>"admin@kirka.ca", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (1.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'admin@kirka.ca'  ORDER BY "users"."id" ASC LIMIT 1
+Completed 401 Unauthorized in 127ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zQ5Gn0g37UtfAI1sSL7n+gRz8hmoKs7dlJPYDZcEEso=", "user"=>{"email"=>"admin@kirka.ca", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  Rendered devise/sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 262ms (Views: 164.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-09-07 07:47:45 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zQ5Gn0g37UtfAI1sSL7n+gRz8hmoKs7dlJPYDZcEEso=", "user"=>{"email"=>"admin@kirka.ca", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'admin@kirka.ca'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "remember_created_at" = $1, "updated_at" = $2 WHERE "users"."id" = 1[0m  [["remember_created_at", "2014-09-07 11:47:45.378451"], ["updated_at", "2014-09-07 11:47:45.379456"]]
+  [1m[35m (14.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = 1  [["current_sign_in_at", "2014-09-07 11:47:45.398394"], ["sign_in_count", 2], ["updated_at", "2014-09-07 11:47:45.400571"]]
+  [1m[36m (4.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost/admin
+Completed 302 Found in 166ms (ActiveRecord: 20.7ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-09-07 07:47:45 -0400
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered admin/partials/_menu.html.erb (1.9ms)
+  Rendered admin/partials/_tophalf.html.erb (3.5ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.6ms)
+  Rendered admin/index.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 226ms (Views: 223.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-07 07:47:48 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (2.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 157ms (Views: 156.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-07 07:47:51 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.4ms)
+  Rendered layouts/partials/_header.html.erb (2.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 165ms (Views: 163.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-07 07:49:35 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (5.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.9ms)
+Completed 200 OK in 177ms (Views: 175.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/services" for 127.0.0.1 at 2014-09-07 07:49:38 -0400
+Processing by HomeController#services as HTML
+  Rendered home/services.html.erb within layouts/application (0.1ms)
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.4ms)
+  Rendered layouts/partials/_header.html.erb (2.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 161ms (Views: 160.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2014-09-07 07:49:39 -0400
+Processing by HomeController#contact as HTML
+  Rendered home/contact.html.erb within layouts/application (0.1ms)
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.4ms)
+  Rendered layouts/partials/_header.html.erb (2.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 164ms (Views: 162.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/services" for 127.0.0.1 at 2014-09-07 07:49:40 -0400
+Processing by HomeController#services as HTML
+  Rendered home/services.html.erb within layouts/application (0.0ms)
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.4ms)
+  Rendered layouts/partials/_header.html.erb (2.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 164ms (Views: 163.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-07 07:49:41 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mSetting Load (0.4ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.4ms)
+  Rendered layouts/partials/_header.html.erb (2.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 163ms (Views: 161.4ms | ActiveRecord: 0.4ms)

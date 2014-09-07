@@ -2,8 +2,11 @@ KONTRACT: a simple service providing solution. Kontract's aim is to help individ
 
 Implementation stack:
     - rails 4
-    - nginx
+    - nginx with passenger
     - postgres sql
+
+Gems:
+    - devise
 
 Key features (must have):
     - admin;
