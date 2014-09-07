@@ -1,17 +1,29 @@
-<div id="control_panel_login_contraner">
-	<h2>Control Panel Login</h2>
+<style type="text/css">
+	body.login_body {
+    		background-image: url( <%= randomized_background_image %>); 
+  	}
+</style>
 
-	<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-		<div>
-		<%= f.email_field :email, autofocus: true, placeholder: 'email', class: 'form_field' %></div>
+<body class="login_body">
+	<div id="control_panel_login_contraner">
+		<h2>Control Panel Login</h2>
 
-		<div>
-			<%= f.password_field :password, autocomplete: "off", placeholder: 'password', class: 'form_field' %></div>
+		<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+			<div>
+			<%= f.email_field :email, autofocus: true, placeholder: 'email', class: 'form_field' %></div>
 
-		<% if devise_mapping.rememberable? -%>
-			<div id="login_form_checkmark"><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
-		<% end -%>
+			<div>
+				<%= f.password_field :password, autocomplete: "off", placeholder: 'password', class: 'form_field' %>
+			</div>
 
-		<div><%= f.submit "Sign in", class: 'btn btn-large' %></div>
-	<% end %>
-</div>
+			<div id="login_button_contrainer">
+				<div id="login_button_contrainer_remember_me">
+					<% if devise_mapping.rememberable? %>
+						<%= f.check_box :remember_me %> <%= f.label :remember_me %>
+					<% end -%>
+				</div>
+				<%= f.submit "Login", class: 'btn btn-large', id: 'login_button' %>
+			</div>
+		<% end %>
+	</div>
+</body>
