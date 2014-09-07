@@ -1,4 +1,6 @@
 class Admin::SubpagesController < ApplicationController
+	before_action :check_if_admin
+
 	def index
 		@subpages = Subpage.all
 	end
@@ -11,4 +13,11 @@ class Admin::SubpagesController < ApplicationController
 	def destroy
 
 	end
+
+	private
+		def check_if_admin
+			if !user_signed_in?
+				redirect_to login_path	
+			end
+		end
 end

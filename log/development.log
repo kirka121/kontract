@@ -19589,3 +19589,716 @@ Processing by Admin::SettingsController#edit as HTML
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
   Rendered layouts/partials/_footer.html.erb (1.2ms)
 Completed 200 OK in 131ms (Views: 128.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-06 20:21:29 -0400
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendered admin/settings/edit.html.erb within layouts/application (0.1ms)
+  [1m[35mSetting Load (0.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (4.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 177ms (Views: 175.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 20:21:30 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 20:21:30 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 20:21:30 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 20:21:30 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 20:21:30 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 20:21:30 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 20:21:30 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 20:21:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 20:21:30 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 20:21:30 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 20:21:30 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 20:21:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 20:21:30 -0400
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-06 20:22:05 -0400
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendered admin/settings/edit.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 199ms (Views: 197.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 20:22:06 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 20:22:06 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 20:22:06 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 20:22:06 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 20:22:06 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 20:22:06 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 20:22:06 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 20:22:06 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 20:22:06 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 20:22:06 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 20:22:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 20:22:06 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 20:22:06 -0400
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-06 20:24:04 -0400
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendered admin/partials/_menu.html.erb (7.1ms)
+  Rendered admin/partials/_tophalf.html.erb (8.1ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 153ms (Views: 151.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 20:24:04 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 20:24:04 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 20:24:04 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 20:24:04 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 20:24:04 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 20:24:04 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 20:24:04 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 20:24:04 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 20:24:04 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 20:24:04 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 20:24:04 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 20:24:04 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 20:24:04 -0400
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-09-06 20:24:07 -0400
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered admin/partials/_menu.html.erb (0.8ms)
+  Rendered admin/partials/_tophalf.html.erb (1.7ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.0ms)
+  Rendered admin/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 130ms (Views: 108.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-06 20:24:08 -0400
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendered admin/partials/_menu.html.erb (0.9ms)
+  Rendered admin/partials/_tophalf.html.erb (1.9ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 196ms (Views: 194.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/subpages" for 127.0.0.1 at 2014-09-06 20:24:09 -0400
+Processing by Admin::SubpagesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.7ms)
+  Rendered admin/partials/_tophalf.html.erb (1.8ms)
+  [1m[36mSubpage Load (0.4ms)[0m  [1mSELECT "subpages".* FROM "subpages"[0m
+  Rendered admin/subpages/_menu.html.erb (3.2ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/subpages/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 114ms (Views: 113.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/teams" for 127.0.0.1 at 2014-09-06 20:24:10 -0400
+Processing by Admin::TeamsController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.8ms)
+  Rendered admin/partials/_tophalf.html.erb (2.1ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/teams/index.html.erb within layouts/application (5.5ms)
+  [1m[35mSetting Load (0.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.4ms)
+  Rendered layouts/partials/_header.html.erb (3.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 129ms (Views: 127.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/teams" for 127.0.0.1 at 2014-09-06 20:24:43 -0400
+Processing by Admin::TeamsController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.8ms)
+  Rendered admin/partials/_tophalf.html.erb (4.2ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/teams/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 205ms (Views: 204.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 20:24:43 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 20:24:43 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 20:24:43 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 20:24:43 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 20:24:43 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 20:24:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 20:24:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 20:24:43 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 20:24:43 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 20:24:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 20:24:43 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 20:24:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 20:24:43 -0400
+
+
+Started GET "/admin/services" for 127.0.0.1 at 2014-09-06 20:24:45 -0400
+Processing by Admin::ServicesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.8ms)
+  Rendered admin/partials/_tophalf.html.erb (1.8ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.0ms)
+  Rendered admin/services/index.html.erb within layouts/application (4.0ms)
+  [1m[35mSetting Load (0.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.3ms)
+  Rendered layouts/partials/_header.html.erb (2.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 117ms (Views: 115.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/services" for 127.0.0.1 at 2014-09-06 20:25:09 -0400
+Processing by Admin::ServicesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.8ms)
+  Rendered admin/partials/_tophalf.html.erb (11.9ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/services/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 186ms (Views: 184.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 20:25:09 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 20:25:09 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 20:25:09 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 20:25:09 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 20:25:09 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 20:25:09 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 20:25:09 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 20:25:09 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 20:25:09 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 20:25:09 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 20:25:09 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 20:25:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 20:25:09 -0400
+
+
+Started GET "/admin/services" for 127.0.0.1 at 2014-09-06 20:25:59 -0400
+Processing by Admin::ServicesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (1.7ms)
+  Rendered admin/partials/_tophalf.html.erb (3.5ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/services/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 196ms (Views: 195.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 20:25:59 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 20:26:00 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 20:26:00 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 20:26:00 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 20:26:00 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 20:26:00 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 20:26:00 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 20:26:00 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 20:26:00 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 20:26:00 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 20:26:00 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 20:26:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 20:26:00 -0400
+
+
+Started GET "/admin/services" for 127.0.0.1 at 2014-09-06 20:27:49 -0400
+Processing by Admin::ServicesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.9ms)
+  Rendered admin/partials/_tophalf.html.erb (1.8ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/services/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 116ms (Views: 115.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:49 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:49 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:49 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:49 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:49 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:49 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:49 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 20:27:49 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 20:27:49 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 20:27:49 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 20:27:49 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 20:27:49 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 20:27:49 -0400
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-09-06 20:27:50 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mq1ZUX+VHAXY5+05BUvQuLY3HUkeSrxspUbXgOQG3Io="}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.9ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 138ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-06 20:27:51 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mSetting Load (0.4ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.6ms)
+  Rendered layouts/partials/_header.html.erb (23.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (2.6ms)
+Completed 200 OK in 181ms (Views: 178.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:51 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:51 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:51 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:51 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:51 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:51 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:51 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 20:27:51 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 20:27:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 20:27:51 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 20:27:51 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 20:27:51 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 20:27:51 -0400
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-09-06 20:27:54 -0400
+Processing by AdminController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :check_if_admin rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-09-06 20:27:54 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 115ms (Views: 113.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:54 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:54 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:54 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:54 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:54 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 20:27:54 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 20:27:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 20:27:54 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 20:27:54 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 20:27:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 20:27:54 -0400
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-09-06 20:27:54 -0400
+Processing by AdminController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :check_if_admin rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-09-06 20:27:54 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 244ms (Views: 240.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:55 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:55 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:55 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:55 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:55 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:55 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 20:27:55 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 20:27:55 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 20:27:55 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 20:27:55 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 20:27:55 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 20:27:55 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 20:27:55 -0400
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-09-06 20:28:01 -0400
+Processing by AdminController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :check_if_admin rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-09-06 20:28:01 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 112ms (Views: 110.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 20:28:01 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 20:28:01 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 20:28:01 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 20:28:01 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 20:28:01 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 20:28:01 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 20:28:01 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 20:28:01 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 20:28:01 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 20:28:01 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 20:28:01 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 20:28:01 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 20:28:01 -0400
+
+
+Started GET "/admin/services" for 127.0.0.1 at 2014-09-06 20:28:04 -0400
+Processing by Admin::ServicesController#index as HTML
+  Rendered admin/partials/_menu.html.erb (0.8ms)
+  Rendered admin/partials/_tophalf.html.erb (1.7ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/services/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 114ms (Views: 113.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 20:28:04 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 20:28:04 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 20:28:04 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 20:28:04 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 20:28:04 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 20:28:04 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 20:28:04 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 20:28:04 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 20:28:04 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 20:28:04 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 20:28:04 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 20:28:04 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 20:28:04 -0400
+
+
+Started GET "/admin/services" for 127.0.0.1 at 2014-09-06 20:28:27 -0400
+Processing by Admin::ServicesController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :check_if_admin rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-09-06 20:28:27 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 137ms (Views: 113.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-06 20:28:27 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-06 20:28:27 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-06 20:28:27 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-06 20:28:27 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-06 20:28:27 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-06 20:28:27 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-06 20:28:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-06 20:28:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-06 20:28:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-06 20:28:28 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-06 20:28:28 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-06 20:28:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-06 20:28:28 -0400
