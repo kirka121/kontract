@@ -1,9 +1,3 @@
-<div id="admin_contrainer">
-	<%= render 'admin/partials/menu' %>
-
-	<div id="admin_content">
-		<%= render 'admin/subpages/menu' %>
-
-		edit: <%= @subpage_to_edit.title %>
-	</div>
-</div>
+<%= render 'admin/partials/tophalf' %>
+	edit a asubpage: <%= @subpage_to_edit.title %>
+<%= render 'admin/partials/bottomhalf' %>

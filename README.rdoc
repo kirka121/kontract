@@ -41,6 +41,10 @@ Key features (must have):
             - banner style message at the top of the website announcing some inmportant information, promotions, coupons
         - CRUD on news system
             - admin can provide news that visitors and clients see on main page of website
+        - CRUD on services
+
+        - confirmation system on team members activities, payment received etc
+        - mailing system notifying admin of occurences on the website
 
     - members;
         - check timetable (email / txt msg notifications in advance if want)

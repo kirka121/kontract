@@ -1,8 +1,8 @@
 <% if controller_name != 'admin' %>
 <footer class="footer navbar-fixed-bottom">
-	<div class="container">
+	<div id="footer_container">
 		<small>
-			<a href="#">Copyright &copy; 2014 Katata Network. All Rights Reserved.</a>
+			<%= yield_site_settings.site_copyright.html_safe %>
 		</small>
 		<nav>
 			<ul>

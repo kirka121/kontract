@@ -11,7 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140906195921) do
+ActiveRecord::Schema.define(version: 20140906232411) do
+
+  create_table "settings", force: true do |t|
+    t.text     "site_name"
+    t.text     "site_title"
+    t.text     "site_copyright"
+    t.string   "admin_email"
+    t.string   "booking_email"
+    t.integer  "registration_mode"
+    t.boolean  "subpages_active"
+    t.boolean  "teams_active"
+    t.boolean  "services_active"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "subpages", force: true do |t|
     t.text     "title"

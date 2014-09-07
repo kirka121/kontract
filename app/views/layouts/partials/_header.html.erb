@@ -2,13 +2,10 @@
 <div id="main_header">
 	<div id="header_contrainer">
 		<div id="header_logo">
-			logo
+			<%= yield_site_settings.site_name %>
 		</div>
 		<div id="header_menu">
-			<ul id="menu_links">
-				<li><%= link_to "Home", root_path %></li>
-				<li><%= link_to "Contact", contact_path %></li>
-			</ul>
+			<%= render 'layouts/partials/main_menu' %>
 		</div>
 	</div>
 </div>
