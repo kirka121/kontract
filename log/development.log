@@ -32574,3 +32574,2376 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:29:35
 
 
 Started GET "/assets/warningicon.png" for 127.0.0.1 at 2014-09-08 11:29:35 -0400
+
+
+Started GET "/register" for 127.0.0.1 at 2014-09-08 11:30:38 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (4.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (53.0ms)
+  [1m[35mSetting Load (0.2ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (23.5ms)
+  Rendered layouts/partials/_flashes.html.erb (1.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.7ms)
+Completed 200 OK in 337ms (Views: 307.3ms | ActiveRecord: 3.7ms)
+
+
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:30:39 -0400
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:30:39 -0400
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:30:39 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:30:39 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:30:39 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:30:39 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:30:39 -0400
+
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:30:39 -0400
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:30:39 -0400
+
+
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:30:39 -0400
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:30:39 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:30:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:30:39 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:30:47 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mUser Exists (1.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered devise/shared/_links.erb (1.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.0ms)
+  [1m[36mSetting Load (0.2ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.6ms)
+  Rendered layouts/partials/_header.html.erb (19.5ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.5ms)
+Completed 200 OK in 461ms (Views: 212.0ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:30:48 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:30:48 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:30:48 -0400
+
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:30:48 -0400
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:30:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:30:48 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:30:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:30:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:30:48 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:30:48 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:30:48 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:30:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:30:48 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:32:35 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.2ms)
+  [1m[35mSetting Load (0.2ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (18.8ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.2ms)
+Completed 200 OK in 332ms (Views: 198.8ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:32:36 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:32:36 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:32:36 -0400
+
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:32:36 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:32:36 -0400
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:32:36 -0400
+
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:32:36 -0400
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:32:36 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:32:36 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:32:36 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:32:36 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:32:36 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:32:36 -0400
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 11:32:37 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:36:20 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (1.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered devise/shared/_links.erb (2.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (25.3ms)
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.6ms)
+  Rendered layouts/partials/_header.html.erb (19.7ms)
+  Rendered layouts/partials/_flashes.html.erb (2.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (39.5ms)
+Completed 200 OK in 452ms (Views: 263.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:36:21 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:36:21 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:36:21 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:36:21 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:36:21 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:36:21 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:36:21 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:36:21 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:36:21 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:36:21 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:36:21 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:36:21 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:36:21 -0400
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 11:36:21 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:36:46 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.9ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.3ms)
+  [1m[35mSetting Load (0.7ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (3.2ms)
+  Rendered layouts/partials/_flashes.html.erb (1.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.0ms)
+Completed 200 OK in 379ms (Views: 234.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:36:47 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:36:47 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:36:47 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:36:47 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:36:47 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:36:47 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:36:47 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:36:47 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:36:47 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:36:47 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:36:47 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:36:47 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:36:47 -0400
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 11:36:47 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:37:36 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (1.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.1ms)
+  [1m[36mSetting Load (0.2ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.6ms)
+  Rendered layouts/partials/_header.html.erb (26.2ms)
+  Rendered layouts/partials/_flashes.html.erb (2.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.3ms)
+Completed 200 OK in 479ms (Views: 266.9ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:37:37 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:37:37 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:37:37 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:37:37 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:37:37 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:37:37 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:37:37 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:37:37 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:37:37 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:37:37 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:37:37 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:37:37 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:37:37 -0400
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 11:37:37 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:38:58 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (1.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered devise/shared/_links.erb (2.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (18.0ms)
+  [1m[36mSetting Load (0.2ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (18.8ms)
+  Rendered layouts/partials/_flashes.html.erb (4.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.5ms)
+Completed 200 OK in 399ms (Views: 211.5ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:38:59 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:38:59 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:38:59 -0400
+
+
+
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:38:59 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:38:59 -0400
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:38:59 -0400
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:38:59 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:38:59 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:38:59 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:38:59 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:38:59 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:38:59 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:38:59 -0400
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 11:38:59 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:40:45 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.4ms)
+  [1m[36mSetting Load (0.2ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (23.8ms)
+  Rendered layouts/partials/_flashes.html.erb (1.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (2.0ms)
+Completed 200 OK in 434ms (Views: 255.2ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:40:46 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:40:46 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:40:46 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:40:46 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:40:46 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:40:46 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:40:46 -0400
+
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:40:46 -0400
+
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:40:46 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:40:46 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:40:46 -0400
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:40:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:40:46 -0400
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 11:40:46 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:41:09 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (1.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered devise/shared/_links.erb (2.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.6ms)
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (18.9ms)
+  Rendered layouts/partials/_flashes.html.erb (4.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.6ms)
+Completed 200 OK in 379ms (Views: 207.3ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:41:10 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:41:10 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:41:10 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:41:10 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:41:10 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:41:10 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:41:10 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:41:10 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:41:10 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:41:10 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:41:10 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:41:10 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:41:10 -0400
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 11:41:10 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:42:07 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (2.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered devise/shared/_links.erb (2.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.7ms)
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.6ms)
+  Rendered layouts/partials/_header.html.erb (19.4ms)
+  Rendered layouts/partials/_flashes.html.erb (2.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.3ms)
+Completed 200 OK in 490ms (Views: 227.2ms | ActiveRecord: 7.2ms)
+
+
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:42:08 -0400
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:42:08 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:42:08 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:42:08 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:42:08 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:42:08 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:42:08 -0400
+
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:42:08 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:42:08 -0400
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:42:08 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:42:08 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:42:08 -0400
+
+
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 11:42:08 -0400
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:42:08 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:45:58 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.5ms)
+  [1m[35mSetting Load (0.2ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (18.6ms)
+  Rendered layouts/partials/_flashes.html.erb (1.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (2.3ms)
+Completed 200 OK in 351ms (Views: 203.9ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:45:59 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:45:59 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:45:59 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:45:59 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:45:59 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:45:59 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:45:59 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:45:59 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:45:59 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:45:59 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:45:59 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:45:59 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:45:59 -0400
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 11:45:59 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:46:59 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.2ms)
+  [1m[35mSetting Load (0.2ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.6ms)
+  Rendered layouts/partials/_header.html.erb (19.0ms)
+  Rendered layouts/partials/_flashes.html.erb (1.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.4ms)
+Completed 200 OK in 417ms (Views: 274.6ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:46:59 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:46:59 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:46:59 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:46:59 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:47:00 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:47:00 -0400
+
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:47:00 -0400
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:47:00 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:47:00 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:47:00 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:47:00 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:47:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:47:00 -0400
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 11:47:00 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:47:29 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.6ms)
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (24.0ms)
+  Rendered layouts/partials/_flashes.html.erb (3.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.3ms)
+Completed 200 OK in 449ms (Views: 266.1ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:47:30 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:47:30 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:47:30 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:47:30 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:47:30 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:47:30 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:47:30 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:47:31 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:47:31 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:47:31 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:47:31 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:47:31 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:47:31 -0400
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 11:47:31 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:47:43 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered devise/shared/_links.erb (4.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (17.9ms)
+  [1m[36mSetting Load (0.2ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (22.2ms)
+  Rendered layouts/partials/_flashes.html.erb (3.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.4ms)
+Completed 200 OK in 612ms (Views: 406.2ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:47:44 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:47:44 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:47:44 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:47:44 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:47:44 -0400
+
+
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:47:44 -0400
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:47:44 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:47:44 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:47:44 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:47:44 -0400
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:47:44 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:47:44 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:47:44 -0400
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 11:47:44 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:48:49 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.3ms)
+  [1m[35mSetting Load (0.2ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (18.2ms)
+  Rendered layouts/partials/_flashes.html.erb (1.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.2ms)
+Completed 200 OK in 457ms (Views: 320.2ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:48:50 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:48:50 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:48:50 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:48:50 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:48:50 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:48:50 -0400
+
+
+
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:48:50 -0400
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:48:50 -0400
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:48:50 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:48:50 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:48:50 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:48:50 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:48:50 -0400
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 11:48:50 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:49:27 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered devise/shared/_links.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.9ms)
+  [1m[36mSetting Load (0.2ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (57.1ms)
+  Rendered layouts/partials/_flashes.html.erb (1.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.2ms)
+Completed 200 OK in 479ms (Views: 317.5ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:49:28 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:49:28 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:49:28 -0400
+
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:49:28 -0400
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:49:28 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:49:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:49:28 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:49:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:49:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:49:28 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:49:28 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:49:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:49:28 -0400
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 11:49:28 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:49:43 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered devise/shared/_links.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.7ms)
+  [1m[35mSetting Load (0.2ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (2.5ms)
+  Rendered layouts/partials/_header.html.erb (24.1ms)
+  Rendered layouts/partials/_flashes.html.erb (3.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.2ms)
+Completed 200 OK in 554ms (Views: 364.9ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:49:44 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:49:44 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:49:44 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:49:44 -0400
+
+
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:49:44 -0400
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:49:44 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:49:44 -0400
+
+
+
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:49:44 -0400
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:49:44 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:49:44 -0400
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:49:44 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:49:44 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:49:44 -0400
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 11:49:44 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:50:07 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.8ms)
+  [1m[36mSetting Load (0.2ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (18.3ms)
+  Rendered layouts/partials/_flashes.html.erb (1.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.3ms)
+Completed 200 OK in 442ms (Views: 310.4ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:50:08 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:50:08 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:50:08 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:50:08 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:50:08 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:50:08 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:50:08 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:50:08 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:50:08 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:50:08 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:50:08 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:50:08 -0400
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 11:50:08 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:50:08 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:50:54 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.8ms)
+  [1m[35mSetting Load (0.2ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.6ms)
+  Rendered layouts/partials/_header.html.erb (18.7ms)
+  Rendered layouts/partials/_flashes.html.erb (1.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.3ms)
+Completed 200 OK in 399ms (Views: 265.6ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:50:54 -0400
+
+
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:50:54 -0400
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:50:54 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:50:54 -0400
+
+
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:50:54 -0400
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:50:54 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:50:54 -0400
+
+
+
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:50:54 -0400
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:50:54 -0400
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:50:54 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:50:54 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:50:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:50:54 -0400
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 11:50:54 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:51:24 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1[0m
+  [1m[35m (1.9ms)[0m  ROLLBACK
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.2ms)
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (3.8ms)
+  Rendered layouts/partials/_flashes.html.erb (3.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.9ms)
+Completed 200 OK in 541ms (Views: 391.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:51:25 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:51:25 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:51:25 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:51:25 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:51:25 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:51:25 -0400
+
+
+
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:51:25 -0400
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:51:25 -0400
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:51:25 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:51:25 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:51:25 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:51:25 -0400
+
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 11:51:25 -0400
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:51:25 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:52:01 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (2.6ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1
+  [1m[36m (0.8ms)[0m  [1mROLLBACK[0m
+  Rendered devise/shared/_links.erb (2.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.3ms)
+  [1m[35mSetting Load (0.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (3.0ms)
+  Rendered layouts/partials/_flashes.html.erb (1.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.5ms)
+Completed 200 OK in 403ms (Views: 271.5ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:52:01 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:52:01 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:52:02 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:52:02 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:52:02 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:52:02 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:52:02 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:52:02 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:52:02 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:52:02 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:52:02 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:52:02 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:52:02 -0400
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 11:52:02 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:52:21 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.3ms)
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (3.3ms)
+  Rendered layouts/partials/_flashes.html.erb (1.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.0ms)
+Completed 200 OK in 474ms (Views: 361.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:52:22 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:52:22 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:52:22 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:52:22 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:52:22 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:52:22 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:52:22 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:52:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:52:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:52:22 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:52:22 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:52:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:52:22 -0400
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 11:52:22 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:52:57 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (2.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.1ms)
+  [1m[35mSetting Load (0.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.4ms)
+  Rendered layouts/partials/_header.html.erb (2.7ms)
+  Rendered layouts/partials/_flashes.html.erb (1.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.0ms)
+Completed 200 OK in 445ms (Views: 316.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:52:58 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:52:58 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:52:58 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:52:58 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:52:58 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:52:58 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:52:58 -0400
+
+
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:52:58 -0400
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:52:58 -0400
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:52:58 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:52:58 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:52:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:52:58 -0400
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 11:52:58 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:53:26 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.6ms)
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (3.0ms)
+  Rendered layouts/partials/_flashes.html.erb (1.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.9ms)
+Completed 200 OK in 395ms (Views: 286.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:53:27 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:53:27 -0400
+
+
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:53:27 -0400
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:53:27 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:53:27 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:53:27 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:53:27 -0400
+
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:53:27 -0400
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:53:27 -0400
+
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:53:27 -0400
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:53:27 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:53:27 -0400
+
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:53:27 -0400
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 11:53:27 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:53:47 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.7ms)
+  [1m[35mSetting Load (0.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (3.1ms)
+  Rendered layouts/partials/_flashes.html.erb (1.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.0ms)
+Completed 200 OK in 358ms (Views: 244.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:53:48 -0400
+
+
+
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:53:48 -0400
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:53:48 -0400
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:53:48 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:53:48 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:53:48 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:53:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:53:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:53:48 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:53:48 -0400
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 11:53:48 -0400
+
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:53:48 -0400
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:53:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:53:48 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:58:39 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered devise/shared/_links.erb (2.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.3ms)
+  [1m[36mSetting Load (0.2ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (24.0ms)
+  Rendered layouts/partials/_flashes.html.erb (4.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.3ms)
+Completed 200 OK in 443ms (Views: 268.8ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:58:40 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:58:40 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:58:40 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:58:40 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:58:40 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:58:40 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:58:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:58:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:58:40 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:58:40 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:58:40 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:58:40 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:58:40 -0400
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 11:58:40 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:58:58 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered devise/shared/_links.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.0ms)
+  [1m[35mSetting Load (0.8ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (28.7ms)
+  Rendered layouts/partials/_flashes.html.erb (4.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.2ms)
+Completed 200 OK in 487ms (Views: 321.9ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:58:59 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:58:59 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:58:59 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:58:59 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:58:59 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:58:59 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:58:59 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:58:59 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:58:59 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:58:59 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:58:59 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:58:59 -0400
+
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:58:59 -0400
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 11:58:59 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:59:31 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.9ms)
+  [1m[36mSetting Load (0.2ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (20.2ms)
+  Rendered layouts/partials/_flashes.html.erb (3.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.3ms)
+Completed 200 OK in 425ms (Views: 280.2ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:59:32 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:59:32 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:59:32 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:59:32 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:59:32 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:59:32 -0400
+
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:59:32 -0400
+
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:59:32 -0400
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:59:32 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:59:32 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:59:32 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:59:32 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:59:32 -0400
+
+
+Started GET "/assets/popupalertimage.png" for 127.0.0.1 at 2014-09-08 11:59:32 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 11:59:43 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.1ms)
+  [1m[35mSetting Load (0.2ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.6ms)
+  Rendered layouts/partials/_header.html.erb (25.7ms)
+  Rendered layouts/partials/_flashes.html.erb (3.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (2.3ms)
+Completed 200 OK in 548ms (Views: 352.2ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 11:59:44 -0400
+
+
+
+
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 11:59:44 -0400
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 11:59:44 -0400
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 11:59:44 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 11:59:44 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 11:59:44 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 11:59:44 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 11:59:44 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 11:59:44 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 11:59:44 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 11:59:44 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 11:59:44 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 11:59:44 -0400
+
+
+Started GET "/assets/checkmarksuccessimage.png" for 127.0.0.1 at 2014-09-08 11:59:44 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 12:00:07 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.5ms)
+  [1m[35mSetting Load (0.2ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.7ms)
+  Rendered layouts/partials/_header.html.erb (21.2ms)
+  Rendered layouts/partials/_flashes.html.erb (3.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.3ms)
+Completed 200 OK in 482ms (Views: 296.2ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 12:00:08 -0400
+
+
+Started GET "/assets/warningicon.png" for 127.0.0.1 at 2014-09-08 12:00:08 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 12:00:08 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 12:00:08 -0400
+
+
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 12:00:08 -0400
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 12:00:08 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 12:00:08 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 12:00:08 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 12:00:08 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 12:00:08 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 12:00:08 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 12:00:08 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 12:00:08 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 12:00:08 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 12:02:19 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered devise/shared/_links.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.3ms)
+  [1m[36mSetting Load (0.2ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (18.7ms)
+  Rendered layouts/partials/_flashes.html.erb (1.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.1ms)
+Completed 200 OK in 531ms (Views: 324.4ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 12:02:20 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 12:02:20 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 12:02:20 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 12:02:20 -0400
+
+
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 12:02:20 -0400
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 12:02:20 -0400
+
+
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 12:02:20 -0400
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 12:02:20 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 12:02:20 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 12:02:20 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 12:02:20 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 12:02:20 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 12:02:20 -0400
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 12:02:20 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 12:02:50 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.7ms)
+  [1m[35mSetting Load (0.2ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.6ms)
+  Rendered layouts/partials/_header.html.erb (18.9ms)
+  Rendered layouts/partials/_flashes.html.erb (1.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.3ms)
+Completed 200 OK in 453ms (Views: 310.9ms | ActiveRecord: 13.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 12:02:51 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 12:02:51 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 12:02:51 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 12:02:51 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 12:02:51 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 12:02:51 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 12:02:51 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 12:02:51 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 12:02:51 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 12:02:51 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 12:02:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 12:02:51 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 12:02:51 -0400
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 12:02:51 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 12:03:01 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered devise/shared/_links.erb (2.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.7ms)
+  [1m[35mSetting Load (0.2ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (28.5ms)
+  Rendered layouts/partials/_flashes.html.erb (1.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (4.4ms)
+Completed 200 OK in 561ms (Views: 376.3ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 12:03:02 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 12:03:02 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 12:03:02 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 12:03:02 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 12:03:02 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 12:03:02 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 12:03:02 -0400
+
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 12:03:02 -0400
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 12:03:02 -0400
+
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 12:03:02 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 12:03:02 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 12:03:02 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 12:03:02 -0400
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 12:03:02 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 12:04:27 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.3ms)
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (1.4ms)
+  Rendered layouts/partials/_header.html.erb (3.9ms)
+  Rendered layouts/partials/_flashes.html.erb (1.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.1ms)
+Completed 200 OK in 539ms (Views: 392.5ms | ActiveRecord: 1.1ms)
+
+
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 12:04:28 -0400
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 12:04:28 -0400
+
+
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 12:04:28 -0400
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 12:04:28 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 12:04:28 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 12:04:28 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 12:04:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 12:04:28 -0400
+
+
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 12:04:28 -0400
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 12:04:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 12:04:28 -0400
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 12:04:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 12:04:28 -0400
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 12:04:28 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-08 12:04:49 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdas@asd.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asdas@asd.ca' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.4ms)
+  [1m[35mSetting Load (0.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.6ms)
+  Rendered layouts/partials/_header.html.erb (3.5ms)
+  Rendered layouts/partials/_flashes.html.erb (1.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.1ms)
+Completed 200 OK in 422ms (Views: 291.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 12:04:50 -0400
+
+
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 12:04:50 -0400
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 12:04:50 -0400
+
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 12:04:50 -0400
+
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 12:04:50 -0400
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 12:04:50 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 12:04:50 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 12:04:50 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 12:04:50 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 12:04:50 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 12:04:50 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 12:04:50 -0400
+
+
+
+Started GET "/assets/crossfailureimage.png" for 127.0.0.1 at 2014-09-08 12:04:50 -0400
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 12:04:50 -0400
+
+
+Started GET "/users" for 127.0.0.1 at 2014-09-08 12:05:13 -0400
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  passenger (4.0.50) lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  passenger (4.0.50) lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  passenger (4.0.50) lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  passenger (4.0.50) lib/phusion_passenger/request_handler.rb:455:in `block (3 levels) in start_threads'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.8ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (61.2ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2014-09-08 12:05:17 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.1ms)
+  [1m[35mSetting Load (0.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (3.7ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.0ms)
+Completed 200 OK in 197ms (Views: 194.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:17 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:17 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:17 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:17 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:17 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:17 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:17 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 12:05:17 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 12:05:17 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 12:05:17 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 12:05:17 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 12:05:17 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 12:05:17 -0400
+
+
+Started GET "/register" for 127.0.0.1 at 2014-09-08 12:05:18 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.2ms)
+  [1m[35mSetting Load (0.4ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.6ms)
+  Rendered layouts/partials/_header.html.erb (3.9ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.2ms)
+Completed 200 OK in 205ms (Views: 202.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:18 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:18 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:18 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:18 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:18 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:18 -0400
+
+
+
+
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 12:05:18 -0400
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 12:05:18 -0400
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 12:05:18 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:18 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 12:05:18 -0400
+
+
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 12:05:18 -0400
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 12:05:18 -0400
+
+
+Started GET "/login" for 127.0.0.1 at 2014-09-08 12:05:23 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (6.0ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 244ms (Views: 241.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-09-08 12:05:23 -0400
+Processing by Devise::SessionsController#new as HTML
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:23 -0400
+  Rendered devise/sessions/new.html.erb within layouts/application (2.3ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:23 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:23 -0400
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 264ms (Views: 261.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:23 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:24 -0400
+
+
+
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:24 -0400
+
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:24 -0400
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:24 -0400
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:24 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:24 -0400
+
+
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 12:05:24 -0400
+
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 12:05:24 -0400
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 12:05:24 -0400
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 12:05:24 -0400
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 12:05:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 12:05:24 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-12.jpg" for 127.0.0.1 at 2014-09-08 12:05:24 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-12.jpg" for 127.0.0.1 at 2014-09-08 12:05:25 -0400
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-09-08 12:05:30 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rZVdjVRRg3hCXgrRcLsvKiK61L/lD9RIt9M+mRQllIY=", "user"=>{"email"=>"asdf@asd.ca", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'asdf@asd.ca'  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 401 Unauthorized in 14ms
+
+
+Started GET "/login" for 127.0.0.1 at 2014-09-08 12:05:31 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (14.7ms)
+  Rendered layouts/partials/_flashes.html.erb (5.2ms)
+Completed 200 OK in 354ms (Views: 328.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:31 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:31 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:31 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:31 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:31 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:31 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 12:05:31 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 12:05:31 -0400
+
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 12:05:31 -0400
+
+
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 12:05:31 -0400
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 12:05:31 -0400
+
+
+Started GET "/assets/popupalertimage.png" for 127.0.0.1 at 2014-09-08 12:05:31 -0400
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 12:05:31 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 12:05:31 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-19.jpg" for 127.0.0.1 at 2014-09-08 12:05:32 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-19.jpg" for 127.0.0.1 at 2014-09-08 12:05:32 -0400
+
+
+Started GET "/login" for 127.0.0.1 at 2014-09-08 12:06:30 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (12.0ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 359ms (Views: 316.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 12:06:30 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 12:06:30 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 12:06:30 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 12:06:30 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 12:06:30 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 12:06:30 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 12:06:30 -0400
+
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 12:06:30 -0400
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 12:06:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 12:06:30 -0400
+
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 12:06:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 12:06:30 -0400
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 12:06:30 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-9.jpg" for 127.0.0.1 at 2014-09-08 12:06:31 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-9.jpg" for 127.0.0.1 at 2014-09-08 12:06:31 -0400
