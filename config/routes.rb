@@ -1,13 +1,12 @@
 Rails.application.routes.draw do
 	devise_for :users
 
-	devise_scope :user do
-			get "/login" => "devise/sessions#new"
+devise_scope :user do
+		get 'login' => 'devise/sessions#new'
+		get 'register' => 'devise/registrations#new'
+		delete 'logout' => 'devise/sessions#destroy'
 	end
-	# The priority is based upon order of creation: first created -> highest priority.
-	# See how all your routes lay out with "rake routes".
 
-	# You can have the root of your site routed with "root"
 	root 'home#index'
 
 	get '/admin', to: 'admin#index', as: 'admin'
@@ -15,13 +14,13 @@ Rails.application.routes.draw do
 	get '/services', to: 'home#services', as: 'services'
 
 	namespace :admin do
-	     # Directs /admin/products/* to Admin::ProductsController
-	     # (app/controllers/admin/products_controller.rb)
-	     resources :subpages
-	     resources :settings, :only => [:edit]
-	     resources :teams
-	     resources :services
+		resources :subpages
+		resources :settings, :only => [:edit]
+		resources :teams
+		resources :services
 	end
+	
+
 	# Example of regular route:
 	#   get 'products/:id' => 'catalog#view'
 
