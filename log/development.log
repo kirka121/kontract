@@ -34947,3 +34947,406 @@ Started GET "/assets/elegant_backgrounds/Elegant_Background-9.jpg" for 127.0.0.1
 
 
 Started GET "/assets/elegant_backgrounds/Elegant_Background-9.jpg" for 127.0.0.1 at 2014-09-08 12:06:31 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-08 12:23:16 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mSetting Load (0.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (2.8ms)
+  Rendered layouts/partials/_flashes.html.erb (73.0ms)
+Completed 500 Internal Server Error in 394ms
+
+ActionView::Template::Error (undefined local variable or method `resource' for #<#<Class:0xafcaa94>:0xafc9fcc>):
+    1: <%= devise_error_messages! %>
+    2: 
+    3: <% flash.each do |key, value| %>
+    4: 	<% if key == "form_errors"%>
+  app/helpers/devise_helper.rb:3:in `devise_error_messages!'
+  app/views/layouts/partials/_flashes.html.erb:1:in `_app_views_layouts_partials__flashes_html_erb__787632482_93857460'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb___938359515_93504970'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-09-08 12:24:20 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (5.7ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 163ms (Views: 160.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 12:24:21 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 12:24:21 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 12:24:21 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 12:24:21 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 12:24:21 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 12:24:21 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 12:24:21 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 12:24:21 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 12:24:21 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 12:24:21 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 12:24:21 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 12:24:21 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 12:24:21 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-15.jpg" for 127.0.0.1 at 2014-09-08 12:24:21 -0400
+
+
+Started GET "/register" for 127.0.0.1 at 2014-09-08 12:24:27 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.8ms)
+  [1m[36mSetting Load (0.4ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (3.2ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.9ms)
+Completed 200 OK in 174ms (Views: 171.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 12:24:28 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 12:24:28 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 12:24:28 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 12:24:28 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 12:24:28 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 12:24:28 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 12:24:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 12:24:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 12:24:28 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 12:24:28 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 12:24:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 12:24:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 12:24:28 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/login" for 127.0.0.1 at 2014-09-08 12:24:32 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (92.3ms)
+  Rendered layouts/partials/_flashes.html.erb (1.1ms)
+Completed 200 OK in 416ms (Views: 334.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 12:24:32 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 12:24:32 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 12:24:32 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 12:24:32 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 12:24:32 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 12:24:32 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 12:24:32 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 12:24:32 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 12:24:32 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 12:24:32 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 12:24:32 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 12:24:32 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 12:24:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-8.jpg" for 127.0.0.1 at 2014-09-08 12:24:33 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-08 12:24:37 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[35mSetting Load (0.4ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (1.2ms)
+  Rendered layouts/partials/_header.html.erb (62.2ms)
+  Rendered layouts/partials/_flashes.html.erb (18.5ms)
+Completed 500 Internal Server Error in 203ms
+
+ActionView::Template::Error (undefined local variable or method `resource' for #<#<Class:0x9d323f0>:0x9d3021c>):
+    1: <%= devise_error_messages! %>
+    2: 
+    3: <% flash.each do |key, value| %>
+    4: 	<% if key == "form_errors"%>
+  app/helpers/devise_helper.rb:3:in `devise_error_messages!'
+  app/views/layouts/partials/_flashes.html.erb:1:in `_app_views_layouts_partials__flashes_html_erb__1044644073_91783640'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb___906217512_91433790'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-08 12:26:06 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mSetting Load (0.2ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (17.6ms)
+  Rendered layouts/partials/_flashes.html.erb (21.2ms)
+Completed 500 Internal Server Error in 194ms
+
+ActionView::Template::Error (undefined local variable or method `resource' for #<#<Class:0xace8e5c>:0xace868c>):
+    1: <%= devise_error_messages! %>
+    2: 
+    3: <% flash.each do |key, value| %>
+    4: 	<% if key == "form_errors"%>
+  app/helpers/devise_helper.rb:3:in `devise_error_messages!'
+  app/views/layouts/partials/_flashes.html.erb:1:in `_app_views_layouts_partials__flashes_html_erb__1044644073_91783640'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb___906217512_91433790'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-09-08 12:26:53 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 176ms (Views: 153.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 12:26:53 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 12:26:53 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 12:26:53 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 12:26:53 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 12:26:53 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 12:26:53 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 12:26:53 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 12:26:53 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 12:26:53 -0400
+
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 12:26:53 -0400
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 12:26:53 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 12:26:53 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 12:26:53 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (5.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-12.jpg" for 127.0.0.1 at 2014-09-08 12:26:54 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-08 12:27:11 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+  [1m[35mSetting Load (0.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (1.2ms)
+  Rendered layouts/partials/_header.html.erb (30.5ms)
+  Rendered layouts/partials/_flashes.html.erb (20.4ms)
+Completed 500 Internal Server Error in 471ms
+
+SyntaxError (/home/kirka/web/kontract/app/views/layouts/partials/_flashes.html.erb:14: unterminated string meets end of file
+/home/kirka/web/kontract/app/views/layouts/partials/_flashes.html.erb:14: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb___906217512_91804870'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-08 12:27:48 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (2.9ms)
+  Rendered layouts/partials/_flashes.html.erb (1.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (2.2ms)
+Completed 200 OK in 330ms (Views: 328.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 12:27:49 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 12:27:49 -0400
+
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 12:27:49 -0400
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 12:27:49 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 12:27:49 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 12:27:49 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 12:27:49 -0400
+
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 12:27:49 -0400
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 12:27:49 -0400
+
+
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 12:27:49 -0400
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 12:27:49 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 12:27:49 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 12:27:49 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/login" for 127.0.0.1 at 2014-09-08 12:27:58 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (38.7ms)
+  Rendered layouts/partials/_flashes.html.erb (1.0ms)
+Completed 200 OK in 467ms (Views: 371.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-09-08 12:27:58 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+Completed 200 OK in 302ms (Views: 299.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 12:27:59 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-08 12:27:59 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-08 12:27:59 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-08 12:27:59 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-08 12:27:59 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-08 12:27:59 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-08 12:27:59 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 12:27:59 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 12:27:59 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 12:27:59 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-08 12:27:59 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 12:27:59 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 12:27:59 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-2.jpg" for 127.0.0.1 at 2014-09-08 12:27:59 -0400
