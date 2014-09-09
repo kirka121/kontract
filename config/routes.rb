@@ -15,7 +15,7 @@ devise_scope :user do
 
 	namespace :admin do
 		resources :subpages
-		resources :settings, :only => [:edit]
+		resources :settings, :only => [:edit, :update]
 		resources :teams
 		resources :services
 	end

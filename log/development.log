@@ -35350,3 +35350,2560 @@ Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-08 12:27:59 -0400
 
 
 Started GET "/assets/elegant_backgrounds/Elegant_Background-2.jpg" for 127.0.0.1 at 2014-09-08 12:27:59 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 11:34:26 -0700
+
+PG::ConnectionBad (FATAL:  Ident authentication failed for user "kirka"
+):
+  activerecord (4.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:881:in `initialize'
+  activerecord (4.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:881:in `new'
+  activerecord (4.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:881:in `connect'
+  activerecord (4.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /home/kirka/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /home/kirka/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.1) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  passenger (4.0.50) lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  passenger (4.0.50) lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  passenger (4.0.50) lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  passenger (4.0.50) lib/phusion_passenger/request_handler.rb:455:in `block (3 levels) in start_threads'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 11:37:20 -0700
+
+ActiveRecord::NoDatabaseError (FATAL:  database "kirka_development" does not exist
+Run `$ bin/rake db:create db:migrate` to create your database):
+  activerecord (4.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:891:in `rescue in connect'
+  activerecord (4.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:881:in `connect'
+  activerecord (4.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /home/kirka/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /home/kirka/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.1) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  passenger (4.0.50) lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  passenger (4.0.50) lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  passenger (4.0.50) lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  passenger (4.0.50) lib/phusion_passenger/request_handler.rb:455:in `block (3 levels) in start_threads'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.9ms)
+  [1m[36m (7.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (22.2ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20140906165900)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (14.8ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying(255), "last_sign_in_ip" character varying(255), "confirmation_token" character varying(255), "confirmed_at" timestamp, "confirmation_sent_at" timestamp, "unconfirmed_email" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (4.4ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")
+  [1m[36m (4.4ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35m (3.9ms)[0m  CREATE UNIQUE INDEX  "index_users_on_confirmation_token" ON "users"  ("confirmation_token")
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140906165900"]]
+  [1m[35m (1.7ms)[0m  COMMIT
+Migrating to CreateSubpages (20140906195921)
+  [1m[36m (1.6ms)[0m  [1mBEGIN[0m
+  [1m[35m (14.8ms)[0m  CREATE TABLE "subpages" ("id" serial primary key, "title" text, "user" character varying(255), "content" text, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140906195921"]]
+  [1m[35m (1.6ms)[0m  COMMIT
+Migrating to CreateSettings (20140906232411)
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35m (11.0ms)[0m  CREATE TABLE "settings" ("id" serial primary key, "site_name" text, "site_title" text, "site_copyright" text, "admin_email" character varying(255), "booking_email" character varying(255), "registration_mode" integer, "subpages_active" boolean, "teams_active" boolean, "services_active" boolean, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140906232411"]]
+  [1m[35m (1.2ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 11:42:14 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  [1m[35mSetting Load (0.4ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_header.html.erb (16.0ms)
+Completed 500 Internal Server Error in 3562ms
+
+ActiveRecord::RecordNotFound (Couldn't find Setting with 'id'=1):
+  app/helpers/application_helper.rb:4:in `yield_site_settings'
+  app/views/layouts/partials/_header.html.erb:5:in `_app_views_layouts_partials__header_html_erb__137607563_102942000'
+  app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb___28541303_98313150'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "settings" ("admin_email", "booking_email", "created_at", "registration_mode", "services_active", "site_copyright", "site_name", "site_title", "subpages_active", "teams_active", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["admin_email", "kirka121@gmail.com"], ["booking_email", "kirka121@gmail.com"], ["created_at", "2014-09-09 18:42:28.065639"], ["registration_mode", 1], ["services_active", "t"], ["site_copyright", "Copyright &copy; 2014 Katata Network. All Rights Reserved."], ["site_name", "Kontract"], ["site_title", "Kontract Network - Awesome Services"], ["subpages_active", "t"], ["teams_active", "t"], ["updated_at", "2014-09-09 18:42:28.087859"]]
+  [1m[35m (1.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "subpages" ("content", "created_at", "title", "updated_at", "user") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["content", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."], ["created_at", "2014-09-09 18:42:28.110380"], ["title", "some page"], ["updated_at", "2014-09-09 18:42:28.110380"], ["user", "kirka"]]
+  [1m[36m (36.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "subpages" ("content", "created_at", "title", "updated_at", "user") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"], ["created_at", "2014-09-09 18:42:28.152344"], ["title", "some page"], ["updated_at", "2014-09-09 18:42:28.152344"], ["user", "kirka"]]
+  [1m[35m (2.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (1.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'admin@kirka.ca' LIMIT 1
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-09-09 18:42:28.408906"], ["email", "admin@kirka.ca"], ["encrypted_password", "$2a$10$dPsULaF1x0Wm7YkS0xhwOuhu5F6tgtRSFsOVvALgsRKQiocK6rHa2"], ["updated_at", "2014-09-09 18:42:28.408906"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 11:42:30 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+  [1m[36mSetting Load (0.4ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (1.3ms)
+  Rendered layouts/partials/_header.html.erb (18.3ms)
+  Rendered layouts/partials/_flashes.html.erb (1.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (2.1ms)
+Completed 200 OK in 215ms (Views: 212.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 11:42:30 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 11:42:30 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 11:42:30 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 11:42:30 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 11:42:30 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 11:42:30 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 11:42:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 11:42:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 11:42:30 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 11:42:30 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 11:42:30 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 11:42:31 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 11:42:31 -0700
+
+
+Started GET "/login" for 127.0.0.1 at 2014-09-09 11:42:34 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (109.4ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 366ms (Views: 320.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-18.jpg" for 127.0.0.1 at 2014-09-09 11:42:35 -0700
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-09-09 11:42:43 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ALl6fb/2NjpBkkQlZWPD5CfRXLget83aW83F/INjvvQ=", "user"=>{"email"=>"admin@kirka.ca", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'admin@kirka.ca'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = $1, "current_sign_in_ip" = $2, "last_sign_in_at" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 1[0m  [["current_sign_in_at", "2014-09-09 18:42:44.065455"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-09-09 18:42:44.065455"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-09-09 18:42:44.069387"]]
+  [1m[35m (1.4ms)[0m  COMMIT
+Redirected to http://localhost/admin
+Completed 302 Found in 202ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-09-09 11:42:44 -0700
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered admin/partials/_menu.html.erb (1.8ms)
+  Rendered admin/partials/_tophalf.html.erb (3.5ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.4ms)
+  Rendered admin/index.html.erb within layouts/application (6.7ms)
+  Rendered layouts/partials/_flashes.html.erb (3.0ms)
+Completed 200 OK in 174ms (Views: 170.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 11:42:44 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 11:42:44 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 11:42:44 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 11:42:44 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 11:42:44 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 11:42:44 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/popupalertimage.png" for 127.0.0.1 at 2014-09-09 11:42:44 -0700
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 11:42:49 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered admin/partials/_menu.html.erb (2.5ms)
+  Rendered admin/partials/_tophalf.html.erb (4.6ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.5ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (13.3ms)
+  Rendered layouts/partials/_flashes.html.erb (1.2ms)
+Completed 200 OK in 333ms (Views: 265.1ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 11:43:49 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mSetting Load (0.4ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (2.9ms)
+  Rendered admin/partials/_tophalf.html.erb (5.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (24.7ms)
+Completed 500 Internal Server Error in 67ms
+
+ActionView::Template::Error (undefined method `name' for #<Setting:0xa9eb31c>):
+    1: <%= render 'admin/partials/tophalf' %>
+    2: 	<%= @settings.name %>
+    3: <%= render 'admin/partials/bottomhalf' %>
+  app/views/admin/settings/edit.html.erb:2:in `_app_views_admin_settings_edit_html_erb__209052292_89082730'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-09-09 11:48:04 -0700
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered admin/partials/_menu.html.erb (1.6ms)
+  Rendered admin/partials/_tophalf.html.erb (3.0ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.5ms)
+  Rendered admin/index.html.erb within layouts/application (5.9ms)
+  Rendered layouts/partials/_flashes.html.erb (1.1ms)
+Completed 200 OK in 161ms (Views: 157.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:04 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:04 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:04 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:04 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:04 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:04 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:04 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:04 -0700
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-09-09 11:48:22 -0700
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered admin/partials/_menu.html.erb (1.0ms)
+  Rendered admin/partials/_tophalf.html.erb (2.0ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+Completed 200 OK in 184ms (Views: 181.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:23 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:23 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:23 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:23 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:23 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:23 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:23 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:23 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:23 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:23 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:23 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:23 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:23 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 11:48:27 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.9ms)
+  Rendered admin/partials/_tophalf.html.erb (3.7ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.4ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (11.0ms)
+  Rendered layouts/partials/_flashes.html.erb (1.1ms)
+Completed 200 OK in 351ms (Views: 270.5ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 11:48:27 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.7ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.8ms)
+  Rendered admin/partials/_tophalf.html.erb (3.9ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.6ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (9.1ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 183ms (Views: 176.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 11:48:38 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.4ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.6ms)
+  Rendered admin/partials/_tophalf.html.erb (3.4ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.6ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (22.7ms)
+  Rendered layouts/partials/_flashes.html.erb (1.3ms)
+Completed 200 OK in 179ms (Views: 173.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:38 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:38 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:38 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:38 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:38 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:38 -0700
+
+
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:38 -0700
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:38 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:38 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:38 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:38 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 11:48:55 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.5ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.8ms)
+  Rendered admin/partials/_tophalf.html.erb (3.8ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.6ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (22.7ms)
+  Rendered layouts/partials/_flashes.html.erb (1.2ms)
+Completed 200 OK in 353ms (Views: 280.5ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:55 -0700
+
+
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:55 -0700
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:55 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:55 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:55 -0700
+
+
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:55 -0700
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:55 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:55 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:55 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:55 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:55 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:55 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:56 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 11:48:58 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.4ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (4.9ms)
+  Rendered admin/partials/_tophalf.html.erb (7.8ms)
+  Rendered admin/partials/_bottomhalf.html.erb (1.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (33.3ms)
+  Rendered layouts/partials/_flashes.html.erb (1.2ms)
+Completed 200 OK in 382ms (Views: 299.8ms | ActiveRecord: 7.3ms)
+
+
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:58 -0700
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:58 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:58 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:58 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:58 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:58 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:58 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:58 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:58 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:58 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:58 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 11:48:58 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 11:48:58 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+PG::UndefinedTable: ERROR:  relation "settings" does not exist
+LINE 5:                WHERE a.attrelid = '"settings"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"settings"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[36m (5049.6ms)[0m  [1mDROP DATABASE IF EXISTS "kirka_development"[0m
+PG::ObjectInUse: ERROR:  database "kirka_development" is being accessed by other users
+DETAIL:  There are 7 other session(s) using the database.
+: DROP DATABASE IF EXISTS "kirka_development"
+  [1m[35m (5045.1ms)[0m  DROP DATABASE IF EXISTS "kirka_test"
+PG::ObjectInUse: ERROR:  database "kirka_test" is being accessed by other users
+DETAIL:  There are 1 other session(s) using the database.
+: DROP DATABASE IF EXISTS "kirka_test"
+  [1m[36m (0.9ms)[0m  [1mCREATE DATABASE "kirka_development" ENCODING = 'unicode'[0m
+PG::DuplicateDatabase: ERROR:  database "kirka_development" already exists
+: CREATE DATABASE "kirka_development" ENCODING = 'unicode'
+  [1m[35m (0.6ms)[0m  CREATE DATABASE "kirka_test" ENCODING = 'unicode'
+PG::DuplicateDatabase: ERROR:  database "kirka_test" already exists
+: CREATE DATABASE "kirka_test" ENCODING = 'unicode'
+  [1m[36m (25.9ms)[0m  [1mCREATE TABLE "settings" ("id" serial primary key, "site_name" text, "site_title" text, "site_copyright" text, "admin_email" character varying(255), "booking_email" character varying(255), "registration_mode" integer, "subpages_active" boolean, "teams_active" boolean, "services_active" boolean, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (4.8ms)[0m  DROP TABLE "subpages"
+  [1m[36m (9.4ms)[0m  [1mCREATE TABLE "subpages" ("id" serial primary key, "title" text, "user" character varying(255), "content" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (7.5ms)[0m  DROP TABLE "users"
+  [1m[36m (18.0ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying(255), "last_sign_in_ip" character varying(255), "confirmation_token" character varying(255), "confirmed_at" timestamp, "confirmation_sent_at" timestamp, "unconfirmed_email" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (5.3ms)[0m  CREATE UNIQUE INDEX  "index_users_on_confirmation_token" ON "users" USING btree ("confirmation_token")
+  [1m[36m (3.2ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_email" ON "users" USING btree ("email")[0m
+  [1m[35m (4.5ms)[0m  CREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users" USING btree ("reset_password_token")
+  [1m[36m (1.3ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "settings" ("admin_email", "booking_email", "created_at", "registration_mode", "services_active", "site_copyright", "site_name", "site_title", "subpages_active", "teams_active", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"  [["admin_email", "kirka121@gmail.com"], ["booking_email", "kirka121@gmail.com"], ["created_at", "2014-09-09 18:54:01.568960"], ["registration_mode", 1], ["services_active", "t"], ["site_copyright", "Copyright &copy; 2014 Katata Network. All Rights Reserved."], ["site_name", "Kontract"], ["site_title", "Kontract Network - Awesome Services"], ["subpages_active", "t"], ["teams_active", "t"], ["updated_at", "2014-09-09 18:54:01.604729"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "subpages" ("content", "created_at", "title", "updated_at", "user") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."], ["created_at", "2014-09-09 18:54:01.621113"], ["title", "some page"], ["updated_at", "2014-09-09 18:54:01.621113"], ["user", "kirka"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "subpages" ("content", "created_at", "title", "updated_at", "user") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["content", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"], ["created_at", "2014-09-09 18:54:01.626407"], ["title", "some page"], ["updated_at", "2014-09-09 18:54:01.626407"], ["user", "kirka"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (1.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'admin@kirka.ca' LIMIT 1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-09 18:54:01.829487"], ["email", "admin@kirka.ca"], ["encrypted_password", "$2a$10$lrBoiYh72acc2BlulKuvm..sUZDdYvVV.kB5bEL29Kr9BJ30ytuq2"], ["updated_at", "2014-09-09 18:54:01.829487"]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 11:54:26 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost/login
+Filter chain halted as :check_if_admin rendered or redirected
+Completed 302 Found in 98ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-09-09 11:54:26 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (36.7ms)
+  Rendered layouts/partials/_flashes.html.erb (1.1ms)
+Completed 200 OK in 291ms (Views: 287.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 11:54:27 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 11:54:27 -0700
+
+
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 11:54:27 -0700
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 11:54:27 -0700
+
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 11:54:27 -0700
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 11:54:27 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 11:54:27 -0700
+
+
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 11:54:27 -0700
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 11:54:27 -0700
+
+
+
+
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 11:54:27 -0700
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 11:54:27 -0700
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 11:54:27 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 11:54:27 -0700
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-8.jpg" for 127.0.0.1 at 2014-09-09 11:54:27 -0700
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-09-09 11:54:36 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AeXtdv5GXsvxEDYyyX5O6DFEv5RHJAh6f0BV4zOhmYA=", "user"=>{"email"=>"admin@kirka.ca", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'admin@kirka.ca'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = $1, "current_sign_in_ip" = $2, "last_sign_in_at" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 1[0m  [["current_sign_in_at", "2014-09-09 18:54:36.482397"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-09-09 18:54:36.482397"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-09-09 18:54:36.484668"]]
+  [1m[35m (1.4ms)[0m  COMMIT
+Redirected to http://localhost/admin
+Completed 302 Found in 190ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-09-09 11:54:36 -0700
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered admin/partials/_menu.html.erb (1.7ms)
+  Rendered admin/partials/_tophalf.html.erb (3.2ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.5ms)
+  Rendered admin/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/partials/_flashes.html.erb (2.6ms)
+Completed 200 OK in 163ms (Views: 160.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 11:54:36 -0700
+
+
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 11:54:36 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 11:54:36 -0700
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 11:54:36 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 11:54:36 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 11:54:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 11:54:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 11:54:36 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 11:54:36 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 11:54:36 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 11:54:36 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 11:54:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 11:54:36 -0700
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 11:54:39 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.9ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.3ms)
+  Rendered admin/partials/_tophalf.html.erb (2.7ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (6.2ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 180ms (Views: 172.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 11:56:45 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (0.9ms)
+  Rendered admin/partials/_tophalf.html.erb (1.8ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (18.9ms)
+Completed 500 Internal Server Error in 26ms
+
+ActionView::Template::Error (No route matches {:action=>"update", :controller=>"admin/settings_controller", :id=>"1"}):
+    1: <%= render 'admin/partials/tophalf' %>
+    2: 	<%= form_for @settings, url: {action: "update", controller: 'settings_controller'} do |f| %>
+    3: 		<%= f.text_field :site_name %>
+    4: 		<%= f.text_field :site_copyright %>
+    5: 		<%= f.submit "Update" %>
+  app/views/admin/settings/edit.html.erb:2:in `_app_views_admin_settings_edit_html_erb__691548054_92106240'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.4ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 11:56:57 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.2ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.6ms)
+  Rendered admin/partials/_tophalf.html.erb (3.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (18.6ms)
+Completed 500 Internal Server Error in 51ms
+
+ActionView::Template::Error (No route matches {:action=>"update", :controller=>"admin/settings_controller", :id=>"1"}):
+    1: <%= render 'admin/partials/tophalf' %>
+    2: 	<%= form_for @settings, url: {action: "update", controller: 'settings_controller'} do |f| %>
+    3: 		<%= f.text_field :site_name %>
+    4: 		<%= f.text_field :site_copyright %>
+    5: 		<%= f.submit "Update" %>
+  app/views/admin/settings/edit.html.erb:2:in `_app_views_admin_settings_edit_html_erb__691548054_92106240'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.6ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 11:58:26 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.5ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (2.0ms)
+  Rendered admin/partials/_tophalf.html.erb (3.7ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (28.7ms)
+Completed 500 Internal Server Error in 80ms
+
+ActionView::Template::Error (No route matches {:action=>"update", :controller=>"admin/settings_controller", :id=>"1"}):
+    1: <%= render 'admin/partials/tophalf' %>
+    2: 	<%= form_for @settings, url: {action: "update", controller: 'settings_controller'} do |f| %>
+    3: 		<%= f.text_field :site_name %>
+    4: 		<%= f.text_field :site_copyright %>
+    5: 		<%= f.submit "Update" %>
+  app/views/admin/settings/edit.html.erb:2:in `_app_views_admin_settings_edit_html_erb__691548054_92106240'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.1ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 11:58:28 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.5ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.3ms)
+  Rendered admin/partials/_tophalf.html.erb (2.5ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (No route matches {:action=>"update", :controller=>"admin/settings_controller", :id=>"1"}):
+    1: <%= render 'admin/partials/tophalf' %>
+    2: 	<%= form_for @settings, url: {action: "update", controller: 'settings_controller'} do |f| %>
+    3: 		<%= f.text_field :site_name %>
+    4: 		<%= f.text_field :site_copyright %>
+    5: 		<%= f.submit "Update" %>
+  app/views/admin/settings/edit.html.erb:2:in `_app_views_admin_settings_edit_html_erb__691548054_92106240'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.8ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.5ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 11:58:35 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (0.9ms)
+  Rendered admin/partials/_tophalf.html.erb (2.0ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 47ms
+
+ActionView::Template::Error (No route matches {:action=>"update", :controller=>"admin/settings_controller", :id=>"1"}):
+    1: <%= render 'admin/partials/tophalf' %>
+    2: 	<%= form_for @settings, url: {action: "update", controller: 'settings_controller'} do |f| %>
+    3: 		<%= f.text_field :site_name %>
+    4: 		<%= f.text_field :site_copyright %>
+    5: 		<%= f.submit "Update" %>
+  app/views/admin/settings/edit.html.erb:2:in `_app_views_admin_settings_edit_html_erb__691548054_92106240'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.4ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:00:45 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.4ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.1ms)
+  Rendered admin/partials/_tophalf.html.erb (2.4ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (18.8ms)
+Completed 500 Internal Server Error in 54ms
+
+ActionView::Template::Error (No route matches {:action=>"update", :controller=>"admin/settings_controller", :id=>"1", :namespace=>"admin"}):
+    1: <%= render 'admin/partials/tophalf' %>
+    2: 	<%= form_for @settings, url: {action: "update", controller: 'settings_controller', namespace: 'admin'} do |f| %>
+    3: 		<%= f.text_field :site_name %>
+    4: 		<%= f.text_field :site_copyright %>
+    5: 		<%= f.submit "Update" %>
+  app/views/admin/settings/edit.html.erb:2:in `_app_views_admin_settings_edit_html_erb__691548054_92587640'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.8ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:01:48 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.2ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.1ms)
+  Rendered admin/partials/_tophalf.html.erb (2.1ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (6.9ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 204ms (Views: 199.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 12:01:49 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 12:01:49 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 12:01:49 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 12:01:49 -0700
+
+
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 12:01:49 -0700
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 12:01:49 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 12:01:49 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 12:01:49 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 12:01:49 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 12:01:49 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 12:01:49 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 12:01:49 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 12:01:49 -0700
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:02:01 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.5ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (2.6ms)
+  Rendered admin/partials/_tophalf.html.erb (5.3ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.9ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (41.6ms)
+  Rendered layouts/partials/_flashes.html.erb (1.1ms)
+Completed 200 OK in 376ms (Views: 288.2ms | ActiveRecord: 7.3ms)
+
+
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 12:02:02 -0700
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 12:02:02 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 12:02:02 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 12:02:02 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 12:02:02 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 12:02:02 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 12:02:02 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 12:02:02 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 12:02:02 -0700
+
+
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 12:02:02 -0700
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 12:02:02 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 12:02:02 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 12:02:02 -0700
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:02:11 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.5ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.2ms)
+  Rendered admin/partials/_tophalf.html.erb (3.0ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.2ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (28.7ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 263ms (Views: 206.3ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 12:02:11 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 12:02:11 -0700
+
+
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 12:02:11 -0700
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 12:02:11 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 12:02:11 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 12:02:11 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 12:02:11 -0700
+
+
+
+
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 12:02:11 -0700
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 12:02:11 -0700
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 12:02:11 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 12:02:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 12:02:11 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 12:02:11 -0700
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:02:42 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.9ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.6ms)
+  Rendered admin/partials/_tophalf.html.erb (3.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (47.6ms)
+Completed 500 Internal Server Error in 91ms
+
+ActionView::Template::Error (undefined method `label_for' for #<ActionView::Helpers::FormBuilder:0xac40040>):
+    1: <%= render 'admin/partials/tophalf' %>
+    2: 	<%= form_for @settings, url: {action: "update"} do |f| %>
+    3: 
+    4: 		<%= f.label_for :site_name %><br/>
+    5: 		<%= f.text_field :site_name %> <br/>
+    6: 		<%= f.text_field :site_copyright %> <br/>
+    7: 		<%= f.submit "Update" %>
+  app/views/admin/settings/edit.html.erb:4:in `block in _app_views_admin_settings_edit_html_erb__691548054_90865500'
+  app/views/admin/settings/edit.html.erb:2:in `_app_views_admin_settings_edit_html_erb__691548054_90865500'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.7ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:02:52 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.4ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.4ms)
+  Rendered admin/partials/_tophalf.html.erb (2.8ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (50.5ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 221ms (Views: 214.1ms | ActiveRecord: 1.2ms)
+
+
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 12:02:53 -0700
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 12:02:53 -0700
+
+
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 12:02:53 -0700
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 12:02:53 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 12:02:53 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 12:02:53 -0700
+
+
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 12:02:53 -0700
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 12:02:53 -0700
+
+
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 12:02:53 -0700
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 12:02:53 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 12:02:53 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 12:02:53 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 12:02:53 -0700
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:03:56 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.6ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.8ms)
+  Rendered admin/partials/_tophalf.html.erb (3.2ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (12.2ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 212ms (Views: 204.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 12:03:56 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 12:03:56 -0700
+
+
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 12:03:56 -0700
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 12:03:56 -0700
+
+
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 12:03:56 -0700
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 12:03:56 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 12:03:56 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 12:03:56 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 12:03:56 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 12:03:56 -0700
+
+
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 12:03:56 -0700
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 12:03:56 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 12:03:56 -0700
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:05:39 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.4ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.3ms)
+  Rendered admin/partials/_tophalf.html.erb (2.3ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (23.0ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+Completed 200 OK in 259ms (Views: 251.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 12:05:39 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 12:05:39 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 12:05:39 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 12:05:39 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 12:05:39 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 12:05:39 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 12:05:39 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 12:05:39 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 12:05:39 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 12:05:39 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 12:05:39 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 12:05:39 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 12:05:39 -0700
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:06:09 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.3ms)
+  Rendered admin/partials/_tophalf.html.erb (2.4ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (24.8ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+Completed 200 OK in 265ms (Views: 259.7ms | ActiveRecord: 1.0ms)
+
+
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 12:06:09 -0700
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 12:06:09 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 12:06:09 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 12:06:09 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 12:06:09 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 12:06:09 -0700
+
+
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 12:06:09 -0700
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 12:06:09 -0700
+
+
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 12:06:09 -0700
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 12:06:09 -0700
+
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 12:06:09 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 12:06:09 -0700
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 12:06:09 -0700
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:06:19 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.7ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.5ms)
+  Rendered admin/partials/_tophalf.html.erb (3.1ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (50.0ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+Completed 200 OK in 340ms (Views: 301.7ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 12:06:20 -0700
+
+
+
+
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 12:06:20 -0700
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 12:06:20 -0700
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 12:06:20 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 12:06:20 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 12:06:20 -0700
+
+
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 12:06:20 -0700
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 12:06:20 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 12:06:20 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 12:06:20 -0700
+
+
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 12:06:20 -0700
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 12:06:20 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 12:06:20 -0700
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:09:14 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.4ms)
+  Rendered admin/partials/_tophalf.html.erb (2.5ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (11.9ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 175ms (Views: 169.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 12:09:14 -0700
+
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 12:09:14 -0700
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 12:09:14 -0700
+
+
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 12:09:14 -0700
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 12:09:14 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 12:09:14 -0700
+
+
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 12:09:14 -0700
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 12:09:14 -0700
+
+
+
+
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 12:09:14 -0700
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 12:09:14 -0700
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 12:09:14 -0700
+
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 12:09:14 -0700
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 12:09:14 -0700
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:12:18 -0700
+
+SyntaxError (/home/kirka/web/kontract/app/controllers/admin/settings_controller.rb:24: syntax error, unexpected end-of-input, expecting keyword_end):
+  activesupport (4.1.1) lib/active_support/dependencies.rb:443:in `load'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:240:in `const_get'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:240:in `block in constantize'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `constantize'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:552:in `get'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:583:in `constantize'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  passenger (4.0.50) lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  passenger (4.0.50) lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  passenger (4.0.50) lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  passenger (4.0.50) lib/phusion_passenger/request_handler.rb:455:in `block (3 levels) in start_threads'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.3ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:12:32 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mSetting Load (0.6ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.1ms)
+  Rendered admin/partials/_tophalf.html.erb (2.2ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (56.5ms)
+  Rendered layouts/partials/_flashes.html.erb (0.3ms)
+Completed 200 OK in 286ms (Views: 252.2ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 12:12:33 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 12:12:33 -0700
+
+
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 12:12:33 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 12:12:33 -0700
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 12:12:33 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 12:12:33 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 12:12:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 12:12:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 12:12:33 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 12:12:33 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 12:12:33 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 12:12:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 12:12:33 -0700
+
+
+Started PATCH "/admin/settings/1" for 127.0.0.1 at 2014-09-09 12:12:40 -0700
+Processing by Admin::SettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"olM5kpjbkHko6EisNepNNETMwJagXinwGNjvomJfszo=", "setting"=>{"site_name"=>"Kontract - kirka", "site_title"=>"Kontract Network - Awesome Services", "site_copyright"=>"Copyright &copy; 2014 Katata Network. All Rights Reserved.", "admin_email"=>"kirka121@gmail.com", "booking_email"=>"kirka121@gmail.com", "registration_mode"=>"1"}, "commit"=>"Update", "id"=>"1"}
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 104ms
+
+NameError (undefined local variable or method `site_name' for #<Admin::SettingsController:0xb0d6014>):
+  app/controllers/admin/settings_controller.rb:13:in `update'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.5ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:12:53 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mSetting Load (0.2ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.1ms)
+  Rendered admin/partials/_tophalf.html.erb (2.3ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (24.6ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 269ms (Views: 214.5ms | ActiveRecord: 6.3ms)
+
+
+Started PATCH "/admin/settings/1" for 127.0.0.1 at 2014-09-09 12:12:58 -0700
+Processing by Admin::SettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"olM5kpjbkHko6EisNepNNETMwJagXinwGNjvomJfszo=", "setting"=>{"site_name"=>"test", "site_title"=>"Kontract Network - Awesome Services", "site_copyright"=>"Copyright &copy; 2014 Katata Network. All Rights Reserved.", "admin_email"=>"kirka121@gmail.com", "booking_email"=>"kirka121@gmail.com", "registration_mode"=>"1"}, "commit"=>"Update", "id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "settings" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2014-09-09 19:12:58.122654"], ["updated_at", "2014-09-09 19:12:58.122654"]]
+  [1m[35m (2.8ms)[0m  COMMIT
+Completed 500 Internal Server Error in 21ms
+
+ActionView::MissingTemplate (Missing template admin/settings/update, application/update with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/kirka/web/kontract/app/views"
+  * "/home/kirka/.rvm/gems/ruby-2.1.1/gems/devise-3.2.4/app/views"
+):
+  actionview (4.1.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.1) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.1) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.1) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/kirka/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  passenger (4.0.50) lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  passenger (4.0.50) lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  passenger (4.0.50) lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  passenger (4.0.50) lib/phusion_passenger/request_handler.rb:455:in `block (3 levels) in start_threads'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.9ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:13:11 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mSetting Load (0.5ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.9ms)
+  Rendered admin/partials/_tophalf.html.erb (4.0ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.2ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (24.7ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 239ms (Views: 196.8ms | ActiveRecord: 9.5ms)
+
+
+Started PATCH "/admin/settings/1" for 127.0.0.1 at 2014-09-09 12:13:14 -0700
+Processing by Admin::SettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"olM5kpjbkHko6EisNepNNETMwJagXinwGNjvomJfszo=", "setting"=>{"site_name"=>"Kontract", "site_title"=>"Kontract Network - Awesome Services", "site_copyright"=>"Copyright &copy; 2014 Katata Network. All Rights Reserved.", "admin_email"=>"kirka121@gmail.com", "booking_email"=>"kirka121@gmail.com", "registration_mode"=>"1"}, "commit"=>"Update", "id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "settings" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2014-09-09 19:13:14.319646"], ["updated_at", "2014-09-09 19:13:14.319646"]]
+  [1m[35m (2.3ms)[0m  COMMIT
+  Rendered admin/partials/_menu.html.erb (2.1ms)
+  Rendered admin/partials/_tophalf.html.erb (3.8ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (10.9ms)
+Completed 500 Internal Server Error in 36ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= render 'admin/partials/tophalf' %>
+    2: 	<%= form_for @settings, url: {action: "update"}, html: { class: "default_update_form"} do |f| %>
+    3: 
+    4: 		<%= f.label :site_name %>
+    5: 		<%= f.text_field :site_name %><br/>
+  app/views/admin/settings/edit.html.erb:2:in `_app_views_admin_settings_edit_html_erb__691548054_99257990'
+  app/controllers/admin/settings_controller.rb:15:in `update'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.8ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (33.6ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:13:25 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mSetting Load (1.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.3ms)
+  Rendered admin/partials/_tophalf.html.erb (2.5ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (11.6ms)
+  Rendered layouts/partials/_flashes.html.erb (0.4ms)
+Completed 200 OK in 217ms (Views: 209.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:13:27 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mSetting Load (0.4ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.0ms)
+  Rendered admin/partials/_tophalf.html.erb (2.2ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (10.3ms)
+  Rendered layouts/partials/_flashes.html.erb (0.4ms)
+Completed 200 OK in 167ms (Views: 162.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:13:28 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mSetting Load (0.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.1ms)
+  Rendered admin/partials/_tophalf.html.erb (2.5ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (12.3ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 239ms (Views: 233.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:13:28 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mSetting Load (0.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.2ms)
+  Rendered admin/partials/_tophalf.html.erb (2.2ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (10.6ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:13:29 -0700
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+Completed 200 OK in 211ms (Views: 203.3ms | ActiveRecord: 1.1ms)
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:13:29 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mSetting Load (0.5ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (0.9ms)
+  Rendered admin/partials/_tophalf.html.erb (2.0ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (10.5ms)
+  [1m[36mSetting Load (0.4ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (2.1ms)
+  Rendered admin/partials/_tophalf.html.erb (4.1ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.6ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (30.9ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:13:29 -0700
+  Rendered layouts/partials/_flashes.html.erb (0.4ms)
+Completed 200 OK in 175ms (Views: 169.9ms | ActiveRecord: 1.2ms)
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/partials/_flashes.html.erb (1.1ms)
+Completed 200 OK in 330ms (Views: 283.1ms | ActiveRecord: 6.0ms)
+  [1m[36mSetting Load (0.2ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (2.0ms)
+  Rendered admin/partials/_tophalf.html.erb (4.4ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.5ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (28.0ms)
+  Rendered layouts/partials/_flashes.html.erb (1.8ms)
+Completed 200 OK in 229ms (Views: 198.3ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/admin/subpages" for 127.0.0.1 at 2014-09-09 12:13:30 -0700
+Processing by Admin::SubpagesController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered admin/partials/_menu.html.erb (1.4ms)
+  Rendered admin/partials/_tophalf.html.erb (2.9ms)
+  [1m[36mSubpage Load (0.7ms)[0m  [1mSELECT "subpages".* FROM "subpages"[0m
+  Rendered admin/subpages/_menu.html.erb (12.0ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/subpages/index.html.erb within layouts/application (20.1ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+Completed 200 OK in 191ms (Views: 181.0ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:13:31 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.5ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.3ms)
+  Rendered admin/partials/_tophalf.html.erb (3.1ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (11.6ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 180ms (Views: 173.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin/subpages" for 127.0.0.1 at 2014-09-09 12:14:07 -0700
+Processing by Admin::SubpagesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered admin/partials/_menu.html.erb (1.0ms)
+  Rendered admin/partials/_tophalf.html.erb (2.1ms)
+  [1m[36mSubpage Load (0.4ms)[0m  [1mSELECT "subpages".* FROM "subpages"[0m
+  Rendered admin/subpages/_menu.html.erb (11.8ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/subpages/index.html.erb within layouts/application (17.0ms)
+  Rendered layouts/partials/_flashes.html.erb (0.3ms)
+Completed 200 OK in 206ms (Views: 177.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:14:09 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.1ms)
+  Rendered admin/partials/_tophalf.html.erb (2.4ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (25.4ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+Completed 200 OK in 233ms (Views: 222.4ms | ActiveRecord: 2.9ms)
+
+
+Started PATCH "/admin/settings/1" for 127.0.0.1 at 2014-09-09 12:14:12 -0700
+Processing by Admin::SettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"olM5kpjbkHko6EisNepNNETMwJagXinwGNjvomJfszo=", "setting"=>{"site_name"=>"Kontract - test", "site_title"=>"Kontract Network - Awesome Services", "site_copyright"=>"Copyright &copy; 2014 Katata Network. All Rights Reserved.", "admin_email"=>"kirka121@gmail.com", "booking_email"=>"kirka121@gmail.com", "registration_mode"=>"1"}, "commit"=>"Update", "id"=>"1"}
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "settings" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"  [["created_at", "2014-09-09 19:14:12.803053"], ["updated_at", "2014-09-09 19:14:12.803053"]]
+  [1m[36m (1.6ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 26ms
+
+ActionView::MissingTemplate (Missing template admins/settings/edit with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/kirka/web/kontract/app/views"
+  * "/home/kirka/.rvm/gems/ruby-2.1.1/gems/devise-3.2.4/app/views"
+  * "/home/kirka/web/kontract"
+  * "/"
+):
+  app/controllers/admin/settings_controller.rb:15:in `update'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (2.3ms)
+
+
+Started PATCH "/admin/settings/1" for 127.0.0.1 at 2014-09-09 12:15:28 -0700
+Processing by Admin::SettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"olM5kpjbkHko6EisNepNNETMwJagXinwGNjvomJfszo=", "setting"=>{"site_name"=>"Kontract - test", "site_title"=>"Kontract Network - Awesome Services", "site_copyright"=>"Copyright &copy; 2014 Katata Network. All Rights Reserved.", "admin_email"=>"kirka121@gmail.com", "booking_email"=>"kirka121@gmail.com", "registration_mode"=>"1"}, "commit"=>"Update", "id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "settings" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"  [["created_at", "2014-09-09 19:15:29.152092"], ["updated_at", "2014-09-09 19:15:29.152092"]]
+  [1m[36m (3.6ms)[0m  [1mCOMMIT[0m
+  Rendered admin/partials/_menu.html.erb (2.0ms)
+  Rendered admin/partials/_tophalf.html.erb (5.0ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 61ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= render 'admin/partials/tophalf' %>
+    2: 	<%= form_for @settings, url: {action: "update"}, html: { class: "default_update_form"} do |f| %>
+    3: 
+    4: 		<%= f.label :site_name %>
+    5: 		<%= f.text_field :site_name %><br/>
+  app/views/admin/settings/edit.html.erb:2:in `_app_views_admin_settings_edit_html_erb__691548054_91595640'
+  app/controllers/admin/settings_controller.rb:15:in `update'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.9ms)
+
+
+Started PATCH "/admin/settings/1" for 127.0.0.1 at 2014-09-09 12:15:48 -0700
+Processing by Admin::SettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"olM5kpjbkHko6EisNepNNETMwJagXinwGNjvomJfszo=", "setting"=>{"site_name"=>"Kontract - test", "site_title"=>"Kontract Network - Awesome Services", "site_copyright"=>"Copyright &copy; 2014 Katata Network. All Rights Reserved.", "admin_email"=>"kirka121@gmail.com", "booking_email"=>"kirka121@gmail.com", "registration_mode"=>"1"}, "commit"=>"Update", "id"=>"1"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "settings" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"  [["created_at", "2014-09-09 19:15:48.684682"], ["updated_at", "2014-09-09 19:15:48.684682"]]
+  [1m[36m (1.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mSetting Load (0.4ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.7ms)
+  Rendered admin/partials/_tophalf.html.erb (3.0ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (15.1ms)
+  Rendered layouts/partials/_flashes.html.erb (2.8ms)
+Completed 200 OK in 255ms (Views: 195.6ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 12:15:49 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 12:15:49 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 12:15:49 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 12:15:49 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 12:15:49 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 12:15:49 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 12:15:49 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 12:15:49 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 12:15:49 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 12:15:49 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 12:15:49 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 12:15:49 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 12:15:49 -0700
+
+
+Started GET "/assets/checkmarksuccessimage.png" for 127.0.0.1 at 2014-09-09 12:15:50 -0700
+
+
+Started PATCH "/admin/settings/1" for 127.0.0.1 at 2014-09-09 12:15:56 -0700
+Processing by Admin::SettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"olM5kpjbkHko6EisNepNNETMwJagXinwGNjvomJfszo=", "setting"=>{"site_name"=>"tester", "site_title"=>"Kontract Network - Awesome Services", "site_copyright"=>"Copyright &copy; 2014 Katata Network. All Rights Reserved.", "admin_email"=>"kirka121@gmail.com", "booking_email"=>"kirka121@gmail.com", "registration_mode"=>"1"}, "commit"=>"Update", "id"=>"1"}
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "settings" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"  [["created_at", "2014-09-09 19:15:56.198014"], ["updated_at", "2014-09-09 19:15:56.198014"]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mSetting Load (0.4ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.2ms)
+  Rendered admin/partials/_tophalf.html.erb (2.3ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (18.1ms)
+  Rendered layouts/partials/_flashes.html.erb (1.4ms)
+Completed 200 OK in 289ms (Views: 199.2ms | ActiveRecord: 15.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 12:15:56 -0700
+
+
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 12:15:56 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 12:15:56 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 12:15:56 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 12:15:56 -0700
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 12:15:56 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 12:15:56 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 12:15:56 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 12:15:56 -0700
+
+
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 12:15:56 -0700
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 12:15:56 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 12:15:56 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 12:15:56 -0700
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:15:59 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.2ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.1ms)
+  Rendered admin/partials/_tophalf.html.erb (2.4ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (25.5ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 266ms (Views: 235.2ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 12:15:59 -0700
+
+
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 12:15:59 -0700
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 12:15:59 -0700
+
+
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 12:15:59 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 12:15:59 -0700
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 12:15:59 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 12:15:59 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 12:15:59 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 12:15:59 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 12:15:59 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 12:15:59 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 12:15:59 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 12:15:59 -0700
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:16:01 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.8ms)
+  Rendered admin/partials/_tophalf.html.erb (5.5ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.6ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (15.9ms)
+  Rendered layouts/partials/_flashes.html.erb (1.2ms)
+Completed 200 OK in 187ms (Views: 180.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:16:03 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.4ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.7ms)
+  Rendered admin/partials/_tophalf.html.erb (3.2ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (13.6ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 194ms (Views: 188.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/subpages" for 127.0.0.1 at 2014-09-09 12:16:04 -0700
+Processing by Admin::SubpagesController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered admin/partials/_menu.html.erb (1.5ms)
+  Rendered admin/partials/_tophalf.html.erb (3.0ms)
+  [1m[36mSubpage Load (0.8ms)[0m  [1mSELECT "subpages".* FROM "subpages"[0m
+  Rendered admin/subpages/_menu.html.erb (13.0ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/subpages/index.html.erb within layouts/application (20.3ms)
+  Rendered layouts/partials/_flashes.html.erb (0.3ms)
+Completed 200 OK in 189ms (Views: 179.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:16:06 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.5ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.0ms)
+  Rendered admin/partials/_tophalf.html.erb (2.4ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.2ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (15.7ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 212ms (Views: 201.9ms | ActiveRecord: 1.2ms)
+
+
+Started PATCH "/admin/settings/1" for 127.0.0.1 at 2014-09-09 12:16:39 -0700
+Processing by Admin::SettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"olM5kpjbkHko6EisNepNNETMwJagXinwGNjvomJfszo=", "setting"=>{"site_name"=>"ASDFASDFASD", "site_title"=>"Kontract Network - Awesome Services", "site_copyright"=>"Copyright &copy; 2014 Katata Network. All Rights Reserved.", "admin_email"=>"kirka121@gmail.com", "booking_email"=>"kirka121@gmail.com", "registration_mode"=>"1"}, "commit"=>"Update", "id"=>"1"}
+  [1m[35mUser Load (1.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "settings" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"  [["created_at", "2014-09-09 19:16:39.260711"], ["updated_at", "2014-09-09 19:16:39.260711"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSetting Load (0.4ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (3.2ms)
+  Rendered admin/partials/_tophalf.html.erb (8.2ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.2ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (20.2ms)
+  Rendered layouts/partials/_flashes.html.erb (2.5ms)
+Completed 200 OK in 241ms (Views: 201.3ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 12:16:39 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 12:16:39 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 12:16:39 -0700
+
+
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 12:16:39 -0700
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 12:16:39 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 12:16:39 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 12:16:39 -0700
+
+
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 12:16:39 -0700
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 12:16:39 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 12:16:39 -0700
+
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 12:16:39 -0700
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 12:16:39 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 12:16:39 -0700
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:17:15 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.4ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.1ms)
+  Rendered admin/partials/_tophalf.html.erb (2.4ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (23.6ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 244ms (Views: 210.7ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 12:17:16 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 12:17:16 -0700
+
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 12:17:16 -0700
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 12:17:16 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 12:17:16 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 12:17:16 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 12:17:16 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 12:17:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 12:17:16 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 12:17:16 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 12:17:16 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 12:17:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 12:17:16 -0700
+
+
+Started PATCH "/admin/settings/1" for 127.0.0.1 at 2014-09-09 12:17:22 -0700
+Processing by Admin::SettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"olM5kpjbkHko6EisNepNNETMwJagXinwGNjvomJfszo=", "setting"=>{"site_name"=>"Kontractsdsdasda", "site_title"=>"Kontract Network - Awesome Services", "site_copyright"=>"Copyright &copy; 2014 Katata Network. All Rights Reserved.", "admin_email"=>"kirka121@gmail.com", "booking_email"=>"kirka121@gmail.com", "registration_mode"=>"1"}, "commit"=>"Update", "id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mSetting Load (0.7ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "settings" SET "site_name" = $1, "updated_at" = $2 WHERE "settings"."id" = 1  [["site_name", nil], ["updated_at", "2014-09-09 19:17:22.214464"]]
+  [1m[36m (1.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mSetting Load (0.9ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.3ms)
+  Rendered admin/partials/_tophalf.html.erb (3.5ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (18.8ms)
+  Rendered layouts/partials/_flashes.html.erb (0.7ms)
+Completed 200 OK in 304ms (Views: 210.6ms | ActiveRecord: 14.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 12:17:22 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 12:17:22 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 12:17:22 -0700
+
+
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 12:17:22 -0700
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 12:17:22 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 12:17:22 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 12:17:22 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 12:17:22 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 12:17:22 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 12:17:22 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 12:17:22 -0700
+
+
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 12:17:22 -0700
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 12:17:22 -0700
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:17:24 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.4ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (0.9ms)
+  Rendered admin/partials/_tophalf.html.erb (1.9ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (10.6ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 195ms (Views: 188.9ms | ActiveRecord: 1.2ms)
+
+
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 12:17:25 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 12:17:25 -0700
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 12:17:25 -0700
+
+
+
+
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 12:17:25 -0700
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 12:17:25 -0700
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 12:17:25 -0700
+
+
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 12:17:25 -0700
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 12:17:25 -0700
+
+
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 12:17:25 -0700
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 12:17:25 -0700
+
+
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 12:17:25 -0700
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 12:17:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 12:17:25 -0700
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:18:35 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mSetting Load (0.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.1ms)
+  Rendered admin/partials/_tophalf.html.erb (2.4ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (21.6ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 213ms (Views: 182.5ms | ActiveRecord: 5.4ms)
+
+
+Started PATCH "/admin/settings/1" for 127.0.0.1 at 2014-09-09 12:18:38 -0700
+Processing by Admin::SettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"olM5kpjbkHko6EisNepNNETMwJagXinwGNjvomJfszo=", "setting"=>{"site_name"=>"asdasdas", "site_title"=>"Kontract Network - Awesome Services", "site_copyright"=>"Copyright &copy; 2014 Katata Network. All Rights Reserved.", "admin_email"=>"kirka121@gmail.com", "booking_email"=>"kirka121@gmail.com", "registration_mode"=>"1"}, "commit"=>"Update", "id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 21ms
+
+NameError (undefined local variable or method `settings_params' for #<Admin::SettingsController:0xae35918>):
+  app/controllers/admin/settings_controller.rb:9:in `update'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (51.5ms)
+
+
+Started PATCH "/admin/settings/1" for 127.0.0.1 at 2014-09-09 12:18:48 -0700
+Processing by Admin::SettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"olM5kpjbkHko6EisNepNNETMwJagXinwGNjvomJfszo=", "setting"=>{"site_name"=>"asdasdas", "site_title"=>"Kontract Network - Awesome Services", "site_copyright"=>"Copyright &copy; 2014 Katata Network. All Rights Reserved.", "admin_email"=>"kirka121@gmail.com", "booking_email"=>"kirka121@gmail.com", "registration_mode"=>"1"}, "commit"=>"Update", "id"=>"1"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 38ms
+
+NameError (undefined local variable or method `setting_params' for #<Admin::SettingsController:0xb053d1c>):
+  app/controllers/admin/settings_controller.rb:9:in `update'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.2ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:19:54 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mSetting Load (0.5ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.5ms)
+  Rendered admin/partials/_tophalf.html.erb (3.4ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (29.5ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 248ms (Views: 234.8ms | ActiveRecord: 4.5ms)
+
+
+Started PATCH "/admin/settings/1" for 127.0.0.1 at 2014-09-09 12:20:30 -0700
+Processing by Admin::SettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"olM5kpjbkHko6EisNepNNETMwJagXinwGNjvomJfszo=", "setting"=>{"site_name"=>"asdasdasd", "site_title"=>"Kontract Network - Awesome Services", "site_copyright"=>"Copyright &copy; 2014 Katata Network. All Rights Reserved.", "admin_email"=>"kirka121@gmail.com", "booking_email"=>"kirka121@gmail.com", "registration_mode"=>"1"}, "commit"=>"Update", "id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mSetting Load (0.2ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "settings" SET "site_name" = $1, "updated_at" = $2 WHERE "settings"."id" = 1  [["site_name", "asdasdasd"], ["updated_at", "2014-09-09 19:20:30.908653"]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mSetting Load (0.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.4ms)
+  Rendered admin/partials/_tophalf.html.erb (2.9ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (15.2ms)
+  Rendered layouts/partials/_flashes.html.erb (0.7ms)
+Completed 200 OK in 201ms (Views: 149.8ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 12:20:31 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 12:20:31 -0700
+
+
+
+
+
+
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 12:20:31 -0700
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 12:20:31 -0700
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 12:20:31 -0700
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 12:20:31 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 12:20:31 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 12:20:31 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 12:20:31 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 12:20:31 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 12:20:31 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 12:20:31 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 12:20:31 -0700
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:20:33 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mSetting Load (0.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.0ms)
+  Rendered admin/partials/_tophalf.html.erb (2.7ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (24.4ms)
+  Rendered layouts/partials/_flashes.html.erb (0.4ms)
+Completed 200 OK in 240ms (Views: 208.1ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 12:20:34 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 12:20:34 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 12:20:34 -0700
+
+
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 12:20:34 -0700
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 12:20:34 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 12:20:34 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 12:20:34 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 12:20:34 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 12:20:34 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 12:20:34 -0700
+
+
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 12:20:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 12:20:34 -0700
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 12:20:34 -0700
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:21:54 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mSetting Load (0.4ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.1ms)
+  Rendered admin/partials/_tophalf.html.erb (2.3ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (37.6ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 323ms (Views: 280.4ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 12:21:54 -0700
+
+
+
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 12:21:54 -0700
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 12:21:54 -0700
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 12:21:54 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 12:21:54 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 12:21:54 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 12:21:54 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 12:21:54 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 12:21:54 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 12:21:54 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 12:21:54 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 12:21:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 12:21:54 -0700

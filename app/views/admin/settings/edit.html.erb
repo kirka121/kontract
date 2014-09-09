@@ -1,3 +1,29 @@
 <%= render 'admin/partials/tophalf' %>
-	edit settings
+	<%= form_for @settings, url: {action: "update"}, html: { class: "default_update_form"} do |f| %>
+
+		<%= f.label :site_name %>
+		<%= f.text_field :site_name %><br/>
+
+		<%= f.label :site_title %>
+		<%= f.text_field :site_title %><br/>
+
+		<%= f.label :site_copyright %>
+		<%= f.text_field :site_copyright %><br/>
+
+		<%= f.label :admin_email %>
+		<%= f.text_field :admin_email %><br/> 
+
+		<%= f.label :booking_email %>
+		<%= f.text_field :booking_email %><br/> 
+
+		<%= f.label :registration_mode %>
+		<%= f.text_field :registration_mode %><br/>
+
+		<%= f.label :subpages_active %>
+		<%= f.text_field :subpages_active %><br/>
+
+		<%= f.label :teams_active %>
+		<%= f.text_field :teams_active %><br/>
+		<%= f.submit "Update", class: "btn btn-large btn-submit" %>
+	<% end %>
 <%= render 'admin/partials/bottomhalf' %>
