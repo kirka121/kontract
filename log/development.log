@@ -37907,3 +37907,2472 @@ Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 12:21:54 -0700
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 12:21:54 -0700
+
+
+Started GET "/admin/subpages" for 127.0.0.1 at 2014-09-09 12:38:07 -0700
+Processing by Admin::SubpagesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered admin/partials/_menu.html.erb (1.1ms)
+  Rendered admin/partials/_tophalf.html.erb (2.3ms)
+  [1m[35mSubpage Load (0.6ms)[0m  SELECT "subpages".* FROM "subpages"
+  Rendered admin/subpages/_menu.html.erb (10.4ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/subpages/index.html.erb within layouts/application (18.3ms)
+Completed 500 Internal Server Error in 865ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap3-switch.
+Load paths:
+  /home/kirka/web/kontract/app/assets/images
+  /home/kirka/web/kontract/app/assets/javascripts
+  /home/kirka/web/kontract/app/assets/stylesheets
+  /home/kirka/web/kontract/vendor/assets/javascripts
+  /home/kirka/web/kontract/vendor/assets/stylesheets
+  /home/kirka/.rvm/gems/ruby-2.1.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/images
+  /home/kirka/.rvm/gems/ruby-2.1.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/javascripts
+  /home/kirka/.rvm/gems/ruby-2.1.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets
+  /home/kirka/.rvm/gems/ruby-2.1.1/gems/turbolinks-2.3.0/lib/assets/javascripts
+  /home/kirka/.rvm/gems/ruby-2.1.1/gems/jquery-rails-3.1.2/vendor/assets/javascripts
+  /home/kirka/.rvm/gems/ruby-2.1.1/gems/coffee-rails-4.0.1/lib/assets/javascripts
+  /home/kirka/web/vendor/assets/stylesheets
+  (in /home/kirka/web/kontract/app/assets/stylesheets/bootstrap_config.scss:2)):
+    2: <html>
+    3: <head>
+    4: 	<title>Kirka</title>
+    5: 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6: 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7: 	<%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/bootstrap_config.scss:2
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__934229948_91578860'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.0ms)
+
+
+Started GET "/admin/subpages" for 127.0.0.1 at 2014-09-09 12:38:08 -0700
+Processing by Admin::SubpagesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered admin/partials/_menu.html.erb (1.2ms)
+  Rendered admin/partials/_tophalf.html.erb (2.4ms)
+  [1m[35mSubpage Load (0.4ms)[0m  SELECT "subpages".* FROM "subpages"
+  Rendered admin/subpages/_menu.html.erb (3.3ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/subpages/index.html.erb within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 921ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap3-switch.
+Load paths:
+  /home/kirka/web/kontract/app/assets/images
+  /home/kirka/web/kontract/app/assets/javascripts
+  /home/kirka/web/kontract/app/assets/stylesheets
+  /home/kirka/web/kontract/vendor/assets/javascripts
+  /home/kirka/web/kontract/vendor/assets/stylesheets
+  /home/kirka/.rvm/gems/ruby-2.1.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/images
+  /home/kirka/.rvm/gems/ruby-2.1.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/javascripts
+  /home/kirka/.rvm/gems/ruby-2.1.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets
+  /home/kirka/.rvm/gems/ruby-2.1.1/gems/turbolinks-2.3.0/lib/assets/javascripts
+  /home/kirka/.rvm/gems/ruby-2.1.1/gems/jquery-rails-3.1.2/vendor/assets/javascripts
+  /home/kirka/.rvm/gems/ruby-2.1.1/gems/coffee-rails-4.0.1/lib/assets/javascripts
+  /home/kirka/web/vendor/assets/stylesheets
+  (in /home/kirka/web/kontract/app/assets/stylesheets/bootstrap_config.scss:2)):
+    2: <html>
+    3: <head>
+    4: 	<title>Kirka</title>
+    5: 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6: 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7: 	<%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/bootstrap_config.scss:2
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__934229948_91578860'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.2ms)
+
+
+Started GET "/admin/subpages" for 127.0.0.1 at 2014-09-09 12:38:42 -0700
+Processing by Admin::SubpagesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered admin/partials/_menu.html.erb (2.0ms)
+  Rendered admin/partials/_tophalf.html.erb (3.5ms)
+  [1m[35mSubpage Load (0.6ms)[0m  SELECT "subpages".* FROM "subpages"
+  Rendered admin/subpages/_menu.html.erb (3.0ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/subpages/index.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 916ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-switch.
+Load paths:
+  /home/kirka/web/kontract/app/assets/images
+  /home/kirka/web/kontract/app/assets/javascripts
+  /home/kirka/web/kontract/app/assets/stylesheets
+  /home/kirka/web/kontract/vendor/assets/javascripts
+  /home/kirka/web/kontract/vendor/assets/stylesheets
+  /home/kirka/.rvm/gems/ruby-2.1.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/images
+  /home/kirka/.rvm/gems/ruby-2.1.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/javascripts
+  /home/kirka/.rvm/gems/ruby-2.1.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets
+  /home/kirka/.rvm/gems/ruby-2.1.1/gems/turbolinks-2.3.0/lib/assets/javascripts
+  /home/kirka/.rvm/gems/ruby-2.1.1/gems/jquery-rails-3.1.2/vendor/assets/javascripts
+  /home/kirka/.rvm/gems/ruby-2.1.1/gems/coffee-rails-4.0.1/lib/assets/javascripts
+  /home/kirka/web/vendor/assets/stylesheets
+  (in /home/kirka/web/kontract/app/assets/stylesheets/bootstrap_config.scss:2)):
+    2: <html>
+    3: <head>
+    4: 	<title>Kirka</title>
+    5: 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6: 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7: 	<%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/bootstrap_config.scss:2
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__934229948_91578860'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.8ms)
+
+
+Started GET "/admin/subpages" for 127.0.0.1 at 2014-09-09 12:39:16 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Admin::SubpagesController#index as HTML
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered admin/partials/_menu.html.erb (2.0ms)
+  Rendered admin/partials/_tophalf.html.erb (4.0ms)
+  [1m[36mSubpage Load (0.6ms)[0m  [1mSELECT "subpages".* FROM "subpages"[0m
+  Rendered admin/subpages/_menu.html.erb (12.7ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.6ms)
+  Rendered admin/subpages/index.html.erb within layouts/application (26.1ms)
+  Rendered layouts/partials/_flashes.html.erb (1.2ms)
+Completed 200 OK in 1714ms (Views: 1624.6ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 12:39:18 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 12:39:18 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 12:39:18 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 12:39:18 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 12:39:18 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 12:39:18 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 12:39:18 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 12:39:18 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 12:39:18 -0700
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 12:39:18 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 12:39:18 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 12:39:18 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 12:39:18 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 12:39:18 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:39:20 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.4ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (2.4ms)
+  Rendered admin/partials/_tophalf.html.erb (4.6ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.7ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (61.0ms)
+  Rendered layouts/partials/_flashes.html.erb (1.3ms)
+Completed 200 OK in 478ms (Views: 373.0ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:39:42 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.5ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.7ms)
+  Rendered admin/partials/_tophalf.html.erb (3.3ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.6ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (13.9ms)
+  Rendered layouts/partials/_flashes.html.erb (1.9ms)
+Completed 200 OK in 237ms (Views: 230.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 12:39:42 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 12:39:42 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 12:39:42 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 12:39:42 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 12:39:42 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 12:39:42 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 12:39:42 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 12:39:42 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 12:39:42 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 12:39:42 -0700
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 12:39:42 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 12:39:42 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 12:39:42 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 12:39:42 -0700
+
+
+Started GET "/admin/subpages" for 127.0.0.1 at 2014-09-09 12:39:55 -0700
+Processing by Admin::SubpagesController#index as HTML
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered admin/partials/_menu.html.erb (2.0ms)
+  Rendered admin/partials/_tophalf.html.erb (4.1ms)
+  [1m[36mSubpage Load (0.6ms)[0m  [1mSELECT "subpages".* FROM "subpages"[0m
+  Rendered admin/subpages/_menu.html.erb (12.6ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.6ms)
+  Rendered admin/subpages/index.html.erb within layouts/application (26.3ms)
+  Rendered layouts/partials/_flashes.html.erb (1.1ms)
+Completed 200 OK in 390ms (Views: 319.8ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:39:56 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.6ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.8ms)
+  Rendered admin/partials/_tophalf.html.erb (3.8ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (64.4ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 289ms (Views: 263.2ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:40:00 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.6ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.9ms)
+  Rendered admin/partials/_tophalf.html.erb (3.6ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.6ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (14.8ms)
+  Rendered layouts/partials/_flashes.html.erb (1.7ms)
+Completed 200 OK in 269ms (Views: 260.2ms | ActiveRecord: 1.4ms)
+
+
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 12:40:00 -0700
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 12:40:00 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 12:40:00 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 12:40:00 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 12:40:00 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 12:40:00 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 12:40:00 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 12:40:00 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 12:40:00 -0700
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 12:40:00 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 12:40:00 -0700
+
+
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 12:40:00 -0700
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 12:40:00 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 12:40:00 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:40:03 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.5ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (2.7ms)
+  Rendered admin/partials/_tophalf.html.erb (5.3ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.6ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (58.1ms)
+  Rendered layouts/partials/_flashes.html.erb (1.4ms)
+Completed 200 OK in 474ms (Views: 393.4ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:40:05 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSetting Load (0.5ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.1ms)
+  Rendered admin/partials/_tophalf.html.erb (2.3ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (11.6ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+Completed 200 OK in 216ms (Views: 209.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-09-09 12:40:07 -0700
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered admin/partials/_menu.html.erb (1.2ms)
+  Rendered admin/partials/_tophalf.html.erb (2.7ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/index.html.erb within layouts/application (9.9ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 207ms (Views: 203.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/settings/1/edit" for 127.0.0.1 at 2014-09-09 12:40:08 -0700
+Processing by Admin::SettingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mSetting Load (0.4ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/partials/_menu.html.erb (1.6ms)
+  Rendered admin/partials/_tophalf.html.erb (3.0ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/settings/edit.html.erb within layouts/application (16.3ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+Completed 200 OK in 252ms (Views: 244.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/subpages" for 127.0.0.1 at 2014-09-09 12:40:34 -0700
+Processing by Admin::SubpagesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered admin/partials/_menu.html.erb (3.2ms)
+  Rendered admin/partials/_tophalf.html.erb (6.2ms)
+  [1m[35mSubpage Load (1.1ms)[0m  SELECT "subpages".* FROM "subpages"
+  Rendered admin/subpages/_menu.html.erb (31.4ms)
+  Rendered admin/partials/_bottomhalf.html.erb (0.1ms)
+  Rendered admin/subpages/index.html.erb within layouts/application (43.7ms)
+  Rendered layouts/partials/_flashes.html.erb (0.3ms)
+Completed 200 OK in 246ms (Views: 232.6ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 15:43:07 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.4ms)
+  [1m[35mSetting Load (0.6ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (1.5ms)
+  Rendered layouts/partials/_header.html.erb (43.1ms)
+  Rendered layouts/partials/_flashes.html.erb (1.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (2.1ms)
+Completed 200 OK in 402ms (Views: 363.2ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 15:43:08 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 15:43:08 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 15:43:08 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 15:43:08 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 15:43:08 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 15:43:08 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 15:43:08 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 15:43:08 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 15:43:08 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 15:43:08 -0700
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 15:43:08 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 15:43:08 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 15:43:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 15:43:08 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 15:44:16 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mSetting Load (1.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.7ms)
+  Rendered layouts/partials/_header.html.erb (4.4ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.3ms)
+Completed 200 OK in 317ms (Views: 314.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 15:44:17 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 15:44:17 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 15:44:17 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 15:44:17 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 15:44:17 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 15:44:17 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 15:44:17 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 15:44:17 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 15:44:17 -0700
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 15:44:17 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 15:44:17 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 15:44:17 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 15:44:17 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 15:44:17 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 15:46:34 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+  [1m[35mSetting Load (0.4ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (1.6ms)
+  Rendered layouts/partials/_header.html.erb (29.3ms)
+  Rendered layouts/partials/_flashes.html.erb (1.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (2.4ms)
+Completed 200 OK in 452ms (Views: 397.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 15:46:34 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 15:46:34 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 15:46:34 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 15:46:34 -0700
+
+
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 15:46:34 -0700
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 15:46:34 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 15:46:34 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 15:46:34 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 15:46:34 -0700
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 15:46:34 -0700
+
+
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 15:46:34 -0700
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 15:46:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 15:46:34 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 15:46:34 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 15:46:49 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+  [1m[35mSetting Load (0.5ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (1.4ms)
+  Rendered layouts/partials/_header.html.erb (43.6ms)
+  Rendered layouts/partials/_flashes.html.erb (1.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (2.2ms)
+Completed 200 OK in 439ms (Views: 388.7ms | ActiveRecord: 16.2ms)
+
+
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 15:46:50 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 15:46:50 -0700
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 15:46:50 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 15:46:50 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 15:46:50 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 15:46:50 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 15:46:50 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 15:46:50 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 15:46:50 -0700
+
+
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 15:46:50 -0700
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 15:46:50 -0700
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 15:46:50 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 15:46:50 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 15:46:50 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 15:46:57 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+  [1m[35mSetting Load (44.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (1.4ms)
+  Rendered layouts/partials/_header.html.erb (77.9ms)
+  Rendered layouts/partials/_flashes.html.erb (1.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (2.0ms)
+Completed 200 OK in 496ms (Views: 405.7ms | ActiveRecord: 47.2ms)
+
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 15:46:58 -0700
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 15:46:58 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 15:46:58 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 15:46:58 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 15:46:58 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 15:46:58 -0700
+
+
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 15:46:58 -0700
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 15:46:58 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 15:46:58 -0700
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 15:46:58 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 15:46:58 -0700
+
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 15:46:58 -0700
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 15:46:58 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 15:46:58 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 15:47:16 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.5ms)
+  [1m[35mSetting Load (0.5ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (1.5ms)
+  Rendered layouts/partials/_header.html.erb (34.3ms)
+  Rendered layouts/partials/_flashes.html.erb (1.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (2.9ms)
+Completed 200 OK in 432ms (Views: 396.8ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 15:47:17 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 15:47:17 -0700
+
+
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 15:47:17 -0700
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 15:47:17 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 15:47:17 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 15:47:17 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 15:47:17 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 15:47:17 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 15:47:17 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 15:47:17 -0700
+
+
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 15:47:17 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 15:47:17 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 15:47:17 -0700
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 15:47:17 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 15:47:30 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.2ms)
+  [1m[35mSetting Load (0.5ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (1.7ms)
+  Rendered layouts/partials/_header.html.erb (34.3ms)
+  Rendered layouts/partials/_flashes.html.erb (1.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (2.1ms)
+Completed 200 OK in 459ms (Views: 419.8ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 15:47:30 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 15:47:30 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 15:47:30 -0700
+
+
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 15:47:30 -0700
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 15:47:30 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 15:47:30 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 15:47:30 -0700
+
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 15:47:30 -0700
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 15:47:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 15:47:30 -0700
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 15:47:30 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 15:47:30 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 15:47:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 15:47:30 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 15:48:33 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mSetting Load (2.8ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.6ms)
+  Rendered layouts/partials/_header.html.erb (7.6ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.0ms)
+Completed 200 OK in 308ms (Views: 303.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 15:48:34 -0700
+
+
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 15:48:34 -0700
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 15:48:34 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 15:48:34 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 15:48:34 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 15:48:34 -0700
+
+
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 15:48:34 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 15:48:34 -0700
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 15:48:34 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 15:48:34 -0700
+
+
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 15:48:34 -0700
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 15:48:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 15:48:34 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 15:48:34 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 15:48:44 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mSetting Load (0.7ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.6ms)
+  Rendered layouts/partials/_header.html.erb (5.1ms)
+  Rendered layouts/partials/_flashes.html.erb (0.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.3ms)
+Completed 200 OK in 329ms (Views: 327.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 15:48:44 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 15:48:44 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 15:48:44 -0700
+
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 15:48:44 -0700
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 15:48:44 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 15:48:44 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 15:48:44 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 15:48:44 -0700
+
+
+
+
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 15:48:44 -0700
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 15:48:44 -0700
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 15:48:44 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 15:48:44 -0700
+
+
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 15:48:44 -0700
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 15:48:44 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 15:49:02 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mSetting Load (0.5ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.6ms)
+  Rendered layouts/partials/_header.html.erb (4.2ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (2.7ms)
+Completed 200 OK in 296ms (Views: 293.8ms | ActiveRecord: 0.6ms)
+
+
+
+
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 15:49:02 -0700
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 15:49:02 -0700
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 15:49:02 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 15:49:02 -0700
+
+
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 15:49:02 -0700
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 15:49:02 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 15:49:02 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 15:49:02 -0700
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 15:49:02 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 15:49:02 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 15:49:02 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 15:49:02 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 15:49:02 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 15:49:02 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 15:50:52 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mSetting Load (0.5ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.5ms)
+  Rendered layouts/partials/_header.html.erb (3.5ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.3ms)
+Completed 200 OK in 311ms (Views: 309.0ms | ActiveRecord: 0.5ms)
+
+
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 15:50:52 -0700
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 15:50:52 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 15:50:52 -0700
+
+
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 15:50:52 -0700
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 15:50:52 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 15:50:52 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 15:50:52 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 15:50:52 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 15:50:52 -0700
+
+
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 15:50:52 -0700
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 15:50:52 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 15:50:52 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 15:50:52 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 15:50:52 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 15:51:05 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  [1m[35mSetting Load (43.6ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.6ms)
+  Rendered layouts/partials/_header.html.erb (47.8ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.1ms)
+Completed 200 OK in 399ms (Views: 354.2ms | ActiveRecord: 43.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 15:51:06 -0700
+
+
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 15:51:06 -0700
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 15:51:06 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 15:51:06 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 15:51:06 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 15:51:06 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 15:51:06 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 15:51:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 15:51:06 -0700
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 15:51:06 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 15:51:06 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 15:51:06 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 15:51:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 15:51:06 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 15:51:34 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+  [1m[35mSetting Load (0.7ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (2.6ms)
+  Rendered layouts/partials/_header.html.erb (109.1ms)
+  Rendered layouts/partials/_flashes.html.erb (0.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.3ms)
+Completed 200 OK in 495ms (Views: 493.0ms | ActiveRecord: 0.7ms)
+
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 15:51:34 -0700
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 15:51:34 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 15:51:34 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 15:51:34 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 15:51:34 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 15:51:34 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 15:51:34 -0700
+
+
+
+
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 15:51:34 -0700
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 15:51:34 -0700
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 15:51:34 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 15:51:34 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 15:51:34 -0700
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 15:51:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 15:51:34 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 15:53:18 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 42ms
+
+ActionView::Template::Error (Invalid CSS after "		background: ": expected expression (e.g. 1px, bold), was "@include filter..."
+  (in /home/kirka/web/kontract/app/assets/stylesheets/layouts.css.scss:18)):
+    2: <html>
+    3: <head>
+    4: 	<title>Kirka</title>
+    5: 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6: 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7: 	<%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/layouts.css.scss:18
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__553917219_85709180'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 15:53:55 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mSetting Load (0.8ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.7ms)
+  Rendered layouts/partials/_header.html.erb (4.0ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.0ms)
+Completed 200 OK in 384ms (Views: 382.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 15:53:55 -0700
+
+
+
+
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 15:53:55 -0700
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 15:53:55 -0700
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 15:53:55 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 15:53:55 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 15:53:55 -0700
+
+
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 15:53:55 -0700
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 15:53:55 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 15:53:55 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 15:53:55 -0700
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 15:53:55 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 15:53:55 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 15:53:55 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 15:53:55 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 15:55:10 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mSetting Load (0.4ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.7ms)
+  Rendered layouts/partials/_header.html.erb (4.3ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.0ms)
+Completed 200 OK in 335ms (Views: 332.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 15:55:10 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 15:55:10 -0700
+
+
+
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 15:55:10 -0700
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 15:55:10 -0700
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 15:55:10 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 15:55:10 -0700
+
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 15:55:10 -0700
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 15:55:10 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 15:55:10 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 15:55:10 -0700
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 15:55:10 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 15:55:10 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 15:55:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 15:55:11 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 15:55:20 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mSetting Load (0.9ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.6ms)
+  Rendered layouts/partials/_header.html.erb (4.2ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.4ms)
+Completed 200 OK in 327ms (Views: 325.4ms | ActiveRecord: 0.9ms)
+
+
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 15:55:20 -0700
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 15:55:20 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 15:55:20 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 15:55:20 -0700
+
+
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 15:55:20 -0700
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 15:55:20 -0700
+
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 15:55:20 -0700
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 15:55:20 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 15:55:20 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 15:55:20 -0700
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 15:55:20 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 15:55:20 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 15:55:20 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 15:55:20 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 15:56:11 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mSetting Load (0.4ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.7ms)
+  Rendered layouts/partials/_header.html.erb (4.8ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.0ms)
+Completed 200 OK in 321ms (Views: 318.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 15:56:12 -0700
+
+
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 15:56:12 -0700
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 15:56:12 -0700
+
+
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 15:56:12 -0700
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 15:56:12 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 15:56:12 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 15:56:12 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 15:56:12 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 15:56:12 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 15:56:12 -0700
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 15:56:12 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 15:56:12 -0700
+
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 15:56:12 -0700
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 15:56:12 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 15:56:24 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+  [1m[35mSetting Load (0.5ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.6ms)
+  Rendered layouts/partials/_header.html.erb (3.7ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.2ms)
+Completed 200 OK in 340ms (Views: 338.4ms | ActiveRecord: 0.5ms)
+
+
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 15:56:24 -0700
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 15:56:24 -0700
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 15:56:24 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 15:56:24 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 15:56:24 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 15:56:24 -0700
+
+
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 15:56:24 -0700
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 15:56:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 15:56:24 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 15:56:24 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 15:56:24 -0700
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 15:56:24 -0700
+
+
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 15:56:24 -0700
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 15:56:24 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 15:57:23 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+  [1m[35mSetting Load (0.7ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.8ms)
+  Rendered layouts/partials/_header.html.erb (6.8ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.5ms)
+Completed 200 OK in 492ms (Views: 488.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 15:57:24 -0700
+
+
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 15:57:24 -0700
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 15:57:24 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 15:57:24 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 15:57:24 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 15:57:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 15:57:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 15:57:24 -0700
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 15:57:24 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 15:57:24 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 15:57:24 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 15:57:24 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 15:57:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 15:57:24 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 16:00:40 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  [1m[35mSetting Load (0.7ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.7ms)
+  Rendered layouts/partials/_header.html.erb (7.6ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.6ms)
+Completed 200 OK in 290ms (Views: 288.2ms | ActiveRecord: 0.7ms)
+
+
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 16:00:40 -0700
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 16:00:40 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 16:00:40 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 16:00:40 -0700
+
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 16:00:40 -0700
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 16:00:40 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 16:00:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 16:00:40 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 16:00:40 -0700
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 16:00:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 16:00:40 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 16:00:40 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 16:00:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 16:00:40 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 16:03:22 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mSetting Load (0.6ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.6ms)
+  Rendered layouts/partials/_header.html.erb (4.5ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.0ms)
+Completed 200 OK in 256ms (Views: 253.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 16:03:22 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 16:03:22 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 16:03:22 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 16:03:22 -0700
+
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 16:03:22 -0700
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 16:03:22 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 16:03:22 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 16:03:22 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 16:03:22 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 16:03:22 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 16:03:22 -0700
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 16:03:22 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 16:03:22 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 16:03:22 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 16:03:43 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  [1m[35mSetting Load (0.5ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (1.0ms)
+  Rendered layouts/partials/_header.html.erb (5.5ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.9ms)
+Completed 200 OK in 300ms (Views: 296.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 16:03:43 -0700
+
+
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 16:03:43 -0700
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 16:03:43 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 16:03:43 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 16:03:43 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 16:03:43 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 16:03:43 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 16:03:43 -0700
+
+
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 16:03:43 -0700
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 16:03:43 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 16:03:43 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 16:03:43 -0700
+
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 16:03:43 -0700
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 16:03:43 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 16:07:02 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 198ms
+
+ActionView::Template::Error (couldn't find file 'bootstrap/affix'
+  (in /home/kirka/web/kontract/app/assets/javascripts/application.js:17)):
+    3: <head>
+    4: 	<title>Kirka</title>
+    5: 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6: 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7: 	<%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__106052482_94022610'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.4ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.7ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 16:08:49 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mSetting Load (0.8ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.7ms)
+  Rendered layouts/partials/_header.html.erb (4.9ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.4ms)
+Completed 200 OK in 279ms (Views: 276.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 16:08:49 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 16:08:49 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 16:08:49 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 16:08:49 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 16:08:49 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 16:08:49 -0700
+
+
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 16:08:49 -0700
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 16:08:49 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 16:08:49 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 16:08:49 -0700
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 16:08:49 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 16:08:49 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 16:08:49 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 16:08:49 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 16:09:27 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+  [1m[35mSetting Load (2.8ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.8ms)
+  Rendered layouts/partials/_header.html.erb (7.0ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.2ms)
+Completed 200 OK in 921ms (Views: 914.8ms | ActiveRecord: 2.8ms)
+
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:29 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 16:09:58 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mSetting Load (0.7ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.9ms)
+  Rendered layouts/partials/_header.html.erb (5.7ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.3ms)
+Completed 200 OK in 592ms (Views: 590.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+
+
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+
+
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+
+
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+
+
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 16:09:59 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 16:10:04 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mSetting Load (1.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.7ms)
+  Rendered layouts/partials/_header.html.erb (6.2ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.2ms)
+Completed 200 OK in 547ms (Views: 544.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+
+
+
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+
+
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+
+
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+
+
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 16:10:05 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 16:11:19 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mSetting Load (0.6ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.9ms)
+  Rendered layouts/partials/_header.html.erb (7.0ms)
+  Rendered layouts/partials/_flashes.html.erb (0.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.6ms)
+Completed 200 OK in 804ms (Views: 801.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 16:11:20 -0700
+
+
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 16:11:20 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 16:11:20 -0700
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 16:11:20 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 16:11:20 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 16:11:20 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 16:11:20 -0700
+
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 16:11:20 -0700
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 16:11:20 -0700
+
+
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 16:11:20 -0700
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 16:11:20 -0700
+
+
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-09-09 16:11:20 -0700
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-09-09 16:11:20 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-09-09 16:11:20 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-09-09 16:11:20 -0700
+
+
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-09-09 16:11:20 -0700
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-09-09 16:11:20 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-09-09 16:11:20 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-09-09 16:11:20 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-09-09 16:11:20 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-09-09 16:11:20 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-09-09 16:11:20 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-09-09 16:11:21 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-09-09 16:11:21 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-09 16:11:21 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 16:11:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 16:11:21 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 16:11:21 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 16:17:45 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+  [1m[35mSetting Load (0.8ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.8ms)
+  Rendered layouts/partials/_header.html.erb (5.0ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.2ms)
+Completed 200 OK in 743ms (Views: 740.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/carousel/bootstrapTheme.css?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/carousel/custom.css?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/carousel/responsive.css?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/carousel/application.js?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/carousel/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/carousel/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/carousel/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 16:17:46 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 16:17:51 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  [1m[35mSetting Load (0.7ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (3.9ms)
+  Rendered layouts/partials/_header.html.erb (9.5ms)
+  Rendered layouts/partials/_flashes.html.erb (3.7ms)
+  [1m[36mCACHE (0.2ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (3.6ms)
+Completed 200 OK in 783ms (Views: 778.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/services" for 127.0.0.1 at 2014-09-09 16:17:53 -0700
+Processing by HomeController#services as HTML
+  Rendered home/services.html.erb within layouts/application (0.6ms)
+  [1m[35mSetting Load (0.5ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.8ms)
+  Rendered layouts/partials/_header.html.erb (3.8ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (2.6ms)
+Completed 200 OK in 535ms (Views: 533.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2014-09-09 16:17:54 -0700
+Processing by HomeController#contact as HTML
+  Rendered home/contact.html.erb within layouts/application (0.9ms)
+
+
+Started GET "/services" for 127.0.0.1 at 2014-09-09 16:17:55 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSetting Load (0.8ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.7ms)
+  Rendered layouts/partials/_header.html.erb (4.5ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.1ms)
+Completed 200 OK in 574ms (Views: 572.4ms | ActiveRecord: 0.9ms)
+Processing by HomeController#services as HTML
+  Rendered home/services.html.erb within layouts/application (2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 16:17:56 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  [1m[35mSetting Load (0.9ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (2.0ms)
+  Rendered layouts/partials/_header.html.erb (42.1ms)
+  Rendered layouts/partials/_flashes.html.erb (1.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (3.5ms)
+Completed 200 OK in 846ms (Views: 807.3ms | ActiveRecord: 5.9ms)
+  [1m[35mSetting Load (0.9ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (1.0ms)
+  Rendered layouts/partials/_header.html.erb (7.6ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (2.8ms)
+Completed 200 OK in 610ms (Views: 607.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 16:18:08 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  [1m[35mSetting Load (0.8ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (0.7ms)
+  Rendered layouts/partials/_header.html.erb (4.9ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.4ms)
+Completed 200 OK in 542ms (Views: 539.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 16:18:09 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 16:18:09 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 16:18:09 -0700
+
+
+Started GET "/assets/carousel/bootstrapTheme.css?body=1" for 127.0.0.1 at 2014-09-09 16:18:09 -0700
+
+
+Started GET "/assets/carousel/responsive.css?body=1" for 127.0.0.1 at 2014-09-09 16:18:09 -0700
+
+
+Started GET "/assets/carousel/custom.css?body=1" for 127.0.0.1 at 2014-09-09 16:18:09 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 16:18:09 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 16:18:09 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 16:18:09 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 16:18:09 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:09 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:09 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:09 -0700
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:09 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:09 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:09 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:09 -0700
+
+
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:09 -0700
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:09 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:09 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:09 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:09 -0700
+
+
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:09 -0700
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:09 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:10 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:10 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:10 -0700
+
+
+Started GET "/assets/carousel/application.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:10 -0700
+
+
+Started GET "/assets/carousel/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:10 -0700
+
+
+
+Started GET "/assets/carousel/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:10 -0700
+
+Started GET "/assets/carousel/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:10 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:10 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:10 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:10 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:10 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 16:18:57 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+  [1m[35mSetting Load (0.5ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_main_menu.html.erb (1.6ms)
+  Rendered layouts/partials/_header.html.erb (44.1ms)
+  Rendered layouts/partials/_flashes.html.erb (1.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (2.3ms)
+Completed 200 OK in 771ms (Views: 733.7ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 16:18:58 -0700
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-09 16:18:58 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-09 16:18:58 -0700
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-09 16:18:58 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-09 16:18:58 -0700
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-09 16:18:58 -0700
+
+
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:58 -0700
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:58 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:58 -0700
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:58 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:58 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:58 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:58 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:58 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:58 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:58 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:59 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:59 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:59 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:59 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:59 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:59 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:59 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:59 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:59 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:59 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-09 16:18:59 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-09-09 16:18:59 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m

@@ -1,12 +1,16 @@
 <% if controller_name != 'admin' %>
-<div id="main_header">
-	<div id="header_contrainer">
-		<div id="header_logo">
-			<%= yield_site_settings.site_name %>
-		</div>
-		<div id="header_menu">
-			<%= render 'layouts/partials/main_menu' %>
+<div id="main_header" data-spy="affix" data-offset-top="85" data-offset-bottom="200">
+	<div id="main_header_top_spacer"></div>
+	<div id="main_header_background">
+		<div id="header_contrainer">
+			<div id="header_logo">
+				<%= yield_site_settings.site_name %>
+			</div>
+			<div id="header_menu">
+				<%= render 'layouts/partials/main_menu' %>
+			</div>
 		</div>
 	</div>
+	<div id="main_header_bottom_spacer"></div>
 </div>
 <% end %>

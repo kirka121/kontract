@@ -1,3 +1,7 @@
+<script type="text/javascript">
+	$("[name='my-checkbox']").bootstrapSwitch();
+</script>
+
 <%= render 'admin/partials/tophalf' %>
 	<%= form_for @settings, url: {action: "update"}, html: { class: "default_update_form"} do |f| %>
 
@@ -24,6 +28,9 @@
 
 		<%= f.label :teams_active %>
 		<%= f.text_field :teams_active %><br/>
+
+		<input type="checkbox" name="my-checkbox" checked>
+		<br/>
 		<%= f.submit "Update", class: "btn btn-large btn-submit" %>
 	<% end %>
 <%= render 'admin/partials/bottomhalf' %>
