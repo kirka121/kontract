@@ -4,14 +4,14 @@
 		<div id="navbar_contrainer">
 			<div class="navbar">
 			    <div class="navbar-inner">
-					<div class="logo"><%= yield_site_settings.site_name %></div>
+					<div class="logo"><%= link_to image_tag('KN_white.png', height: 40, width: 40), {action: 'index', controller: 'home'} %> <%= yield_site_settings.site_title %></div>
 					<%= render 'layouts/partials/main_menu' %>
 			    </div> 
 		    </div>
 		</div> 
 		<div id="main_header_bottom_spacer"></div>
 	</div>
-	
+
 	<div id="owl-demo" class="owl-carousel owl-theme">
 		<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-1.jpg' %> </div>
 		<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-2.jpg' %> </div>

@@ -78607,3 +78607,1816 @@ Started GET "/assets/elegant_backgrounds/Elegant_Background-2.jpg" for 127.0.0.1
 Started GET "/assets/elegant_backgrounds/Elegant_Background-4.jpg" for 127.0.0.1 at 2014-09-12 11:54:02 -0400
 
 Started GET "/assets/elegant_backgrounds/Elegant_Background-8.jpg" for 127.0.0.1 at 2014-09-12 11:54:02 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:58:11 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.1ms)
+  [1m[35mSetting Load (0.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/partials/_main_menu.html.erb (2.4ms)
+  Rendered layouts/partials/_header.html.erb (6.1ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.9ms)
+Completed 200 OK in 687ms (Views: 684.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/owl.theme.css?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/owl.carousel.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+Started GET "/assets/elegant_backgrounds/Elegant_Background-1.jpg" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-2.jpg" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-3.jpg" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-4.jpg" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-6.jpg" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-8.jpg" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-7.jpg" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-5.jpg" for 127.0.0.1 at 2014-09-12 11:58:12 -0400
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2014-09-12 11:58:13 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:58:44 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[35mSetting Load (5.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (2.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/partials/_main_menu.html.erb (32.4ms)
+  Rendered layouts/partials/_header.html.erb (36.8ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.2ms)
+Completed 200 OK in 634ms (Views: 623.3ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/owl.theme.css?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+
+
+
+Started GET "/assets/owl.carousel.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-1.jpg" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-2.jpg" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-3.jpg" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-5.jpg" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-7.jpg" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+Started GET "/assets/elegant_backgrounds/Elegant_Background-8.jpg" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-4.jpg" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-6.jpg" for 127.0.0.1 at 2014-09-12 11:58:45 -0400
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2014-09-12 11:58:46 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:59:52 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mSetting Load (8.6ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/partials/_main_menu.html.erb (2.5ms)
+  Rendered layouts/partials/_header.html.erb (10.4ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 603ms (Views: 593.3ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+Started GET "/assets/owl.theme.css?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/owl.carousel.js?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+
+
+Started GET "/assets/KN_white.png" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-2.jpg" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-4.jpg" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-1.jpg" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-5.jpg" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+Started GET "/assets/elegant_backgrounds/Elegant_Background-6.jpg" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-3.jpg" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-8.jpg" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-7.jpg" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2014-09-12 11:59:53 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 12:00:11 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[35mSetting Load (3.8ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/partials/_main_menu.html.erb (3.2ms)
+  Rendered layouts/partials/_header.html.erb (9.4ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.0ms)
+Completed 200 OK in 655ms (Views: 650.3ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+Started GET "/assets/owl.theme.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+Started GET "/assets/owl.carousel.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+Started GET "/assets/KN_white.png" for 127.0.0.1 at 2014-09-12 12:00:12 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-1.jpg" for 127.0.0.1 at 2014-09-12 12:00:13 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-2.jpg" for 127.0.0.1 at 2014-09-12 12:00:13 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-3.jpg" for 127.0.0.1 at 2014-09-12 12:00:13 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-4.jpg" for 127.0.0.1 at 2014-09-12 12:00:13 -0400
+
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-6.jpg" for 127.0.0.1 at 2014-09-12 12:00:13 -0400
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-5.jpg" for 127.0.0.1 at 2014-09-12 12:00:13 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-8.jpg" for 127.0.0.1 at 2014-09-12 12:00:13 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-7.jpg" for 127.0.0.1 at 2014-09-12 12:00:13 -0400
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2014-09-12 12:00:13 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 12:00:32 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mSetting Load (10.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/partials/_main_menu.html.erb (2.4ms)
+  Rendered layouts/partials/_header.html.erb (7.2ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.2ms)
+Completed 200 OK in 623ms (Views: 609.9ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/owl.theme.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+Started GET "/assets/owl.carousel.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/KN_white.png" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-1.jpg" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-2.jpg" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-3.jpg" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-4.jpg" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-5.jpg" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-6.jpg" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-7.jpg" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-8.jpg" for 127.0.0.1 at 2014-09-12 12:00:33 -0400
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2014-09-12 12:00:34 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 12:00:44 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/partials/_main_menu.html.erb (2.2ms)
+  Rendered layouts/partials/_header.html.erb (11.6ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 682ms (Views: 680.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:45 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:45 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:45 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:45 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:45 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:45 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:45 -0400
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:45 -0400
+
+
+Started GET "/assets/owl.theme.css?body=1" for 127.0.0.1 at 2014-09-12 12:00:45 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:45 -0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:45 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:45 -0400
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:45 -0400
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:45 -0400
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:45 -0400
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:45 -0400
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:45 -0400
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:45 -0400
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:45 -0400
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:45 -0400
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:45 -0400
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:46 -0400
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:46 -0400
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:46 -0400
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:46 -0400
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:46 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:46 -0400
+
+
+Started GET "/assets/owl.carousel.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:46 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:46 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:46 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-12 12:00:46 -0400
+
+
+Started GET "/assets/KN_white.png" for 127.0.0.1 at 2014-09-12 12:00:46 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-1.jpg" for 127.0.0.1 at 2014-09-12 12:00:46 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-2.jpg" for 127.0.0.1 at 2014-09-12 12:00:46 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-3.jpg" for 127.0.0.1 at 2014-09-12 12:00:46 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-4.jpg" for 127.0.0.1 at 2014-09-12 12:00:46 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-5.jpg" for 127.0.0.1 at 2014-09-12 12:00:46 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-6.jpg" for 127.0.0.1 at 2014-09-12 12:00:46 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-7.jpg" for 127.0.0.1 at 2014-09-12 12:00:46 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-8.jpg" for 127.0.0.1 at 2014-09-12 12:00:46 -0400
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2014-09-12 12:00:46 -0400
+
+
+Started GET "/assets/grabbing.png" for 127.0.0.1 at 2014-09-12 12:00:50 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 12:01:34 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mSetting Load (0.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/partials/_main_menu.html.erb (5.3ms)
+  Rendered layouts/partials/_header.html.erb (11.4ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.0ms)
+Completed 200 OK in 729ms (Views: 726.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/owl.theme.css?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+
+
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/owl.carousel.js?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/KN_white.png" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-1.jpg" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-2.jpg" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-3.jpg" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-4.jpg" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-5.jpg" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-6.jpg" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-7.jpg" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-8.jpg" for 127.0.0.1 at 2014-09-12 12:01:35 -0400
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2014-09-12 12:01:36 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 12:02:01 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mSetting Load (0.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/partials/_main_menu.html.erb (2.7ms)
+  Rendered layouts/partials/_header.html.erb (9.1ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.0ms)
+Completed 200 OK in 604ms (Views: 602.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/owl.theme.css?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/owl.carousel.js?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/KN_white.png" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-1.jpg" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-2.jpg" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-3.jpg" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-7.jpg" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-5.jpg" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-6.jpg" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-4.jpg" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-8.jpg" for 127.0.0.1 at 2014-09-12 12:02:02 -0400
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2014-09-12 12:02:03 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 12:02:04 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  [1m[35mSetting Load (0.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/partials/_main_menu.html.erb (2.1ms)
+  Rendered layouts/partials/_header.html.erb (6.9ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 564ms (Views: 562.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/KN_white.png" for 127.0.0.1 at 2014-09-12 12:02:04 -0400
+
+
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-3.jpg" for 127.0.0.1 at 2014-09-12 12:02:04 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-2.jpg" for 127.0.0.1 at 2014-09-12 12:02:04 -0400
+Started GET "/assets/elegant_backgrounds/Elegant_Background-1.jpg" for 127.0.0.1 at 2014-09-12 12:02:04 -0400
+
+
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-5.jpg" for 127.0.0.1 at 2014-09-12 12:02:04 -0400
+Started GET "/assets/elegant_backgrounds/Elegant_Background-4.jpg" for 127.0.0.1 at 2014-09-12 12:02:04 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-6.jpg" for 127.0.0.1 at 2014-09-12 12:02:04 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-8.jpg" for 127.0.0.1 at 2014-09-12 12:02:04 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-7.jpg" for 127.0.0.1 at 2014-09-12 12:02:04 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 12:02:06 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/partials/_main_menu.html.erb (3.2ms)
+  Rendered layouts/partials/_header.html.erb (9.3ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.0ms)
+Completed 200 OK in 564ms (Views: 562.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/KN_white.png" for 127.0.0.1 at 2014-09-12 12:02:07 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-2.jpg" for 127.0.0.1 at 2014-09-12 12:02:07 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-3.jpg" for 127.0.0.1 at 2014-09-12 12:02:07 -0400
+
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-4.jpg" for 127.0.0.1 at 2014-09-12 12:02:07 -0400
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-1.jpg" for 127.0.0.1 at 2014-09-12 12:02:07 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-5.jpg" for 127.0.0.1 at 2014-09-12 12:02:07 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-6.jpg" for 127.0.0.1 at 2014-09-12 12:02:07 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-7.jpg" for 127.0.0.1 at 2014-09-12 12:02:07 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-8.jpg" for 127.0.0.1 at 2014-09-12 12:02:07 -0400
+
+
+Started GET "/services" for 127.0.0.1 at 2014-09-12 12:02:08 -0400
+Processing by HomeController#services as HTML
+  Rendered home/services.html.erb within layouts/application (0.1ms)
+  [1m[35mSetting Load (0.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/partials/_main_menu.html.erb (3.3ms)
+  Rendered layouts/partials/_header.html.erb (11.5ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.0ms)
+Completed 200 OK in 632ms (Views: 630.2ms | ActiveRecord: 0.8ms)
+
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-2.jpg" for 127.0.0.1 at 2014-09-12 12:02:08 -0400
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-1.jpg" for 127.0.0.1 at 2014-09-12 12:02:08 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-3.jpg" for 127.0.0.1 at 2014-09-12 12:02:08 -0400
+
+
+Started GET "/assets/KN_white.png" for 127.0.0.1 at 2014-09-12 12:02:08 -0400
+
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-7.jpg" for 127.0.0.1 at 2014-09-12 12:02:08 -0400
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-6.jpg" for 127.0.0.1 at 2014-09-12 12:02:08 -0400
+
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-5.jpg" for 127.0.0.1 at 2014-09-12 12:02:08 -0400
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-4.jpg" for 127.0.0.1 at 2014-09-12 12:02:08 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-8.jpg" for 127.0.0.1 at 2014-09-12 12:02:08 -0400
+
+
+Started GET "/services" for 127.0.0.1 at 2014-09-12 12:02:09 -0400
+Processing by HomeController#services as HTML
+  Rendered home/services.html.erb within layouts/application (0.1ms)
+  [1m[35mSetting Load (0.9ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/partials/_main_menu.html.erb (2.1ms)
+  Rendered layouts/partials/_header.html.erb (9.6ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 647ms (Views: 644.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/KN_white.png" for 127.0.0.1 at 2014-09-12 12:02:10 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-1.jpg" for 127.0.0.1 at 2014-09-12 12:02:10 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-2.jpg" for 127.0.0.1 at 2014-09-12 12:02:10 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-3.jpg" for 127.0.0.1 at 2014-09-12 12:02:10 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-4.jpg" for 127.0.0.1 at 2014-09-12 12:02:10 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-5.jpg" for 127.0.0.1 at 2014-09-12 12:02:10 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-8.jpg" for 127.0.0.1 at 2014-09-12 12:02:10 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-7.jpg" for 127.0.0.1 at 2014-09-12 12:02:10 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-6.jpg" for 127.0.0.1 at 2014-09-12 12:02:10 -0400
+
+
+Started GET "/services" for 127.0.0.1 at 2014-09-12 12:02:11 -0400
+Processing by HomeController#services as HTML
+  Rendered home/services.html.erb within layouts/application (0.1ms)
+  [1m[35mSetting Load (0.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/partials/_main_menu.html.erb (2.0ms)
+  Rendered layouts/partials/_header.html.erb (5.8ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 569ms (Views: 567.9ms | ActiveRecord: 0.8ms)
+
+
+
+
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-2.jpg" for 127.0.0.1 at 2014-09-12 12:02:12 -0400
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-3.jpg" for 127.0.0.1 at 2014-09-12 12:02:12 -0400
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-4.jpg" for 127.0.0.1 at 2014-09-12 12:02:12 -0400
+Started GET "/assets/elegant_backgrounds/Elegant_Background-1.jpg" for 127.0.0.1 at 2014-09-12 12:02:12 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-5.jpg" for 127.0.0.1 at 2014-09-12 12:02:12 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-6.jpg" for 127.0.0.1 at 2014-09-12 12:02:12 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-7.jpg" for 127.0.0.1 at 2014-09-12 12:02:12 -0400
+
+
+Started GET "/assets/KN_white.png" for 127.0.0.1 at 2014-09-12 12:02:12 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-8.jpg" for 127.0.0.1 at 2014-09-12 12:02:12 -0400
+
+
+Started GET "/services" for 127.0.0.1 at 2014-09-12 12:03:09 -0400
+Processing by HomeController#services as HTML
+  Rendered home/services.html.erb within layouts/application (0.5ms)
+  [1m[35mSetting Load (0.2ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_header.html.erb (1.4ms)
+Completed 500 Internal Server Error in 601ms
+
+SyntaxError (/home/kirka/web/kontract/app/views/layouts/partials/_header.html.erb:7: syntax error, unexpected ')', expecting =>
+... 'index', controller: 'home'} );@output_buffer.safe_append='...
+...                               ^
+/home/kirka/web/kontract/app/views/layouts/partials/_header.html.erb:25: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/kirka/web/kontract/app/views/layouts/partials/_header.html.erb:28: syntax error, unexpected keyword_ensure, expecting ')'
+/home/kirka/web/kontract/app/views/layouts/partials/_header.html.erb:30: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__502208036_88152070'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.5ms)
+
+
+Started GET "/services" for 127.0.0.1 at 2014-09-12 12:03:39 -0400
+Processing by HomeController#services as HTML
+  Rendered home/services.html.erb within layouts/application (0.1ms)
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_header.html.erb (1.3ms)
+Completed 500 Internal Server Error in 637ms
+
+SyntaxError (/home/kirka/web/kontract/app/views/layouts/partials/_header.html.erb:7: syntax error, unexpected ')', expecting =>
+...ndex', :controller => 'home'} );@output_buffer.safe_append='...
+...                               ^
+/home/kirka/web/kontract/app/views/layouts/partials/_header.html.erb:25: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/kirka/web/kontract/app/views/layouts/partials/_header.html.erb:28: syntax error, unexpected keyword_ensure, expecting ')'
+/home/kirka/web/kontract/app/views/layouts/partials/_header.html.erb:30: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__502208036_88152070'
+
+
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /home/kirka/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.8ms)
+
+
+Started GET "/services" for 127.0.0.1 at 2014-09-12 12:04:11 -0400
+Processing by HomeController#services as HTML
+  Rendered home/services.html.erb within layouts/application (0.1ms)
+  [1m[35mSetting Load (0.3ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/partials/_main_menu.html.erb (23.2ms)
+  Rendered layouts/partials/_header.html.erb (29.3ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.2ms)
+Completed 200 OK in 574ms (Views: 570.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 12:04:12 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-12 12:04:12 -0400
+
+
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-12 12:04:12 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-12 12:04:12 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-12 12:04:12 -0400
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-12 12:04:12 -0400
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-09-12 12:04:12 -0400
+
+
+Started GET "/assets/owl.theme.css?body=1" for 127.0.0.1 at 2014-09-12 12:04:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:12 -0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:12 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:12 -0400
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:12 -0400
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:12 -0400
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:12 -0400
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:12 -0400
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:12 -0400
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:12 -0400
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:12 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-12 12:04:12 -0400
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:12 -0400
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:13 -0400
+
+
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:13 -0400
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:13 -0400
+
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:13 -0400
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:13 -0400
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:13 -0400
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:13 -0400
+
+
+Started GET "/assets/owl.carousel.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:13 -0400
+
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:13 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:13 -0400
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:13 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:13 -0400
+
+
+Started GET "/assets/KN_white.png" for 127.0.0.1 at 2014-09-12 12:04:13 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-1.jpg" for 127.0.0.1 at 2014-09-12 12:04:13 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-2.jpg" for 127.0.0.1 at 2014-09-12 12:04:13 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-3.jpg" for 127.0.0.1 at 2014-09-12 12:04:13 -0400
+
+
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-4.jpg" for 127.0.0.1 at 2014-09-12 12:04:13 -0400
+Started GET "/assets/elegant_backgrounds/Elegant_Background-6.jpg" for 127.0.0.1 at 2014-09-12 12:04:13 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-5.jpg" for 127.0.0.1 at 2014-09-12 12:04:13 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-7.jpg" for 127.0.0.1 at 2014-09-12 12:04:13 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-8.jpg" for 127.0.0.1 at 2014-09-12 12:04:13 -0400
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2014-09-12 12:04:13 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 12:04:14 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[35mSetting Load (0.2ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/partials/_main_menu.html.erb (23.4ms)
+  Rendered layouts/partials/_header.html.erb (29.4ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.2ms)
+Completed 200 OK in 634ms (Views: 628.9ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/KN_white.png" for 127.0.0.1 at 2014-09-12 12:04:15 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-1.jpg" for 127.0.0.1 at 2014-09-12 12:04:15 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-2.jpg" for 127.0.0.1 at 2014-09-12 12:04:15 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-4.jpg" for 127.0.0.1 at 2014-09-12 12:04:15 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-3.jpg" for 127.0.0.1 at 2014-09-12 12:04:15 -0400
+
+
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-6.jpg" for 127.0.0.1 at 2014-09-12 12:04:15 -0400
+Started GET "/assets/elegant_backgrounds/Elegant_Background-7.jpg" for 127.0.0.1 at 2014-09-12 12:04:15 -0400
+
+
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-5.jpg" for 127.0.0.1 at 2014-09-12 12:04:15 -0400
+Started GET "/assets/elegant_backgrounds/Elegant_Background-8.jpg" for 127.0.0.1 at 2014-09-12 12:04:15 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 12:04:30 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mSetting Load (7.7ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (2.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/partials/_main_menu.html.erb (5.0ms)
+  Rendered layouts/partials/_header.html.erb (12.3ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (0.9ms)
+Completed 200 OK in 715ms (Views: 702.1ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+
+
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+Started GET "/assets/bootstrap_config.css?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+
+
+Started GET "/assets/owl.theme.css?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+
+
+
+Started GET "/assets/bootstrap-switch.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+
+
+
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+
+
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+
+
+Started GET "/assets/owl.carousel.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:31 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:32 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:32 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 12:04:32 -0400
+
+
+Started GET "/assets/KN_white.png" for 127.0.0.1 at 2014-09-12 12:04:32 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-1.jpg" for 127.0.0.1 at 2014-09-12 12:04:32 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-2.jpg" for 127.0.0.1 at 2014-09-12 12:04:32 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-3.jpg" for 127.0.0.1 at 2014-09-12 12:04:32 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-4.jpg" for 127.0.0.1 at 2014-09-12 12:04:32 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-5.jpg" for 127.0.0.1 at 2014-09-12 12:04:32 -0400
+
+
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-6.jpg" for 127.0.0.1 at 2014-09-12 12:04:32 -0400
+Started GET "/assets/elegant_backgrounds/Elegant_Background-7.jpg" for 127.0.0.1 at 2014-09-12 12:04:32 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-8.jpg" for 127.0.0.1 at 2014-09-12 12:04:32 -0400
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2014-09-12 12:04:32 -0400
+
+
+Started GET "/services" for 127.0.0.1 at 2014-09-12 12:04:33 -0400
+Processing by HomeController#services as HTML
+  Rendered home/services.html.erb within layouts/application (0.1ms)
+  [1m[36mSetting Load (0.2ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/partials/_main_menu.html.erb (22.4ms)
+  Rendered layouts/partials/_header.html.erb (28.5ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.2ms)
+Completed 200 OK in 658ms (Views: 653.3ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/KN_white.png" for 127.0.0.1 at 2014-09-12 12:04:34 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-1.jpg" for 127.0.0.1 at 2014-09-12 12:04:34 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-2.jpg" for 127.0.0.1 at 2014-09-12 12:04:34 -0400
+
+
+
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-5.jpg" for 127.0.0.1 at 2014-09-12 12:04:34 -0400
+Started GET "/assets/elegant_backgrounds/Elegant_Background-4.jpg" for 127.0.0.1 at 2014-09-12 12:04:34 -0400
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-3.jpg" for 127.0.0.1 at 2014-09-12 12:04:34 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-6.jpg" for 127.0.0.1 at 2014-09-12 12:04:34 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-7.jpg" for 127.0.0.1 at 2014-09-12 12:04:34 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-8.jpg" for 127.0.0.1 at 2014-09-12 12:04:34 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 12:04:35 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mSetting Load (0.2ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/partials/_main_menu.html.erb (23.3ms)
+  Rendered layouts/partials/_header.html.erb (29.6ms)
+  Rendered layouts/partials/_flashes.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.2ms)
+Completed 200 OK in 587ms (Views: 582.1ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-1.jpg" for 127.0.0.1 at 2014-09-12 12:04:36 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-2.jpg" for 127.0.0.1 at 2014-09-12 12:04:36 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-3.jpg" for 127.0.0.1 at 2014-09-12 12:04:36 -0400
+
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-4.jpg" for 127.0.0.1 at 2014-09-12 12:04:36 -0400
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-5.jpg" for 127.0.0.1 at 2014-09-12 12:04:36 -0400
+
+
+Started GET "/assets/KN_white.png" for 127.0.0.1 at 2014-09-12 12:04:36 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-6.jpg" for 127.0.0.1 at 2014-09-12 12:04:36 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-7.jpg" for 127.0.0.1 at 2014-09-12 12:04:36 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-8.jpg" for 127.0.0.1 at 2014-09-12 12:04:36 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 12:04:36 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[36mSetting Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/partials/_main_menu.html.erb (24.7ms)
+  Rendered layouts/partials/_header.html.erb (31.5ms)
+  Rendered layouts/partials/_flashes.html.erb (0.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "settings".* FROM "settings"  WHERE "settings"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/partials/_footer.html.erb (1.3ms)
+Completed 200 OK in 631ms (Views: 625.0ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/KN_white.png" for 127.0.0.1 at 2014-09-12 12:04:37 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-1.jpg" for 127.0.0.1 at 2014-09-12 12:04:37 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-2.jpg" for 127.0.0.1 at 2014-09-12 12:04:37 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-3.jpg" for 127.0.0.1 at 2014-09-12 12:04:37 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-4.jpg" for 127.0.0.1 at 2014-09-12 12:04:37 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-5.jpg" for 127.0.0.1 at 2014-09-12 12:04:37 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-8.jpg" for 127.0.0.1 at 2014-09-12 12:04:37 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-6.jpg" for 127.0.0.1 at 2014-09-12 12:04:37 -0400
+
+
+Started GET "/assets/elegant_backgrounds/Elegant_Background-7.jpg" for 127.0.0.1 at 2014-09-12 12:04:37 -0400
