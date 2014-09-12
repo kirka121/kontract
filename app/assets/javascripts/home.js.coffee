@@ -2,22 +2,13 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-
-
-
 ready = ->
 	$(".owl-carousel").owlCarousel({
-		navigation : true, 
-		slideSpeed : 300,
-		paginationSpeed : 400,
-		singleItem:true
-
-		
-		items : 1, 
-		itemsDesktop : false,
-		itemsDesktopSmall : false,
-		itemsTablet: false,
-		itemsMobile : false
+		navigation : false,
+		pagination: false,
+		autoPlay: true,
+		singleItem: true,
+		lazyLoad: true
 	});
 
 $(document).ready(ready)

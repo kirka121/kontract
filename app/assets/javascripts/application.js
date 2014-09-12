@@ -20,10 +20,5 @@
 //= require_tree .
 
 //= require turbolinks
-$(".owl-carousel").owlCarousel({
-    items:1,
-    dots:false,
-    lazyLoad:true,
-    loop:true,
-    autoPlay: true
+$('#nav').affix({
 });
