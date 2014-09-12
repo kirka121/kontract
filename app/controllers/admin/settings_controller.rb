@@ -8,10 +8,11 @@ class Admin::SettingsController < ApplicationController
 	def update
 		setting = Setting.find(1)
 
-		setting.site_name = params[:setting][:site_name]
+		setting.update!(setting_params)
+
 
 		if setting.save
-			flash.now[:form_success] = "Success"
+			flash.now[:form_success] = "Settings have been updated."
 
 			@settings = Setting.find(1)
 			render 'admin/settings/edit' 
@@ -23,5 +24,9 @@ class Admin::SettingsController < ApplicationController
 			if !user_signed_in?
 				redirect_to login_path	
 			end
+		end
+
+		def setting_params
+			params.require(:setting).permit(:site_name, :site_title, :site_copyright, :admin_email, :booking_email, :registration_mode, :subpages_active, :teams_active, :services_active)
 		end
 end
