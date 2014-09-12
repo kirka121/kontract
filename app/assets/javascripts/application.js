@@ -11,8 +11,19 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
-//= require turbolinks
+
 //= require bootstrap-switch
 //= require bootstrap
+//= require owl.carousel
 //= require_tree .
+
+//= require turbolinks
+$(".owl-carousel").owlCarousel({
+    items:1,
+    dots:false,
+    lazyLoad:true,
+    loop:true,
+    autoPlay: true
+});

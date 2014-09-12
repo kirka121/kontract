@@ -12,4 +12,8 @@
  *
  *= require_self
  *= require_tree .
+ *= require owl.carousel
+ *= require owl.theme
  */
+
+
