@@ -2,4 +2,11 @@
 	<li class="active"><%= link_to "Home", root_path %></li>
 	<li><%= link_to "Services", services_path %></li>
 	<li><%= link_to "Contact", contact_path %></li>
+	<li>
+		<% if user_signed_in? %>
+			<%= link_to "Control Panel", admin_path %>
+		<% else %>
+			<%= link_to "Login", login_path %>
+		<% end %>
+	</li>
 </ul>
