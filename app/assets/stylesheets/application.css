@@ -14,5 +14,5 @@
  *= require_tree .
  *= require owl.carousel
  *= require owl.theme
- *= require bootstrap2-switch
+ *= require bootstrap3-switch
  */

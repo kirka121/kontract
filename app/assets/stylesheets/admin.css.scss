@@ -60,23 +60,49 @@ body.admin_body{
 		padding: 0;
 		div.standard_form{
 			width: 100%;
-			form.default_update_form{
-				text-align: center;
-				width: 100%;
-				display: inline-block;
-				label.input_label{
-					text-align: left;
-					margin-left: 20px;	
+			table.standard_form_table{
+				width: 90%;
+				margin-left: auto;
+				margin-right: auto;
+				form.default_update_form{
+					text-align: center;
+					width: 100%;
+					display: inline-block;
 				}
-				input.input_field{
-					text-align: left;
-					width: 95%;
-					margin: 5px;
+				td.table_input_label{
+					width: 20%;
+					label.input_label{
+						text-align: left;
+						margin-left: 20px;	
+						display: inline;
+					}
 				}
-				input.btn{
-
-					width: 95%;
-					margin: 5px;
+				td.table_input_field{
+					input.input_field{
+						text-align: left;
+						width: 100%;
+						margin: 5px;
+						display: inline-block;
+					}
+					select{
+						text-align: left;
+						width: 100%;
+						margin: 5px;
+					}
+				}
+				td.table_button{
+					text-align: center;
+					input.btn{
+						width: 100%;
+						margin: 5px;
+					}
+				}
+				td.table_input_checkbox{
+					text-align: center;
+					.bootstrap-switch{
+						margin: 5px;
+						width: 150px;
+					}
 				}
 			}
 		}

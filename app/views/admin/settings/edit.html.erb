@@ -1,35 +1,46 @@
-<%= render 'admin/partials/tophalf' %>
-	<div class="standard_form">
-		<%= form_for @settings, url: {action: "update"}, html: { class: "default_update_form"} do |f| %>
-
-			<%= f.label :site_name,class: 'input_label' %>
-			<%= f.text_field :site_name, class: 'input_field' %><br/>
-
-			<%= f.label :site_title,class: 'input_label' %>
-			<%= f.text_field :site_title, class: 'input_field' %><br/>
-
-			<%= f.label :site_copyright,class: 'input_label' %>
-			<%= f.text_field :site_copyright, class: 'input_field' %><br/>
-
-			<%= f.label :admin_email,class: 'input_label' %>
-			<%= f.text_field :admin_email, class: 'input_field' %><br/> 
-
-			<%= f.label :booking_email,class: 'input_label' %>
-			<%= f.text_field :booking_email, class: 'input_field' %><br/> 
-
-			<%= f.label :registration_mode,class: 'input_label' %>
-			<%= f.text_field :registration_mode, class: 'input_field' %><br/>
-
-			<%= f.label :subpages_active,class: 'input_label' %>
-			<%=f.check_box :subpages_active%><br/>
-
-			<%= f.label :teams_active,class: 'input_label' %>
-			<%= f.check_box :teams_active%><br/>
-
-			<%= f.label :services_active,class: 'input_label' %>
-			<%= f.check_box :services_active%><br/>
-
-			<%= f.submit "Update", class: "btn btn-large btn-submit" %>
-		<% end %>
+<div class="standard_form">
+		<table class='standard_form_table'>
+			<%= form_for @settings, url: {action: "update"}, html: { class: "default_update_form"} do |f| %>
+				<tr>
+					<td class="table_input_label"><%= f.label :site_name,class: 'input_label' %></td>
+					<td class="table_input_field"><%= f.text_field :site_name, class: 'input_field' %></td>
+				</tr>
+				<tr>
+					<td class="table_input_label"><%= f.label :site_title,class: 'input_label' %></td>
+					<td class="table_input_field"><%= f.text_field :site_title, class: 'input_field' %></td>
+				</tr>
+				
+				<tr>
+					<td class="table_input_label"><%= f.label :site_copyright,class: 'input_label' %></td>
+					<td class="table_input_field"><%= f.text_field :site_copyright, class: 'input_field' %></td>
+				</tr>
+				<tr>
+					<td class="table_input_label"><%= f.label :admin_email,class: 'input_label' %></td>
+					<td class="table_input_field"><%= f.text_field :admin_email, class: 'input_field' %></td>
+				</tr>
+				<tr>
+					<td class="table_input_label"><%= f.label :booking_email,class: 'input_label' %></td>
+					<td class="table_input_field"><%= f.text_field :booking_email, class: 'input_field' %></td>
+				</tr>
+				<tr>
+					<td class="table_input_label"><%= f.label :registration_mode,class: 'input_label' %></td>
+					<td class="table_input_field"><%= f.select :registration_mode, registration_options  %></td>
+				</tr>
+				<tr>
+					<td class="table_input_label"><%= f.label :subpages_active,class: 'input_label' %></td>
+					<td class="table_input_checkbox"><%=f.check_box :subpages_active, class: 'checkbox' %></td>
+				</tr>
+				<tr>
+					<td class="table_input_label"><%= f.label :teams_active,class: 'input_label' %></td>
+					<td class="table_input_checkbox"><%= f.check_box :teams_active, class: 'checkbox' %></td>
+				</tr>
+				<tr>
+					<td class="table_input_label"><%= f.label :services_active,class: 'input_label' %></td>
+					<td class="table_input_checkbox"><%= f.check_box :services_active , class: 'checkbox'%></td>
+				</tr>
+				<tr>
+					<td class="table_button"colspan="100%"><%= f.submit "Update", class: "btn btn-large btn-submit" %></td>
+				</tr>
+			<% end %>
+		</table>
 	</div>
-<%= render 'admin/partials/bottomhalf' %>
