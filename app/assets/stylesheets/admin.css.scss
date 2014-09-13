@@ -60,10 +60,19 @@ body.admin_body{
 		padding: 0;
 		div.standard_form{
 			width: 100%;
+			margin-left: 5px;
+			margin-bottom: 10px;
+			border-radius: 4px;
+			border: 1px solid black;
 			table.standard_form_table{
 				width: 90%;
 				margin-left: auto;
 				margin-right: auto;
+				th{
+					font-size: 20px;
+					padding: 10px;
+					color: white;
+				}
 				form.default_update_form{
 					text-align: center;
 					width: 100%;
@@ -105,6 +114,9 @@ body.admin_body{
 					}
 				}
 			}
+		}
+		div.standard_form#general_settings{
+			
 		}
 	}
 }

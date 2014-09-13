@@ -1,6 +1,8 @@
 <ul class="nav">
 	<li class="active"><%= link_to "Home", root_path %></li>
-	<li><%= link_to "Services", services_path %></li>
+	<% if yield_site_settings.services_active %>
+		<li><%= link_to "Services", services_path %></li>
+	<% end %>
 	<li><%= link_to "Contact", contact_path %></li>
 	<li>
 		<% if user_signed_in? %>

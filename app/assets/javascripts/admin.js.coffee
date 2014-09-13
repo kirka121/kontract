@@ -19,7 +19,18 @@ ready = ->
 	$("#setting_site_title").focusout -> 
 		do validate('setting_site_title')
 		return
-
+	$("#setting_site_copyright").focusout -> 
+		do validate('setting_site_copyright')
+		return
+	$("#setting_admin_email").focusout -> 
+		do validate('setting_admin_email')
+		return
+	$("#setting_booking_email").focusout -> 
+		do validate('setting_booking_email')
+		return
+	$("#setting_registration_mode").focusout -> 
+		do validate('setting_registration_mode')
+		return
 
 $(document).ready(ready)
 $(document).on('page:load', ready)
