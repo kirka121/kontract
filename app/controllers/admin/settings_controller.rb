@@ -10,13 +10,12 @@ class Admin::SettingsController < ApplicationController
 
 		setting.update!(setting_params)
 
+		flash.now[:form_success] = setting_params.to_s
 
-		if setting.save
-			flash.now[:form_success] = "Settings have been updated."
+		@settings = Setting.find(1)
 
-			@settings = Setting.find(1)
-			render 'admin/settings/edit' 
-		end
+		render 'admin/settings/edit' 
+
 	end
 
 	private

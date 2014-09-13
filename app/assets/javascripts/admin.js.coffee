@@ -2,7 +2,7 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 ready = ->
-  	$('input:checkbox').bootstrapSwitch();
+  	$('input.table_switch_checkbox').bootstrapSwitch();
 
 
 $(document).ready(ready)
