@@ -8,14 +8,14 @@ class Admin::SettingsController < ApplicationController
 	def update
 		setting = Setting.find(1)
 
-		setting.update!(setting_params)
-
-		flash.now[:form_success] = setting_params.to_s
+		if setting.update_attributes(setting_params)
+			flash.now[:form_success] = 'Settings have been updates.'
+		else
+			flash.now[:form_warning] = generate_error_message(setting.errors.full_messages)
+		end
 
 		@settings = Setting.find(1)
-
 		render 'admin/settings/edit' 
-
 	end
 
 	private

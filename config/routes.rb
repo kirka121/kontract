@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 	devise_for :users
 
-devise_scope :user do
+	devise_scope :user do
 		get 'login' => 'devise/sessions#new'
 		get 'register' => 'devise/registrations#new'
 		delete 'logout' => 'devise/sessions#destroy'
@@ -20,7 +20,7 @@ devise_scope :user do
 		resources :services
 	end
 	
-
+	mount Judge::Engine => '/judge'
 	# Example of regular route:
 	#   get 'products/:id' => 'catalog#view'
 

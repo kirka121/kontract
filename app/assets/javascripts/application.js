@@ -17,6 +17,9 @@
 //= require bootstrap-switch
 //= require bootstrap
 //= require owl.carousel
+//= require underscore
+//= require json2
+//= require judge
 //= require_tree .
 
 //= require turbolinks
