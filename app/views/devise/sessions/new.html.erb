@@ -9,10 +9,10 @@
 		<h2>Control Panel Login</h2>
 		<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 			<div>
-			<%= f.email_field :email, autofocus: true, placeholder: 'email', class: 'form_field' %></div>
+			<%= f.email_field :email, autofocus: true, placeholder: 'email', validate: true, class: 'form_field' %></div>
 
 			<div>
-				<%= f.password_field :password, autocomplete: "off", placeholder: 'password', class: 'form_field' %>
+				<%= f.password_field :password, autocomplete: "off", validate: true, placeholder: 'password', class: 'form_field' %>
 			</div>
 
 			<div id="login_button_contrainer">

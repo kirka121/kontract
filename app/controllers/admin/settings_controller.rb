@@ -9,7 +9,7 @@ class Admin::SettingsController < ApplicationController
 		setting = Setting.find(1)
 
 		if setting.update_attributes(setting_params)
-			flash.now[:form_success] = 'Settings have been updates.'
+			flash.now[:form_success] = 'Settings have been updated.'
 		else
 			flash.now[:form_warning] = generate_error_message(setting.errors.full_messages)
 		end

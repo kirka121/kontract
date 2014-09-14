@@ -19,7 +19,8 @@ gem 'passenger'
 gem "bootstrap-switch-rails"
 gem 'owlcarousel-rails'
 gem 'judge'
-gem 'paperclip'
+gem 'tinymce-rails'
+
 # gem 'bcrypt', '~> 3.1.7'
 
 # gem 'unicorn'

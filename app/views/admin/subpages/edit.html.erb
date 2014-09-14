@@ -1,1 +1,17 @@
-edit a asubpage: <%= @subpage_to_edit.title %>
+<div class="standard_form">
+	<%= form_for @subpage_to_edit, url: {action: "update"}, html: { class: "default_update_form"}, :builder => Judge::FormBuilder do |f| %>
+		<table class='standard_form_table'>
+			<tr>
+				<td class="table_input_label"><%= f.label :title,class: 'input_label' %></td>
+				<td class="table_input_field"><%= f.text_field :title, validate: true, class: 'input_field' %></td>
+			</tr>
+			<tr>
+				<td class="table_input_label"><%= f.label :content,class: 'input_label' %></td>
+				<td class="table_input_field"><%= f.text_area :content, :rows => 40, :cols => 120, validate: true, class: 'tinymce' %><%= tinymce %></td>
+			</tr>
+			<tr>
+				<td class="table_button"colspan="100%"><%= f.submit "Update", class: "btn btn-large btn-submit" %></td>
+			</tr>
+		</table>
+	<% end %>
+</div>

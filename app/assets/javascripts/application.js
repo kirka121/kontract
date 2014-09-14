@@ -20,6 +20,7 @@
 //= require underscore
 //= require json2
 //= require judge
+//= require tinymce-jquery
 //= require_tree .
 
 //= require turbolinks

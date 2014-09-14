@@ -10,6 +10,19 @@ class Admin::SubpagesController < ApplicationController
 		@subpage_to_edit = @subpages.find(params[:id])
 	end
 
+	def update
+		subpage = Subpage.find(params[:id])
+
+		if subpage.update_attributes(subpage_params)
+			flash.now[:form_success] = 'Supbage has been updated.'
+		else
+			flash.now[:form_warning] = generate_error_message(subpage.errors.full_messages)
+		end
+
+		@subpages = Subpage.all
+		render 'admin/subpages/index' 
+	end
+
 	def destroy
 
 	end
@@ -19,5 +32,9 @@ class Admin::SubpagesController < ApplicationController
 			if !user_signed_in?
 				redirect_to login_path	
 			end
+		end
+
+		def subpage_params
+			params.require(:subpage).permit(:title, :content)
 		end
 end
