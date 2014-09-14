@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 	get '/admin', to: 'admin#index', as: 'admin'
 	get '/contact', to: 'home#contact', as: 'contact'
 	get '/services', to: 'home#services', as: 'services'
+	get '/sp', to: 'sp#index', as: 'sp'
 
 	namespace :admin do
 		resources :subpages

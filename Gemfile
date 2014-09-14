@@ -19,7 +19,7 @@ gem 'passenger'
 gem "bootstrap-switch-rails"
 gem 'owlcarousel-rails'
 gem 'judge'
-gem 'validates_email_format_of'
+gem 'paperclip'
 # gem 'bcrypt', '~> 3.1.7'
 
 # gem 'unicorn'

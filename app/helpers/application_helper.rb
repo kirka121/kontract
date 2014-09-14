@@ -4,6 +4,10 @@ module ApplicationHelper
 		return Setting.find(1)
 	end
 
+	def yield_site_subpages
+		return Subpage.all
+	end
+
 	def randomized_background_image
 		string = "assets/elegant_backgrounds/Elegant_Background-"
 		digit = rand(1..20)

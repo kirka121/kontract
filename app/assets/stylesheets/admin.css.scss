@@ -120,3 +120,37 @@ body.admin_body{
 		}
 	}
 }
+table.sub_menu{
+	width: 100%;
+	margin-left: 5px;
+	th#sub_menu_title{
+		width: 10%;
+	}
+	th#sub_menu_content{
+		width: 60%;
+	}
+	th#sub_menu_author{
+		width: 10%;
+	}
+	th#sub_menu_edit{
+		width: 10%;
+	}
+	th#sub_menu_delete{
+		width:10%;
+	}
+	td#sub_menu_title{
+		
+	}
+	td#sub_menu_content{
+		
+	}
+	td#sub_menu_author{
+		text-align: center;
+	}
+	td#sub_menu_edit{
+		text-align: center;
+	}
+	td#sub_menu_delete{
+		text-align: center;
+	}
+}

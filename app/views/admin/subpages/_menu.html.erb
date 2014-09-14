@@ -1,8 +1,18 @@
+<table class="sub_menu">
+	<tr>
+		<th id="sub_menu_title">title</th>
+		<th id="sub_menu_content">content</th>
+		<th id="sub_menu_author">author</th>
+		<th id="sub_menu_edit">edit</th>
+		<th id="sub_menu_delete">delete</th>
+	</tr>
 <% @subpages.each do |page| %>
-	<%= page.title %>
-	<%= page.content %>
-	<%= page.user %>
-	<%= link_to "Edit" ,edit_admin_subpage_path(page) %>
-	<%= link_to 'Destroy',  admin_subpage_path(page),  method: :delete, data: { confirm: 'Are you sure?' } %>
-	</br>
-<% end %>		
+	<tr>
+		<td id="sub_menu_title"><%= page.title %></td>
+		<td id="sub_menu_content"><%= truncate(page.content , :length => 70, :separator => ' ')%></td>
+		<td id="sub_menu_author"><%= page.user %></td>
+		<td id="sub_menu_edit"><%= link_to "Edit" ,edit_admin_subpage_path(page) %></td>
+		<td id="sub_menu_delete"><%= link_to 'Delete',  admin_subpage_path(page),  method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	</tr>
+<% end %>	
+</table>	
