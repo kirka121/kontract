@@ -19,7 +19,8 @@ gem 'passenger'
 gem "bootstrap-switch-rails"
 gem 'owlcarousel-rails'
 gem 'judge'
-gem 'tinymce-rails'
+gem 'tinymce-rails'										# => https://github.com/spohlenz/tinymce-rails
+gem 'tinymce-rails-imageupload', '~> 4.0.0.beta' 		# => https://github.com/PerfectlyNormal/tinymce-rails-imageupload
 
 # gem 'bcrypt', '~> 3.1.7'
 

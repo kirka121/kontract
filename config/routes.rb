@@ -22,6 +22,8 @@ Rails.application.routes.draw do
 	end
 	
 	mount Judge::Engine => '/judge'
+	post '/tinymce_assets' => 'tinymce_assets#create'
+	
 	# Example of regular route:
 	#   get 'products/:id' => 'catalog#view'
 

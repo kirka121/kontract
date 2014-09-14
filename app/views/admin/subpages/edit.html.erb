@@ -7,7 +7,7 @@
 			</tr>
 			<tr>
 				<td class="table_input_label"><%= f.label :content,class: 'input_label' %></td>
-				<td class="table_input_field"><%= f.text_area :content, :rows => 40, :cols => 120, validate: true, class: 'tinymce' %><%= tinymce %></td>
+				<td class="table_input_field"><%= f.text_area :content, :rows => 40, :cols => 120, validate: true, class: 'tinymce' %><%= tinymce plugins: "uploadimage" %></td>
 			</tr>
 			<tr>
 				<td class="table_button"colspan="100%"><%= f.submit "Update", class: "btn btn-large btn-submit" %></td>
