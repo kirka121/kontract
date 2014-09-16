@@ -5,8 +5,6 @@ Implementation stack:
     - nginx with passenger
     - postgres sql
 
-Gems:
-    - devise
 
 Key features (must have):
     - admin;
