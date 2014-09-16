@@ -31,6 +31,10 @@ ready = ->
 	$("#setting_registration_mode").focusout -> 
 		do validate('setting_registration_mode')
 		return
+	$(".registrationmode").click ->
+		$(".registrationmode").addClass("active").not(this).removeClass("active");
+		$("#setting_registration_mode").attr("value", this.value);
+		return
 
 $(document).ready(ready)
 $(document).on('page:load', ready)

@@ -2,8 +2,9 @@ module AdminHelper
 
 	def registration_options
 		[
-      		['Normal', 1],
-      		['E-Mail confirmation', 2],
+      		['Open', 1],
+      		['Require email confirmation', 2],
+      		['Closed', 3]
       	]
 	end
 end
