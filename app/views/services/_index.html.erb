@@ -1,0 +1,8 @@
+<% @services.each do |service| %>
+  <tr>
+    <td><%= service.name %></td>
+    <td><%= number_to_currency service.price %></td>
+    <td><%= link_to "Edit", edit_service_path(service), remote: true, class: "btn" %></td>
+    <td><%= link_to "Delete", service_delete_path(service), remote: true, class: "btn btn-danger" %></td>
+  </tr>
+<% end %>

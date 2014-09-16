@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
+  	resources :services do
+  		get 'delete'
+  	end
+
 	devise_for :users
 
-devise_scope :user do
+	devise_scope :user do
 		get 'login' => 'devise/sessions#new'
 		get 'register' => 'devise/registrations#new'
 		delete 'logout' => 'devise/sessions#destroy'
@@ -11,16 +15,19 @@ devise_scope :user do
 
 	get '/admin', to: 'admin#index', as: 'admin'
 	get '/contact', to: 'home#contact', as: 'contact'
-	get '/services', to: 'home#services', as: 'services'
+	#get '/services', to: 'home#services', as: 'services'
+	get '/sp', to: 'sp#index', as: 'sp'
 
 	namespace :admin do
 		resources :subpages
-		resources :settings, :only => [:edit]
+		resources :settings, :only => [:edit, :update]
 		resources :teams
 		resources :services
 	end
 	
-
+	mount Judge::Engine => '/judge'
+	post '/tinymce_assets' => 'tinymce_assets#create'
+	
 	# Example of regular route:
 	#   get 'products/:id' => 'catalog#view'
 

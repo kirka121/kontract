@@ -1,12 +1,26 @@
 <% if controller_name != 'admin' %>
-<div id="main_header">
-	<div id="header_contrainer">
-		<div id="header_logo">
-			<%= yield_site_settings.site_name %>
-		</div>
-		<div id="header_menu">
-			<%= render 'layouts/partials/main_menu' %>
-		</div>
+	<div class="affix" data-spy="affix" data-offset-top="0" id="nav">
+		<div id="main_header_top_spacer"></div>
+		<div id="navbar_contrainer">
+			<div class="navbar">
+			    <div class="navbar-inner">
+					<div class="logo"><%= link_to image_tag('KN_white.png', height: 40, width: 40), {action: 'index', controller: 'home'} %> <%= yield_site_settings.site_title %></div>
+					<%= render 'layouts/partials/main_menu' %>
+			    </div> 
+		    </div>
+		</div> 
+		<div id="main_header_bottom_spacer"></div>
 	</div>
-</div>
+
+	<div id="owl-demo" class="owl-carousel owl-theme">
+		<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-1.jpg' %> </div>
+		<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-2.jpg' %> </div>
+		<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-3.jpg' %> </div>
+		<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-4.jpg' %> </div>
+		<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-5.jpg' %> </div>
+		<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-6.jpg' %> </div>
+		<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-7.jpg' %> </div>
+		<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-8.jpg' %> </div>
+	</div>
 <% end %>
+

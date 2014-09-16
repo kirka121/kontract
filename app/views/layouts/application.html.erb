@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Kirka</title>
+	<title><%= yield_site_settings.site_title %></title>
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= favicon_link_tag 'favicon.ico' %>
 	<%= csrf_meta_tags %>
 </head>
 <body>
 	<!-- TODO: \/ figure out a better way to filuter out control panel yield vs visitor / client yield -->
-	<% if (controller_name=='sessions' && action_name=='new') || controller_name=='admin' || params[:controller]=='admin/subpages' || params[:controller]=='admin/settings' || params[:controller] == 'admin/teams' || params[:controller] == 'admin/services'%>
+	<% if controller_name=='admin' || params[:controller]=='admin/subpages' || params[:controller]=='admin/settings' || params[:controller] == 'admin/teams' || params[:controller] == 'admin/services'%>
+		<%= render 'admin/partials/tophalf' %>
+		<%= render 'layouts/partials/flashes' %>
+			<%= yield %>
+		<%= render 'admin/partials/bottomhalf' %>
+	<% elsif controller_name=='sessions' && action_name=='new'  %>
 		<%= render 'layouts/partials/flashes' %>
 		<%= yield %>
 	<% else %>
 		<%= render 'layouts/partials/header' %>
 		<div id="main_contrainer">
 			<%= render 'layouts/partials/flashes' %>
-			
 			<%= yield %>
 		</div>
 		<%= debug(params) if Rails.env.development? %>
 		<%= render 'layouts/partials/footer' %>
 	<% end %>
-	
 </body>
 </html>
