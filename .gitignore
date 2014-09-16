@@ -1,5 +1,8 @@
 database.yml
 
+*.log
+/tmp/
+
 *.rbc
 capybara-*.html
 .rspec
