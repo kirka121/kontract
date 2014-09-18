@@ -5,6 +5,27 @@ class Admin::SubpagesController < ApplicationController
 		@subpages = Subpage.all
 	end
 
+	def new
+		@subpages = Subpage.all
+		@subpage = Subpage.new
+	end
+
+	def create
+		subpage = Subpage.new
+
+		subpage.attributes = subpage_params
+
+		if subpage.save!
+			flash.now[:form_success] = 'Supbage has been created.'
+		else
+			flash.now[:form_warning] = generate_error_message(subpage.errors.full_messages)
+		end
+
+		@subpages = Subpage.all
+		render 'admin/subpages/index'
+
+	end
+
 	def edit
 		@subpages = Subpage.all
 		@subpage_to_edit = @subpages.find(params[:id])

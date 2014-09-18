@@ -1,11 +1,3 @@
-<script>
-	$('#registrationmode').click(function() {
-	    $('#registrationmode').addClass('active').not(this).removeClass('active');
-
-	    // TODO: insert whatever you want to do with $(this) here
-	});
-</script>
-
 <div class="standard_form" id='general_settings'>
 	<%= form_for @settings, url: {action: "update"}, html: { class: "default_update_form"}, :builder => Judge::FormBuilder do |f| %>
 		<table class='standard_form_table'>
@@ -63,7 +55,5 @@
 	<% end %>
 </div>
 <div class="standard_form" id='carousel_settings'>
-	<% %>
 
-	<% end %>
 </div>

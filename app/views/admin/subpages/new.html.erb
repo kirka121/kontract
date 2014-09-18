@@ -1,1 +1,7 @@
-new suppage
+<%= form_for @subpage, url: {action: "create"}, html: { class: "default_update_form"}, :builder => Judge::FormBuilder do |f| %>
+	<%= f.label :title, class: 'input_label' %>
+	<%= f.text_field :title, class: 'input_field' %>
+	<%= f.label :content, class: 'input_label' %>
+	<%= f.text_field :content, class: 'input_field' %>
+	<%= f.submit 'Create subpage', class: 'input_field' %>
+<% end %>
