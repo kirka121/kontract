@@ -19,6 +19,7 @@ Rails.application.routes.draw do
 	#get '/services', to: 'home#services', as: 'services'
 
 	get '/sp', to: 'sp#index', as: 'sp'
+	get '/sp/:id', to: 'sp#show', as: 'spid'
 
 	namespace :admin do
 		resources :subpages
