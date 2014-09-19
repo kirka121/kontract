@@ -1,7 +1,7 @@
 module ApplicationHelper
 
 	def yield_site_settings
-		return Setting.find(1)
+		return Setting.first
 	end
 
 	def yield_site_subpages

@@ -30,7 +30,7 @@ class ServicesController < ApplicationController
 	end
 
 	def delete
-		@service = Service.find(params[:service_id]
+		@service = Service.find(params[:service_id])
 	end
 
 	def destroy

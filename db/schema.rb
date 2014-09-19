@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140918202719) do
+ActiveRecord::Schema.define(version: 20140919142505) do
 
   create_table "services", force: true do |t|
     t.string  "name"
@@ -34,12 +34,23 @@ ActiveRecord::Schema.define(version: 20140918202719) do
 
   create_table "subpages", force: true do |t|
     t.text     "title"
-    t.string   "user"
+    t.integer  "author"
     t.text     "content"
-    t.datetime "created_at"
-    t.datetime "updated_at"
     t.string   "link_header"
     t.boolean  "active"
+    t.integer  "subsection_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "subsections", force: true do |t|
+    t.string   "title"
+    t.boolean  "enabled"
+    t.integer  "author"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", force: true do |t|

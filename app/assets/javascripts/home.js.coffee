@@ -10,7 +10,10 @@ ready = ->
 		singleItem: true,
 		lazyLoad: true
 	});
-	skrollr.init();
+	skrollr.init({
+	    forceHeight: false,
+	    smoothScrolling: false
+	});
 
 $(document).ready(ready)
 $(document).on('page:load', ready)

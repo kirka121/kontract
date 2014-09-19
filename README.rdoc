@@ -8,9 +8,8 @@ Implementation stack:
 
 Key features (must have):
     - admin;
-        - login
-        - logout
-        - forgot password
+        - site settings
+        - subpages
         - admin can CRUD on member
             - team member:
                 - name
@@ -46,6 +45,7 @@ Key features (must have):
 
         - confirmation system on team members activities, payment received etc
         - mailing system notifying admin of occurences on the website
+        - notification system
 
     - members;
         - check timetable (email / txt msg notifications in advance if want)
@@ -80,6 +80,8 @@ Brainstorm Dump (optionals):
     - referal program
     - app store / plugin program
     - think of supporting camping businesses, kids camps or kids extracurricular activity businesses (e.g. karate), church and aa groups, etc
+    - free memberships have a copy-able service. any new visitor who browses the "hot services" page, can find free services and copy them as a starting point for his own service
+    - paid memberships are private. like github repos
 
 Glossary:
     - admin;        the primary customer to whom Kontract caters. admin is the team lead, manager, business owner etc, who is paying for our service, and thus is receiving administrative priviledges on the website he has purchased.
@@ -88,3 +90,7 @@ Glossary:
     - visitors;         potential clients, people who visit the website and stay on it longer than 10 seconds at a time. these are potential future customers.
     - CRUD;         create edit update delete; short form for a 4 set of functionality. e.g. registre a user = create. change user password = update / edit, delete is self explanatory.
     - in-house payment system: either a paypal setup or credit debit card setup that allows to accept and send payments through the website interface
+
+
+Sources used:
+    - skrollr.js: easy paralax effects. http://webdesign.tutsplus.com/tutorials/jazz-up-a-static-webpage-with-subtle-parallax--webdesign-10195

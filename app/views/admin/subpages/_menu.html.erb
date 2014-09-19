@@ -10,7 +10,7 @@
 	<tr>
 		<td id="sub_menu_title"><%= page.title %></td>
 		<td id="sub_menu_content"><%= truncate(page.content , :length => 70, :separator => ' ')%></td>
-		<td id="sub_menu_author"><%= page.user %></td>
+		<td id="sub_menu_author"><%= page.user.email %></td>
 		<td id="sub_menu_edit"><%= link_to "Edit" ,edit_admin_subpage_path(page) %></td>
 		<td id="sub_menu_delete"><%= link_to 'Delete',  admin_subpage_path(page),  method: :delete, data: { confirm: 'Are you sure?' } %></td>
 	</tr>
