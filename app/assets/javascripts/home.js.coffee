@@ -10,6 +10,7 @@ ready = ->
 		singleItem: true,
 		lazyLoad: true
 	});
+	skrollr.init();
 
 $(document).ready(ready)
 $(document).on('page:load', ready)

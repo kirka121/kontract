@@ -21,6 +21,8 @@
 //= require json2
 //= require judge
 //= require tinymce-jquery
+//= require skrollr
+//= require skrollr.menu
 //= require_tree .
 
 //= require turbolinks

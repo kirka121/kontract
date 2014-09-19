@@ -6,7 +6,6 @@ class SpController < ApplicationController
 
 	def show
 		@page = Subpage.find(params[:id])
-
-
 	end
+
 end
