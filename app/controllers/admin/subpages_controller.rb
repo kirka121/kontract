@@ -11,9 +11,11 @@ class Admin::SubpagesController < ApplicationController
 	end
 
 	def create
+		@subpages = Subpage.all
 		subpage = Subpage.new
 
 		subpage.attributes = subpage_params
+		subpage.user = current_user.email
 
 		if subpage.save!
 			flash.now[:form_success] = 'Supbage has been created.'
@@ -21,7 +23,6 @@ class Admin::SubpagesController < ApplicationController
 			flash.now[:form_warning] = generate_error_message(subpage.errors.full_messages)
 		end
 
-		@subpages = Subpage.all
 		render 'admin/subpages/index'
 
 	end
@@ -45,7 +46,16 @@ class Admin::SubpagesController < ApplicationController
 	end
 
 	def destroy
+		subpage = Subpage.find(params[:id])
 
+		if subpage.destroy!
+			flash.now[:form_success] = 'Supbage has been deletes.'
+		else
+			flash.now[:form_warning] = generate_error_message(subpage.errors.full_messages)
+		end
+
+		@subpages = Subpage.all
+		render 'admin/subpages/index'
 	end
 
 	private

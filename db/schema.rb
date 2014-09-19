@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140916155448) do
+ActiveRecord::Schema.define(version: 20140918202719) do
 
   create_table "services", force: true do |t|
     t.string  "name"
@@ -38,6 +38,8 @@ ActiveRecord::Schema.define(version: 20140916155448) do
     t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "link_header"
+    t.boolean  "active"
   end
 
   create_table "users", force: true do |t|
