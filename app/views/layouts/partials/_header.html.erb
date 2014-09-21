@@ -1,5 +1,5 @@
 <% if controller_name != 'admin' %>
-	<div class="affix" data-spy="affix" data-offset-top="0" id="nav" data-0="opacity: 1" data-300="opacity: 0.3;">
+	<div <% if yield_site_settings.header_mode == 2%>class="affix main_header" data-spy="affix" style="position: fixed;"<% end %> class='main_header' data-offset-top="0" id="nav" data-0="opacity: 1" data-300="opacity: 0.3;">
 		<div id="main_header_top_spacer"></div>
 		<div id="navbar_contrainer">
 			<div class="navbar">
