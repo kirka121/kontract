@@ -37,3 +37,6 @@ ready = ->
 		return
 
 $(document).ready(ready)
+
+$(document).on 'page:receive', ->
+	tinymce.remove()
