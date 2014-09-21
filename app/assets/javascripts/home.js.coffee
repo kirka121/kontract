@@ -3,17 +3,13 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 ready = ->
-	$(".owl-carousel").owlCarousel({
-		navigation : false,
-		pagination: false,
-		autoPlay: true,
-		singleItem: true,
+	$(".owl-carousel").owlCarousel
+		navigation: false
+		pagination: false
+		autoPlay: true
+		singleItem: true
 		lazyLoad: true
-	});
-	skrollr.init({
-	    forceHeight: false,
-	    smoothScrolling: false
-	});
+	skrollr.init().refresh();
 
-$(document).ready(ready)
-$(document).on('page:load', ready)
+$(document).on "page:change", ->
+	do ready
