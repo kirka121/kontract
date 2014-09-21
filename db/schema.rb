@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140919142505) do
+ActiveRecord::Schema.define(version: 20140921152909) do
 
   create_table "services", force: true do |t|
     t.string  "name"
@@ -30,6 +30,15 @@ ActiveRecord::Schema.define(version: 20140919142505) do
     t.boolean  "services_active"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "carousel_mode"
+    t.integer  "carousel_transition"
+    t.boolean  "carousel_enabled"
+    t.integer  "header_mode"
+    t.integer  "header_fade"
+    t.boolean  "header_enabled"
+    t.integer  "footer_mode"
+    t.integer  "footer_fade"
+    t.boolean  "footer_enabled"
   end
 
   create_table "subpages", force: true do |t|

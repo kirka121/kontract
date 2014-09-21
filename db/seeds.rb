@@ -7,7 +7,28 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Setting.delete_all
-Setting.create(id: 1, site_name: 'Kontract',site_title: 'Kontract Network - Awesome Services', site_copyright: 'Copyright &copy; 2014 Katata Network. All Rights Reserved.', admin_email: 'kirka121@gmail.com', booking_email: 'kirka121@gmail.com', registration_mode: 1, subpages_active: true , teams_active: true, services_active: true, created_at: Time.now)
+Setting.create(
+				id: 1,
+				site_name: 'Kontract',
+				site_title: 'Kontract Network - Awesome Services',
+				site_copyright: 'Copyright &copy; 2014 Katata Network. All Rights Reserved.',
+				admin_email: 'kirka121@gmail.com', 
+				booking_email: 'kirka121@gmail.com', 
+				registration_mode: 1, 
+				subpages_active: true , 
+				teams_active: true, 
+				services_active: true, 
+				created_at: Time.now,
+				header_enabled: true,
+				header_mode: 1,
+				header_fade: 0,
+				footer_enabled: true,
+				footer_mode: 1,
+				footer_fade: 0,
+				carousel_enabled: true,
+				carousel_mode: 1,
+				carousel_transition: 1 
+				)
 
 Subpage.delete_all
 Subpage.create(subsection_id: 1, user_id: 1, link_header: 'First', active: true, title: 'First subpage here', content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', author: 1)
