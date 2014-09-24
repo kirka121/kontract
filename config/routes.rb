@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
 	
-  	resources :services do
-  		get 'delete'
-  	end
+		resources :services do
+			get 'delete'
+		end
+
+		
 
 	devise_for :users
 
@@ -22,7 +24,9 @@ Rails.application.routes.draw do
 	get '/sp/:id', to: 'sp#show', as: 'spid'
 
 	namespace :admin do
-		resources :subpages
+		resources :subpages do
+			get 'delete'
+		end
 		resources :settings, :only => [:edit, :update]
 		resources :teams
 		resources :services

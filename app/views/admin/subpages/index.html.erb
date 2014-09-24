@@ -1,1 +1,7 @@
-<%= render 'admin/subpages/menu' %>
+<table class="subpage-index">
+    <%= render "index" %>
+</table>
+
+<%= link_to "New Subpage", new_admin_subpage_path, remote: true, class: "btn btn-primary" %>
+<div id="subpage-modal" class="modal hide fade"></div>
+<div class="new-subpage"></div>

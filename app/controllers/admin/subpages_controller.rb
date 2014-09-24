@@ -1,5 +1,6 @@
 class Admin::SubpagesController < ApplicationController
 	before_action :check_if_admin
+	respond_to :html, :js
 
 	def index
 		@subpages = Subpage.all
@@ -10,12 +11,21 @@ class Admin::SubpagesController < ApplicationController
 		@subpage = Subpage.new
 	end
 
+	def show
+		@subpages = Subpage.all
+		@subpage = Subpage.find(params[:id])
+	end
+
 	def create
+		@subpages = Subpage.all
+		@subpage = Subpage.create(subpage_params)
+	end
+
+	def OLDcreate
 		@subpages = Subpage.all
 		subpage = Subpage.new
 
 		subpage.attributes = subpage_params
-		subpage.user = current_user.email
 
 		if subpage.save!
 			flash.now[:form_success] = 'Supbage has been created.'
@@ -66,6 +76,6 @@ class Admin::SubpagesController < ApplicationController
 		end
 
 		def subpage_params
-			params.require(:subpage).permit(:title, :content)
+			params.require(:subpage).permit(:title, :content, :link_header, :active)
 		end
 end
