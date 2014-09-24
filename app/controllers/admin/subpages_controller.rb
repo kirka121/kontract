@@ -21,22 +21,16 @@ class Admin::SubpagesController < ApplicationController
 		@subpage = Subpage.find(params[:id])
 	end
 
+
 	def edit
-		@subpages = Subpage.all
-		@subpage_to_edit = @subpages.find(params[:id])
+		@subpage = Subpage.find(params[:id])
 	end
 
 	def update
-		subpage = Subpage.find(params[:id])
-
-		if subpage.update_attributes(subpage_params)
-			flash.now[:form_success] = 'Supbage has been updated.'
-		else
-			flash.now[:form_warning] = generate_error_message(subpage.errors.full_messages)
-		end
-
 		@subpages = Subpage.all
-		render 'admin/subpages/index' 
+		@subpage = Subpage.find(params[:id])
+
+		@subpage.update_attributes(subpage_params)
 	end
 
 	def delete
