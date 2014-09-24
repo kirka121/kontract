@@ -11,30 +11,14 @@ class Admin::SubpagesController < ApplicationController
 		@subpage = Subpage.new
 	end
 
-	def show
-		@subpages = Subpage.all
-		@subpage = Subpage.find(params[:id])
-	end
-
 	def create
 		@subpages = Subpage.all
 		@subpage = Subpage.create(subpage_params)
 	end
 
-	def OLDcreate
+	def show
 		@subpages = Subpage.all
-		subpage = Subpage.new
-
-		subpage.attributes = subpage_params
-
-		if subpage.save!
-			flash.now[:form_success] = 'Supbage has been created.'
-		else
-			flash.now[:form_warning] = generate_error_message(subpage.errors.full_messages)
-		end
-
-		render 'admin/subpages/index'
-
+		@subpage = Subpage.find(params[:id])
 	end
 
 	def edit
@@ -55,7 +39,18 @@ class Admin::SubpagesController < ApplicationController
 		render 'admin/subpages/index' 
 	end
 
+	def delete
+		@subpage = Subpage.find(params[:subpage_id])
+	end
+
 	def destroy
+		@subpages = Subpage.all
+		@subpage = Subpage.find(params[:id])
+
+		@subpage.destroy	
+	end
+
+	def OLDdestroy
 		subpage = Subpage.find(params[:id])
 
 		if subpage.destroy!
