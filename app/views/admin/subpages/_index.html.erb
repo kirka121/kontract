@@ -1,8 +1,10 @@
 <% @subpages.each do |subpage| %>
   <tr>
     <td><%= subpage.title %></td>
-    <td><%= truncate(subpage.content , :length => 70, :separator => ' ') %></td>
+    <td><%= truncate(subpage.content.html_safe , :length => 70, :separator => ' ') %></td>
     <td><%= link_to "Edit", edit_admin_subpage_path(subpage), remote: true, class: "btn" %></td>
     <td><%= link_to "Delete", admin_subpage_delete_path(subpage), remote: true, class: "btn btn-danger" %></td>
   </tr>
 <% end %>
+
+
