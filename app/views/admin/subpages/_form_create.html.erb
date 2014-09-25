@@ -5,19 +5,19 @@
     <div class="control-group">
       <%= f.label :title, class:"control-label" %>
       <div class="controls">
-        <%= f.text_field :title %>
+        <%= f.text_field :title, validate: true %>
       </div>
     </div>
     <div class="control-group">
       <%= f.label :link_header, class: "control-label" %>
       <div class="controls">
-        <%= f.text_field :link_header %>
+        <%= f.text_field :link_header, validate: true %>
       </div>
     </div>
     <div class="control-group">
       <%= f.label :content, class: "control-label" %>
       <div class="controls">
-        <%= f.text_area :content, class: 'tinymce' %>
+        <%= f.text_area :content, validate: true ,class: 'tinymce' %><%= tinymce plugins: "uploadimage" %>
       </div>
     </div>
     <div class="control-group">
