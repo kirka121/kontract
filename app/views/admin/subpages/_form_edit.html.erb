@@ -1,0 +1,35 @@
+<%= form_for @subpage, remote: true, html: { class: "form-horizontal", style: "display:inline;" }, url: {action: 'update'}, :builder => Judge::FormBuilder do |f| %>
+  <div class="modal-body">
+    <ul class="errors"></ul>
+
+    <div class="control-group">
+      <%= f.label :title, class:"control-label" %>
+      <div class="controls">
+        <%= f.text_field :title %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :link_header, class: "control-label" %>
+      <div class="controls">
+        <%= f.text_field :link_header %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :content, class: "control-label" %>
+      <div class="controls">
+        <%= f.text_area :content, class: 'tinymce' %><%= tinymce plugins: "uploadimage" %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :active, class: "control-label" %>
+      <div class="controls">
+        <%= f.check_box :active%>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <%= f.submit class: "btn btn-primary btn-submit" %>
+    <%= link_to "Cancel", "#", class: "btn", data: {dismiss: "modal"} %>
+  </div>
+<% end %>
+

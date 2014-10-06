@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
 	
-  	resources :services do
-  		get 'delete'
-  	end
+		resources :services do
+			get 'delete'
+		end
+
+		
 
 	devise_for :users
 
@@ -23,7 +25,9 @@ Rails.application.routes.draw do
 	post '', to: 'home#arduino_on', as: 'arduino_on'
 
 	namespace :admin do
-		resources :subpages
+		resources :subpages do
+			get 'delete'
+		end
 		resources :settings, :only => [:edit, :update]
 		resources :teams
 		resources :services

@@ -4,7 +4,9 @@
 		<li><%= link_to "Services", services_path %></li>
 	<% end %>
 	<% yield_site_subpages.each do |page| %>
-		<li><%= link_to page.link_header.capitalize, spid_path(page) %></li>
+		<% if page.active %>
+			<li><%= link_to page.link_header.capitalize, spid_path(page) %></li>
+		<% end %>
 	<% end %>
 	<li><%= link_to "Contact", contact_path %></li>
 	<li>

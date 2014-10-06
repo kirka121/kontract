@@ -1,0 +1,5 @@
+tinymce.remove()
+$('.tinymce').each(function(elem) {tinyMCE.execCommand('mceAddControl',false,elem.id);});
+
+$("#subpage-modal").html("<%= escape_javascript(render 'new') %>")
+$("#subpage-modal").modal("show")
