@@ -13,14 +13,16 @@ class Admin::SubpagesController < ApplicationController
 
 	def create
 		@subpages = Subpage.all
-		@subpage = Subpage.create(subpage_params)
+		@subpage = Subpage.create(subpage_params) do |page|
+			page.user_id = 2
+			page.subsection_id = 2
+		end
 	end
 
 	def show
 		@subpages = Subpage.all
 		@subpage = Subpage.find(params[:id])
 	end
-
 
 	def edit
 		@subpage = Subpage.find(params[:id])

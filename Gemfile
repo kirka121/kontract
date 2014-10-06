@@ -25,6 +25,7 @@ gem 'tinymce-rails-imageupload', '~> 4.0.0.beta' 		 # => https://github.com/Perf
 gem 'skrollr-rails'                                  # => https://github.com/reed/skrollr-rails
 
 gem 'dino' #arduin ocontrol
+gem 'delayed_job_active_record'
 
 # gem 'bcrypt', '~> 3.1.7'
 # gem 'unicorn'

@@ -5,11 +5,10 @@
 ready = ->
 	$(".owl-carousel").owlCarousel
 		navigation: false
-		pagination: false
 		autoPlay: true
+		pagination: false
 		singleItem: true
-		lazyLoad: true
+
 	skrollr.init().refresh();
 
-$(document).on "page:change", ->
-	do ready
+$(document).ready(ready)

@@ -5,5 +5,5 @@ $("ul.errors").html("")
   <% end %>
 <% else %>
   $(".subpage-index").html("<%= escape_javascript(render 'index') %>")
-  $("#subpage-modal").modal("hide")
+  $("#subpage-modal").fadeOut("slow");
 <% end %>

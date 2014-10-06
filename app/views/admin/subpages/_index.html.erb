@@ -1,10 +1,18 @@
-<% @subpages.each do |subpage| %>
-  <tr>
-    <td><%= subpage.title %></td>
-    <td><%= truncate(subpage.content.html_safe , :length => 70, :separator => ' ') %></td>
-    <td><%= link_to "Edit", edit_admin_subpage_path(subpage), remote: true, class: "btn" %></td>
-    <td><%= link_to "Delete", admin_subpage_delete_path(subpage), remote: true, class: "btn btn-danger" %></td>
-  </tr>
-<% end %>
-
-
+<table class="sub_menu table table-bordered">
+	<tr>
+		<th id="sub_menu_title">title</th>
+		<th id="sub_menu_content">content</th>
+		<th id="sub_menu_author">author</th>
+		<th id="sub_menu_edit">edit</th>
+		<th id="sub_menu_delete">delete</th>
+	</tr>
+	<% @subpages.each do |subpage| %>
+		<tr>
+			<td><%= subpage.title %></td>
+			<td><%= truncate(subpage.content.html_safe , :length => 70, :separator => ' ') %></td>
+			<td><%= subpage.subsection.title %>
+			<td><%= link_to "Edit", edit_admin_subpage_path(subpage), remote: true, class: "btn" %></td>
+			<td><%= link_to "Delete", admin_subpage_delete_path(subpage), remote: true, class: "btn btn-danger" %></td>
+		</tr>
+	<% end %>
+</table>

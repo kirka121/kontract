@@ -1,0 +1,3 @@
+todo:
+- allow carousel images to be uploaded from cp
+- allow different transitions on carousel
