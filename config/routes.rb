@@ -20,6 +20,7 @@ Rails.application.routes.draw do
 
 	get '/sp', to: 'sp#index', as: 'sp'
 	get '/sp/:id', to: 'sp#show', as: 'spid'
+	post '', to: 'home#arduino_on', as: 'arduino_on'
 
 	namespace :admin do
 		resources :subpages

@@ -24,6 +24,8 @@ gem 'tinymce-rails'										               # => https://github.com/spohlenz/tin
 gem 'tinymce-rails-imageupload', '~> 4.0.0.beta' 		 # => https://github.com/PerfectlyNormal/tinymce-rails-imageupload
 gem 'skrollr-rails'                                  # => https://github.com/reed/skrollr-rails
 
+gem 'dino' #arduin ocontrol
+
 # gem 'bcrypt', '~> 3.1.7'
 # gem 'unicorn'
 # gem 'capistrano-rails', group: :development
