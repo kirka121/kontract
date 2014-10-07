@@ -10,7 +10,7 @@ class Admin::SubsectionsController < ApplicationController
 	def create
 		@subsections = Subsection.all
 		@subsection = Subsection.create(subsection_params) do |section|
-			section.user_id = 2
+			section.user_id = current_user.id
 		end
 	end
 

@@ -1,12 +1,12 @@
 <div class="subpage-index">
 	<%= render "index" %>
 </div>
-<%= link_to "New Subpage", new_admin_subpage_path, remote: true, class: "btn btn-primary" %>
+<%= link_to "New Subpage", new_admin_subpage_path, remote: true, class: "btn btn-primary btn-default" %>
 <div id="subpage-modal"></div>
 <br/><hr/>
 
 <div class="subsection-index">
 	<%= render partial: 'admin/subsections/index' %>
 </div>
-<%= link_to "New Section", new_admin_subsection_path, remote: true, class: "btn btn-primary" %>
+<%= link_to "New Section", new_admin_subsection_path, remote: true, class: "btn btn-default btn-primary" %>
 <div id="subsection-modal"></div>

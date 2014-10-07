@@ -10,13 +10,14 @@ class Admin::SubpagesController < ApplicationController
 	def new
 		@subpages = Subpage.all
 		@subpage = Subpage.new
+
+		@sections = Subsection.all
 	end
 
 	def create
 		@subpages = Subpage.all
 		@subpage = Subpage.create(subpage_params) do |page|
-			page.user_id = 2
-			page.subsection_id = 2
+			page.user_id = current_user.id
 		end
 	end
 
@@ -27,6 +28,8 @@ class Admin::SubpagesController < ApplicationController
 
 	def edit
 		@subpage = Subpage.find(params[:id])
+
+		@sections = Subsection.all
 	end
 
 	def update
@@ -47,19 +50,6 @@ class Admin::SubpagesController < ApplicationController
 		@subpage.destroy	
 	end
 
-	def OLDdestroy
-		subpage = Subpage.find(params[:id])
-
-		if subpage.destroy!
-			flash.now[:form_success] = 'Supbage has been deletes.'
-		else
-			flash.now[:form_warning] = generate_error_message(subpage.errors.full_messages)
-		end
-
-		@subpages = Subpage.all
-		render 'admin/subpages/index'
-	end
-
 	private
 		def check_if_admin
 			if !user_signed_in?
@@ -68,6 +58,6 @@ class Admin::SubpagesController < ApplicationController
 		end
 
 		def subpage_params
-			params.require(:subpage).permit(:title, :content, :link_header, :active)
+			params.require(:subpage).permit(:title, :content, :link_header, :active, :subsection_id)
 		end
 end

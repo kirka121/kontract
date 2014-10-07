@@ -4,6 +4,6 @@ $("ul.errors").html("")
     $("ul.errors").append($("<li />").html("<%= message.html_safe %>"))
   <% end %>
 <% else %>
-  $(".subpage-index").html("<%= escape_javascript(render 'index_subpages') %>")
+  $(".subpage-index").html("<%= escape_javascript(render 'index') %>")
   $("#subpage-modal").fadeOut("slow");
 <% end %>

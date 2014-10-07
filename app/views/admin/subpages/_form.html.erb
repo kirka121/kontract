@@ -17,6 +17,12 @@
 			</div>
 		</div>
 		<div class="control-group">
+			<%= f.label :subsection_id, class: "control-label" %>
+			<div class="controls">
+				<%= f.select :subsection_id, @sections.map{ |s| [s.title, s.id]}, include_blank: 'None' %>
+			</div>
+		</div>
+		<div class="control-group">
 			<%= f.label :content, class: "control-label" %>
 			<div class="controls">
 				<%= f.text_area :content, validate: true ,class: 'tinymce' %><%= tinymce plugins: "uploadimage" %>
@@ -25,7 +31,7 @@
 		<div class="control-group">
 			<%= f.label :active, class: "control-label" %>
 			<div class="controls">
-				<%= f.check_box :active%>
+				<%=f.check_box :active, class: 'table_switch_checkbox' %>
 			</div>
 		</div>
 	</div>
