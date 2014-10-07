@@ -1,0 +1,9 @@
+$("ul.errors").html("")
+<% if @subsection.errors.any? %>
+  <% @subsection.errors.full_messages.each do |message| %>
+    $("ul.errors").append($("<li />").html("<%= message.html_safe %>"))
+  <% end %>
+<% else %>
+  $(".subsection-index").html("<%= escape_javascript(render 'index') %>")
+  $("#subsection-modal").fadeOut("slow");
+<% end %>

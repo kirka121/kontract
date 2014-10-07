@@ -1,0 +1,5 @@
+tinymce.remove()
+$('.tinymce').each(function(elem) {tinyMCE.execCommand('mceAddControl',false,elem.id);});
+
+$("#subsection-modal").html("<%= escape_javascript(render 'edit') %>");
+$("#subsection-modal").hide().fadeIn("slow");

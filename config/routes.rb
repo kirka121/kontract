@@ -1,11 +1,9 @@
 Rails.application.routes.draw do
 	
-		resources :services do
-			get 'delete'
-		end
-
-		
-
+	resources :services do
+		get 'delete'
+	end
+	
 	devise_for :users
 
 	devise_scope :user do
@@ -18,13 +16,14 @@ Rails.application.routes.draw do
 
 	get '/admin', to: 'admin#index', as: 'admin'
 	get '/contact', to: 'home#contact', as: 'contact'
-	#get '/services', to: 'home#services', as: 'services'
-
 	get '/sp', to: 'sp#index', as: 'sp'
 	get '/sp/:id', to: 'sp#show', as: 'spid'
 	
 	namespace :admin do
 		resources :subpages do
+			get 'delete'
+		end
+		resources :subsections do
 			get 'delete'
 		end
 		resources :settings, :only => [:edit, :update]

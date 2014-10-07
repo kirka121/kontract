@@ -1,0 +1,11 @@
+<div class="">
+  <h3>Delete Section</h3>
+</div>
+<div class="">
+<ul class="errors"></ul>
+Are you sure you wish to delete <b><%= @subsection.title %></b>?
+</div>
+<div class="">
+  <%= link_to "Yes, Delete This Section", admin_subsection_path(@subsection), method: :delete, remote: true, class: "btn btn-danger" %>
+  <%= link_to "No, Please Don't", "#", class: "btn", data: { dismiss: "modal" } %>
+</div>

@@ -1,0 +1,25 @@
+<% type=="edit" ? action = "update" : action = "create" %>
+
+<%= form_for @subsection, remote: true, html: { class: "form-horizontal", style: "display:inline;" }, url: {action: action}, :builder => Judge::FormBuilder do |f| %>
+	<div class="">
+		<ul class="errors"></ul>
+
+		<div class="control-group">
+			<%= f.label :title, class:"control-label" %>
+			<div class="controls">
+				<%= f.text_field :title, validate: true %>
+			</div>
+		</div>
+		<div class="control-group">
+			<%= f.label :enabled, class: "control-label" %>
+			<div class="controls">
+				<%= f.check_box :enabled%>
+			</div>
+		</div>
+	</div>
+	<div class="">
+		<%= f.submit class: "btn btn-primary btn-submit" %>
+		<%= link_to "Cancel", "#", class: "btn", data: {dismiss: "modal"} %>
+	</div>
+<% end %>
+

@@ -4,6 +4,7 @@ class Admin::SubpagesController < ApplicationController
 
 	def index
 		@subpages = Subpage.all
+		@subsections = Subsection.all
 	end
 
 	def new
