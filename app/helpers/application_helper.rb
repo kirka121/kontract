@@ -12,6 +12,20 @@ module ApplicationHelper
 		return Subsection.all
 	end
 
+	def display_section?(section)
+		active = false
+
+		if section.enabled && section.subpages.count > 0
+			section.subpages.each do |page|
+				if page.active
+					active = true
+				end
+			end
+		end
+
+		return active
+	end
+
 	def randomized_background_image
 		string = "assets/elegant_backgrounds/Elegant_Background-"
 		digit = rand(1..20)

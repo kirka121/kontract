@@ -3,24 +3,32 @@
 	<% if yield_site_settings.services_active %>
 		<li><%= link_to "Services", services_path %></li>
 	<% end %>
-	<% if yield_site_sections.count > 0 %>
+	<% if yield_site_sections.count > 0 %> <!-- if there are sections present, proceed -->
 		<% yield_site_sections.each do |section| %>
-			<% if section.enabled && section.subpages.count > 0%>
+			<% if display_section?(section)%> <!-- if current section is enabled, and it has pages in it, out of which at least one is active -->
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= section.title %><span class="caret"></span></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= section.title.capitalize %><span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
 						<% section.subpages.each do |page| %>
-							<% if page.active %>
+							<% if page.active %>							<!-- if current page is active -->
 								<li><%= link_to page.link_header.capitalize, spid_path(page) %></li>
 							<% end %>
 						<% end %>
-						<li class="divider"></li>
-						<li><a href="#">One more separated link</a></li>
+						<!-- <li class="divider"></li>
+						<li><a href="#">divided link</a></li> -->
 					</ul>
 				</li>
 			<% end %>
 		<% end %>
 	<% end %>
+	<% if yield_site_subpages.count > 0 %>
+		<% yield_site_subpages.each do |page| %>
+			<% if page.active && page.subsection_id ==nil %>
+				<li><%= link_to page.link_header.capitalize, spid_path(page) %></li>
+			<% end %>
+		<% end %>
+	<% end %>
+
 	<li><%= link_to "Contact", contact_path %></li>
 	<li>
 		<% if user_signed_in? %>

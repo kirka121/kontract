@@ -3,7 +3,12 @@
 </div>
 <div class="">
 <ul class="errors"></ul>
-Are you sure you wish to delete <b><%= @subsection.title %></b>?
+Are you sure you wish to delete <b><%= @subsection.title %></b> section?<br/>
+This will also delete all of the section's children; <ul>
+	<% @subsection.subpages.each do |page| %>
+		<li><b><%= page.link_header %></b></li>
+	<% end %>
+	</ul>
 </div>
 <div class="">
   <%= link_to "Yes, Delete This Section", admin_subsection_path(@subsection), method: :delete, remote: true, class: "btn btn-danger" %>

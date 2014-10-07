@@ -12,6 +12,8 @@ class Admin::SubsectionsController < ApplicationController
 		@subsection = Subsection.create(subsection_params) do |section|
 			section.user_id = current_user.id
 		end
+
+		@subpages = Subpage.all
 	end
 
 	def show
@@ -28,6 +30,8 @@ class Admin::SubsectionsController < ApplicationController
 		@subsection = Subsection.find(params[:id])
 
 		@subsection.update_attributes(subsection_params)
+
+		@subpages = Subpage.all
 	end
 
 	def delete
@@ -37,6 +41,7 @@ class Admin::SubsectionsController < ApplicationController
 	def destroy
 		@subsections = Subsection.all
 		@subsection = Subsection.find(params[:id])
+		@subpages = Subpage.all
 
 		@subsection.destroy	
 	end
@@ -49,6 +54,6 @@ class Admin::SubsectionsController < ApplicationController
 		end
 
 		def subsection_params
-			params.require(:subsection).permit(:title, :active)
+			params.require(:subsection).permit(:title, :enabled)
 		end
 end

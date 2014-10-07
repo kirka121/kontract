@@ -3,3 +3,5 @@ $('.tinymce').each(function(elem) {tinyMCE.execCommand('mceAddControl',false,ele
 
 $("#subsection-modal").html("<%= escape_javascript(render 'new') %>");
 $("#subsection-modal").hide().fadeIn("slow");
+
+$('input.table_switch_checkbox').bootstrapSwitch();
