@@ -25,10 +25,6 @@
 			<%= render 'layouts/partials/flashes' %>
 			<%= yield %>
 		</div>
-		<% if (Rails.env.development?) %>
-		<%= debug(params) %>
-		<% end %>
-
 		<%= render 'layouts/partials/footer' %>
 	<% end %>
 </body>

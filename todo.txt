@@ -1,3 +1,13 @@
 todo:
 - allow carousel images to be uploaded from cp
-- allow different transitions on carousel
+- enable carousel / only 1 picture mode
+- footer options
+- header options
+- normalize forms. 
+	- standard non ajax form scenario with validatons and notifications
+	- standard ajax form scenario with validations and notifications
+	- use ajax when:
+		- there are multiple members
+		- there is full crud
+	- use regular form:
+		- there is only edit
