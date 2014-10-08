@@ -23,7 +23,7 @@ Rails.application.routes.draw do
 		resources :subsections do
 			get 'delete'
 		end
-		resources :settings, :only => [:edit, :update]
+		resources :settings, :only => [:edit, :update, :index]
 		resources :teams
 		resources :services
 	end

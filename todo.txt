@@ -1,4 +1,5 @@
 todo:
+- convert settings form to ajax only
 - allow carousel images to be uploaded from cp
 - enable carousel / only 1 picture mode
 - footer options

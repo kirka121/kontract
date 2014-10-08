@@ -1,5 +1,6 @@
 class Admin::SettingsController < ApplicationController
 	before_action :check_if_admin
+	respond_to :html, :js
 
 	def edit
 		@settings = Setting.find(1)
