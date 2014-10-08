@@ -5,3 +5,26 @@ $("#subpage-modal").html("<%= escape_javascript(render 'new') %>");
 $("#subpage-modal").hide().fadeIn("slow");
 
 $('input.table_switch_checkbox').bootstrapSwitch();
+
+var validate;
+
+validate = function(elementid) {
+  return judge.validate(document.getElementById(elementid), {
+    valid: function(element) {
+      element.style.border = "1px solid green";
+    },
+    invalid: function(element, messages) {
+      element.style.border = "1px solid red";
+    }
+  });
+};
+
+$("#subpage_title").focusout(function() {
+  validate('subpage_title')();
+});
+$("#subpage_link_header").focusout(function() {
+  validate('subpage_link_header')();
+});
+$("#subpage_content").focusout(function() {
+  validate('subpage_content')();
+});

@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
-	
-	resources :services do
-		get 'delete'
-	end
-	
+	resources :services
+
 	devise_for :users
 
 	devise_scope :user do
