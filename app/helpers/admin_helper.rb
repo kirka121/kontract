@@ -10,9 +10,10 @@ module AdminHelper
 
 	def carousel_modes
 		[
-			['Always on', 1],
-			['Always off', 2],
-			['On home page only', 3]
+			['Everywhere', 1],
+			['On homepage only', 2],
+			['First image only', 3],
+			['First image only, on homepage only', 4]
 		]
 	end
 

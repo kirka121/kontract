@@ -1,0 +1,7 @@
+$("#mainsettings-modal").html("<%= escape_javascript(render 'edit_header') %>");
+$("#mainsettings-modal").hide().fadeIn("slow");
+
+$(".headermode").click(function() {
+	$(".headermode").addClass("active").not(this).removeClass("active");
+	$("#setting_carousel_mode").attr("value", this.value);
+});

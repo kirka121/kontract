@@ -1,0 +1,34 @@
+<script type="text/javascript">
+	$('input.table_switch_checkbox').bootstrapSwitch();
+</script>
+
+<div class="modal-header">
+  <h3><%= "Editing Footer Settings" %></h3>
+</div>
+
+<%= form_for @settings, remote: true, url: {action: "update_footer"}, html: { class: "default_update_form"}, :builder => Judge::FormBuilder do |f| %>
+	<table class='standard_form_table'>
+		<tr>
+			<td class="table_input_label"><%= f.label :footer_enabled,class: 'input_label' %></td>
+			<td class="table_input_checkbox"><%=f.check_box :footer_enabled, class: 'table_switch_checkbox' %></td>
+		</tr>
+		<tr>
+			<td class="table_input_label"><%= f.label :footer_mode,class: 'input_label' %></td>
+			<%= f.hidden_field :footer_mode %>
+			<td class="table_input_field">
+				<div class="btn-group">
+					<% footer_modes.each do |option| %>
+					  <button type="button" class="btn btn-default footermode <%= 'active' if option[1] == yield_site_settings.footer_mode %>" value="<%= option[1] %>"><%= option[0] %></button>
+				  	<% end %>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="table_input_label"><%= f.label :footer_fade,class: 'input_label' %></td>
+			<td class="table_input_field"><%= f.text_field :footer_fade, validate: true, class: 'input_field' %></td>
+		</tr>
+		<tr>
+			<td class="table_button"colspan="100%"><%= f.submit "Update", class: "btn btn-large btn-submit" %></td>
+		</tr>
+	</table>
+<% end %>

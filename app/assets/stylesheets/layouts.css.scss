@@ -1,11 +1,14 @@
 body{
 	font-family: 100%/1.5em 'Raleway', sans-serif;
 }
+$line_height_property: 50px;
 
 #con .well {
     height:400px;
 }
-
+#header_carousel_spacer{
+	height: $line_height_property+10;
+}
 #nav.main_header {
 	position: absolute;
     	top: 0;
@@ -30,7 +33,7 @@ body{
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#91e842', GradientType=0 );
 	}
 }
-$line_height_property: 50px;
+
 .navbar{
 	width: 1100px;
 	height: $line_height_property;

@@ -1,4 +1,42 @@
+<script type="text/javascript">
+	$('input.table_switch_checkbox').bootstrapSwitch();
+</script>
+
 <div class="modal-header">
   <h3><%= "Editing Carousel Settings" %></h3>
 </div>
-<%= render "form_carousel" %>
+
+<%= form_for @settings, remote: true, url: {action: "update_carousel"}, html: { class: "default_update_form"}, :builder => Judge::FormBuilder do |f| %>
+	<table class='standard_form_table'>
+		<tr>
+			<td class="table_input_label"><%= f.label :carousel_enabled,class: 'input_label' %></td>
+			<td class="table_input_checkbox"><%=f.check_box :carousel_enabled, class: 'table_switch_checkbox' %></td>
+		</tr>
+		<tr>
+			<td class="table_input_label"><%= f.label :carousel_mode,class: 'input_label' %></td>
+			<%= f.hidden_field :carousel_mode %>
+			<td class="table_input_field">
+				<div class="btn-group">
+					<% carousel_modes.each do |option| %>
+					  <button type="button" class="btn btn-default carouselmode <%= 'active' if option[1] == yield_site_settings.carousel_mode %>" value="<%= option[1] %>"><%= option[0] %></button>
+				  	<% end %>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="table_input_label"><%= f.label :carousel_transition,class: 'input_label' %></td>
+			<%= f.hidden_field :carousel_transition %>
+			<td class="table_input_field">
+				<div class="btn-group">
+					<% carousel_transitions.each do |option| %>
+					  <button type="button" class="btn btn-default carouseltransition <%= 'active' if option[1] == yield_site_settings.carousel_transition %>" value="<%= option[1] %>"><%= option[0] %></button>
+				  	<% end %>
+				</div>
+				<span style="color: red;">*currently not functioning</span>
+			</td>
+		</tr>
+		<tr>
+			<td class="table_button"colspan="100%"><%= f.submit "Update", class: "btn btn-large btn-submit" %></td>
+		</tr>
+	</table>
+<% end %>

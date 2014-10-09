@@ -14,6 +14,14 @@ class Admin::SettingsController < ApplicationController
 		@settings = Setting.find(1)
 	end
 
+	def edit_header
+		@settings = Setting.find(1)
+	end
+
+	def edit_footer
+		@settings = Setting.find(1)
+	end
+
 	def update
 		@setting = Setting.find(1)
 		if @setting.update_attributes(setting_params)
@@ -32,6 +40,24 @@ class Admin::SettingsController < ApplicationController
 		end
 	end
 
+	def update_header
+		@setting = Setting.find(1)
+		if @setting.update_attributes(setting_header_params)
+			flash.now[:form_success] = "Header settings have been updated."
+		else
+			flash.now[:form_errors] = "Header settings have NOT been updated, check for errors."
+		end
+	end
+
+	def update_footer
+		@setting = Setting.find(1)
+		if @setting.update_attributes(setting_footer_params)
+			flash.now[:form_success] = "Footer settings have been updated."
+		else
+			flash.now[:form_errors] = "Footer settings have NOT been updated, check for errors."
+		end
+	end
+
 
 	private
 		def check_if_admin
@@ -46,5 +72,13 @@ class Admin::SettingsController < ApplicationController
 
 		def setting_carousel_params
 			params.require(:setting).permit(:carousel_enabled, :carousel_mode, :carousel_transition)
+		end
+
+		def setting_header_params
+			params.require(:setting).permit(:header_enabled, :header_mode, :header_fade)
+		end
+
+		def setting_footer_params
+			params.require(:setting).permit(:footer_enabled, :footer_mode, :footer_fade)
 		end
 end

@@ -1,0 +1,7 @@
+$("#mainsettings-modal").html("<%= escape_javascript(render 'edit_footer') %>");
+$("#mainsettings-modal").hide().fadeIn("slow");
+
+$(".footermode").click(function() {
+	$(".footermode").addClass("active").not(this).removeClass("active");
+	$("#setting_carousel_mode").attr("value", this.value);
+});

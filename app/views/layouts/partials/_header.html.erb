@@ -12,15 +12,41 @@
 		<div id="main_header_bottom_spacer"></div>
 	</div>
 
-	<div id="owl-demo" class="owl-carousel owl-theme">
-		<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-1.jpg' %> </div>
-		<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-2.jpg' %> </div>
-		<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-3.jpg' %> </div>
-		<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-4.jpg' %> </div>
-		<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-5.jpg' %> </div>
-		<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-6.jpg' %> </div>
-		<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-7.jpg' %> </div>
-		<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-8.jpg' %> </div>
-	</div>
+<% 
+display_carousel = false
+display_more_than_one_image = false
+
+if yield_site_settings.carousel_enabled
+	display_carousel = true
+end
+
+if yield_site_settings.carousel_mode == 2 || yield_site_settings.carousel_mode == 4
+	if !(controller_name == 'home' && params[:action] == 'index')
+		display_carousel = false
+	end
+end
+
+if yield_site_settings.carousel_mode != 3 && yield_site_settings.carousel_mode != 4
+	display_more_than_one_image = true
+end
+%>
+	<% if display_carousel %>
+		<div id="owl-demo" class="owl-carousel owl-theme">
+			<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-1.jpg' %> </div>
+			<% if display_more_than_one_image %>
+				<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-2.jpg' %> </div>
+				<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-3.jpg' %> </div>
+				<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-4.jpg' %> </div>
+				<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-5.jpg' %> </div>
+				<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-6.jpg' %> </div>
+				<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-7.jpg' %> </div>
+				<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-8.jpg' %> </div>
+			<% end %>
+		</div>
+	<% else %>
+		<div id="header_carousel_spacer"></div>
+	<% end %>
 <% end %>
 
+<%= controller_name %><br/>
+<%= params[:action] %>

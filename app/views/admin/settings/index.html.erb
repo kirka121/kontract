@@ -1,8 +1,8 @@
 <div class="btn-group">
 	<%= link_to "Main", edit_admin_setting_path(1), remote: true, class: 'btn btn-default mainsettings', id: 'main_settings_trigger' %>
 	<%= link_to "Carousel", admin_setting_edit_carousel_path(1), remote: true, class: "btn btn-default mainsettings" %>
-	<%= link_to "Header", new_admin_subpage_path, remote: true, class: 'btn btn-default mainsettings' %>
-	<%= link_to "Footer", new_admin_subpage_path, remote: true, class: 'btn btn-default mainsettings' %>
+	<%= link_to "Header", admin_setting_edit_header_path(1), remote: true, class: 'btn btn-default mainsettings' %>
+	<%= link_to "Footer", admin_setting_edit_footer_path(1), remote: true, class: 'btn btn-default mainsettings' %>
 </div>
 
 <div id="mainsettings-modal"></div>
