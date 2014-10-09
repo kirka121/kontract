@@ -6,6 +6,10 @@ class Admin::SettingsController < ApplicationController
 		@settings = Setting.find(1)
 	end
 
+	def edit_Carousel
+
+	end
+
 	def update
 		setting = Setting.find(1)
 

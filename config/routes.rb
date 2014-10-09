@@ -23,7 +23,9 @@ Rails.application.routes.draw do
 		resources :subsections do
 			get 'delete'
 		end
-		resources :settings, :only => [:edit, :update, :index]
+		resources :settings, :only => [:edit, :update, :index] do
+			get 'edit_carousel'
+		end
 		resources :teams
 		resources :services
 	end
