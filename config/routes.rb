@@ -25,7 +25,8 @@ Rails.application.routes.draw do
 		end
 		resources :settings do
 			get 'edit_carousel'
-			post 'update_carousel'
+			put 'update_carousel'
+			patch 'update_carousel'
 		end
 		resources :teams
 		resources :services
