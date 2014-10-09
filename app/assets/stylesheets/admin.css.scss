@@ -64,56 +64,6 @@ body.admin_body{
 			margin-bottom: 10px;
 			border-radius: 4px;
 			border: 1px solid black;
-			table.standard_form_table{
-				width: 90%;
-				margin-left: auto;
-				margin-right: auto;
-				th{
-					font-size: 20px;
-					padding: 10px;
-					color: white;
-				}
-				form.default_update_form{
-					text-align: center;
-					width: 100%;
-					display: inline-block;
-				}
-				td.table_input_label{
-					width: 20%;
-					label.input_label{
-						text-align: left;
-						margin-left: 20px;	
-						display: inline;
-					}
-				}
-				td.table_input_field{
-					input.input_field{
-						text-align: left;
-						width: 100%;
-						margin: 5px;
-						display: inline-block;
-					}
-					select{
-						text-align: left;
-						width: 100%;
-						margin: 5px;
-					}
-				}
-				td.table_button{
-					text-align: center;
-					input.btn{
-						width: 100%;
-						margin: 5px;
-					}
-				}
-				td.table_input_checkbox{
-					text-align: center;
-					.bootstrap-switch{
-						margin: 5px;
-						width: 150px;
-					}
-				}
-			}
 		}
 		div.standard_form#general_settings{
 			
@@ -162,4 +112,70 @@ div.information_box{
 	margin: 10px;
 	border: 1px solid black;
 	border-radius: 5px;
+}
+table.standard_form_table{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	th{
+		font-size: 20px;
+		padding: 10px;
+		color: white;
+	}
+	form.default_update_form{
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+	td.table_input_label{
+		width: 10%;
+		min-width: 150px;
+		label.input_label{
+			text-align: left;
+			margin-left: 20px;	
+			display: inline;
+		}
+	}
+	td.table_input_field{
+		text-align: left;
+		width: 50%;
+		input.input_field{
+			text-align: left;
+			width: 100%;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			display: inline-block;
+		}
+		select{
+			text-align: left;
+			width: 100%;
+			margin: 5px;
+		}
+		.btn-group{
+			margin: 5px;
+			margin-left: 0px;
+		}
+	}
+	td.table_button{
+		text-align: left;
+		input.btn{
+			width: 100%;
+			margin: 5px;
+		}
+	}
+	td.table_input_checkbox{
+		text-align: left;
+		.bootstrap-switch{
+			margin: 5px;
+			margin-left: 0px;
+			width: 150px;
+		}
+	}
+	td.table_error_message{
+		width: 40%;
+		div{
+			margin-left: 20px;
+			text-align: left;
+		}
+	}
 }

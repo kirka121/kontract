@@ -1,55 +1,64 @@
-<%= form_for @settings, url: {action: "update"}, html: { class: "default_update_form"}, :builder => Judge::FormBuilder do |f| %>
-    <table class='standard_form_table'>
-        <tr>
-            <th colspan="100%">General</th>
-        </tr>
-        <tr>
-            <td class="table_input_label"><%= f.label :site_name,class: 'input_label' %></td>
-            <td class="table_input_field"><%= f.text_field :site_name, validate: true, class: 'input_field' %></td>
-        </tr>
-        <tr>
-            <td class="table_input_label"><%= f.label :site_title,class: 'input_label' %></td>
-            <td class="table_input_field"><%= f.text_field :site_title, validate: true, class: 'input_field' %></td>
-        </tr>
-        
-        <tr>
-            <td class="table_input_label"><%= f.label :site_copyright,class: 'input_label' %></td>
-            <td class="table_input_field"><%= f.text_field :site_copyright, validate: true, class: 'input_field' %></td>
-        </tr>
-        <tr>
-            <td class="table_input_label"><%= f.label :admin_email,class: 'input_label' %></td>
-            <td class="table_input_field"><%= f.text_field :admin_email, validate: true, class: 'input_field' %></td>
-        </tr>
-        <tr>
-            <td class="table_input_label"><%= f.label :booking_email,class: 'input_label' %></td>
-            <td class="table_input_field"><%= f.text_field :booking_email, validate: true, class: 'input_field' %></td>
-        </tr>
-        <tr>
-            <td class="table_input_label"><%= f.label :registration_mode,class: 'input_label' %></td>
-            <%= f.hidden_field :registration_mode %>
-            <td class="table_input_field">
-                <div class="btn-group">
-                    <% registration_options.each do |option| %>
-                      <button type="button" class="btn btn-default registrationmode <%= 'active' if option[1] == yield_site_settings.registration_mode %>" value="<%= option[1] %>"><%= option[0] %></button>
-                    <% end %>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td class="table_input_label"><%= f.label :subpages_active,class: 'input_label' %></td>
-            <td class="table_input_checkbox"><%=f.check_box :subpages_active, class: 'table_switch_checkbox' %></td>
-        </tr>
-        <tr>
-            <td class="table_input_label"><%= f.label :teams_active,class: 'input_label' %></td>
-            <td class="table_input_checkbox"><%= f.check_box :teams_active, class: 'table_switch_checkbox' %></td>
-        </tr>
-        <tr>
-            <td class="table_input_label"><%= f.label :services_active,class: 'input_label' %></td>
-            <td class="table_input_checkbox"><%= f.check_box :services_active, class: 'table_switch_checkbox'%></td>
-        </tr>
+<script type="text/javascript">
+	$('input.table_switch_checkbox').bootstrapSwitch();
+</script>
+<!--
+to work with validations, a form must follow the example of this form
+td with proper ID for label, input field, and error message are required
+-->
+<%= form_for @settings, remote: true, url: {action: 'update'}, html: { class: "default_update_form"}, :builder => Judge::FormBuilder do |f| %>
+	<table class='standard_form_table'>
+		<tr>
+			<td class="table_input_label"><%= f.label :site_name,class: 'input_label' %></td>
+			<td class="table_input_field"><%= f.text_field :site_name, validate: true, class: 'input_field' %></td>
+			<td class="table_error_message"><div id="site_name"></div></td>
+		</tr>
+		<tr>
+			<td class="table_input_label"><%= f.label :site_title,class: 'input_label' %></td>
+			<td class="table_input_field"><%= f.text_field :site_title, validate: true, class: 'input_field' %></td>
+			<td class="table_error_message"><div id="site_title"></div></td>
+		</tr>
+		
+		<tr>
+			<td class="table_input_label"><%= f.label :site_copyright,class: 'input_label' %></td>
+			<td class="table_input_field"><%= f.text_field :site_copyright, validate: true, class: 'input_field' %></td>
+			<td class="table_error_message"><div id="site_copyright"></div></td>
+		</tr>
+		<tr>
+			<td class="table_input_label"><%= f.label :admin_email,class: 'input_label' %></td>
+			<td class="table_input_field"><%= f.text_field :admin_email, validate: true, class: 'input_field' %></td>
+			<td class="table_error_message"><div id="admin_email"></div></td>
+		</tr>
+		<tr>
+			<td class="table_input_label"><%= f.label :booking_email,class: 'input_label' %></td>
+			<td class="table_input_field"><%= f.text_field :booking_email, validate: true, class: 'input_field' %></td>
+			<td class="table_error_message"><div id="booking_email"></div></td>
+		</tr>
+		<tr>
+			<td class="table_input_label"><%= f.label :registration_mode,class: 'input_label' %></td>
+			<%= f.hidden_field :registration_mode %>
+			<td class="table_input_field">
+				<div class="btn-group">
+					<% registration_options.each do |option| %>
+					  <button type="button" class="btn btn-default registrationmode <%= 'active' if option[1] == yield_site_settings.registration_mode %>" value="<%= option[1] %>"><%= option[0] %></button>
+					<% end %>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="table_input_label"><%= f.label :subpages_active,class: 'input_label' %></td>
+			<td class="table_input_checkbox"><%=f.check_box :subpages_active, class: 'table_switch_checkbox' %></td>
+		</tr>
+		<tr>
+			<td class="table_input_label"><%= f.label :teams_active,class: 'input_label' %></td>
+			<td class="table_input_checkbox"><%= f.check_box :teams_active, class: 'table_switch_checkbox' %></td>
+		</tr>
+		<tr>
+			<td class="table_input_label"><%= f.label :services_active,class: 'input_label' %></td>
+			<td class="table_input_checkbox"><%= f.check_box :services_active, class: 'table_switch_checkbox'%></td>
+		</tr>
 
-        <tr>
-            <td class="table_button"colspan="100%"><%= f.submit "Update", class: "btn btn-large btn-submit" %></td>
-        </tr>
-    </table>
+		<tr>
+			<td class="table_button"colspan="100%"><%= f.submit "Update", class: "btn btn-large btn-submit" %></td>
+		</tr>
+	</table>
 <% end %>

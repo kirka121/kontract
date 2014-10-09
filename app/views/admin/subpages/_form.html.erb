@@ -1,4 +1,4 @@
-<% type=="edit" ? action = "update" : action = "create" %>
+<% type=="edit" ? action = "update" : action = "index" %>
 
 <%= form_for @subpage, remote: true, html: { class: "form-horizontal", style: "display:inline;" }, url: {action: action}, :builder => Judge::FormBuilder do |f| %>
 	<div class="">

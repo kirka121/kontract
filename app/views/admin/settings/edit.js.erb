@@ -1,2 +1,43 @@
 $("#mainsettings-modal").html("<%= escape_javascript(render 'edit') %>");
 $("#mainsettings-modal").hide().fadeIn("slow");
+
+var getsecond;
+getsecond = function(str) {
+    return str.split('_')[1]+"_"+str.split('_')[2];
+};
+
+var validate;
+validate = function(elementid) {
+	return judge.validate(document.getElementById(elementid), {
+		valid: function(element) {
+			element.style.border = "1px solid green";
+			$("td.table_error_message div#"+getsecond(elementid)).html("");
+		},
+		invalid: function(element, messages) {
+			element.style.border = "1px solid red";
+		}
+	});
+};
+
+$("#setting_site_name").focusout(function() {
+	validate('setting_site_name')();
+});
+$("#setting_site_title").focusout(function() {
+	validate('setting_site_title')();
+});
+$("#setting_site_copyright").focusout(function() {
+	validate('setting_site_copyright')();
+});
+$("#setting_admin_email").focusout(function() {
+	validate('setting_admin_email')();
+});
+$("#setting_booking_email").focusout(function() {
+	validate('setting_booking_email')();
+});
+$("#setting_registration_mode").focusout(function() {
+	validate('setting_registration_mode')();
+});
+$(".registrationmode").click(function() {
+	$(".registrationmode").addClass("active").not(this).removeClass("active");
+	$("#setting_registration_mode").attr("value", this.value);
+});

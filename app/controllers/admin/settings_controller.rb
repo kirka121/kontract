@@ -2,25 +2,25 @@ class Admin::SettingsController < ApplicationController
 	before_action :check_if_admin
 	respond_to :html, :js
 
+	def index
+		
+	end
+
 	def edit
 		@settings = Setting.find(1)
 	end
 
-	def edit_Carousel
+	def edit_carousel
 
 	end
 
 	def update
-		setting = Setting.find(1)
-
-		if setting.update_attributes(setting_params)
-			flash.now[:form_success] = 'Settings have been updated.'
+		@setting = Setting.find(1)
+		if @setting.update_attributes(setting_params)
+			flash.now[:form_success] = "Settings have been updated."
 		else
-			flash.now[:form_warning] = generate_error_message(setting.errors.full_messages)
+			flash.now[:form_errors] = "Settings have NOT been updated, check for errors."
 		end
-
-		@settings = Setting.find(1)
-		render 'admin/settings/edit' 
 	end
 
 	private
