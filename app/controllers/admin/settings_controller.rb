@@ -79,6 +79,6 @@ class Admin::SettingsController < ApplicationController
 		end
 
 		def setting_footer_params
-			params.require(:setting).permit(:footer_enabled, :footer_mode, :footer_fade)
+			params.require(:setting).permit(:footer_enabled, :footer_mode)
 		end
 end

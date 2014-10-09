@@ -1,14 +1,18 @@
 <% if controller_name != 'admin' %>
-<footer class="footer">
-	<div id="footer_container">
-		<small>
-			<%= yield_site_settings.site_copyright.html_safe %>
-		</small>
-		<nav>
-			<ul>
-				<li><%= link_to "Contact", contact_path %></li>
-			</ul>
-		</nav>
-	</div>
-</footer>
+	<% if yield_site_settings.footer_enabled %>
+		<div id="actual_footer" <% if yield_site_settings.footer_mode ==2 %> class="navbar navbar-fixed-bottom"<% end %>>
+			<footer class="footer">
+				<div id="footer_container">
+					<small>
+						<%= yield_site_settings.site_copyright.html_safe %>
+					</small>
+					<nav>
+						<ul>
+							<li><%= link_to "Contact", contact_path %></li>
+						</ul>
+					</nav>
+				</div>
+			</footer>
+		</div>
+	<% end %>
 <% end %>

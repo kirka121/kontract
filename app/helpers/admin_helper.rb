@@ -35,8 +35,7 @@ module AdminHelper
 	def footer_modes
 		[
 			['Normal', 1],
-			['Fixed at bottom', 2],
-			['Fixed at bottom, fading', 3]
+			['Fixed at bottom', 2]
 		]
 	end
 end

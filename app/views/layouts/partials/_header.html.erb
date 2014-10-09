@@ -1,15 +1,17 @@
 <% if controller_name != 'admin' %>
-	<div <% if yield_site_settings.header_mode == 2%>class="affix main_header" data-spy="affix" style="position: fixed;"<% end %> class='main_header' data-offset-top="0" id="nav" data-0="opacity: 1; display: block;" data-350="opacity: 0.1; display: none;">
-		<div id="main_header_top_spacer"></div>
-		<div id="navbar_contrainer">
-			<div class="navbar">
-			    <div class="navbar-inner">
-					<div class="logo"><%= link_to image_tag('KN_white.png', height: 40, width: 40), {action: 'index', controller: 'home'} %> <%= yield_site_settings.site_title %></div>
-					<%= render 'layouts/partials/main_menu' %>
-			    </div> 
-		    </div>
-		</div> 
-		<div id="main_header_bottom_spacer"></div>
+	<% if yield_site_settings.header_enabled %>
+		<div <% if yield_site_settings.header_mode == 3 %>data-offset-top="0" data-0="opacity: 1; display: block;" data-<%= yield_site_settings.header_fade %>="opacity: 0.1; display: none;" class="affix main_header" data-spy="affix" style="position: fixed;" <% elsif yield_site_settings.header_mode == 2 %>style="position: fixed;"<% end %> id="nav" class ="main_header">
+			<div id="main_header_top_spacer"></div>
+			<div id="navbar_contrainer">
+				<div class="navbar">
+				    <div class="navbar-inner">
+						<div class="logo"><%= link_to image_tag('KN_white.png', height: 40, width: 40), {action: 'index', controller: 'home'} %> <%= yield_site_settings.site_title %></div>
+						<%= render 'layouts/partials/main_menu' %>
+				    </div> 
+			    </div>
+			</div> 
+			<div id="main_header_bottom_spacer"></div>
+		<% end %>
 	</div>
 
 <% 
@@ -47,6 +49,3 @@ end
 		<div id="header_carousel_spacer"></div>
 	<% end %>
 <% end %>
-
-<%= controller_name %><br/>
-<%= params[:action] %>
