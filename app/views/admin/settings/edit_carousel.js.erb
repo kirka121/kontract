@@ -1,2 +1,11 @@
 $("#mainsettings-modal").html("<%= escape_javascript(render 'edit_carousel') %>");
 $("#mainsettings-modal").hide().fadeIn("slow");
+
+$(".carouselmode").click(function() {
+	$(".carouselmode").addClass("active").not(this).removeClass("active");
+	$("#setting_carousel_mode").attr("value", this.value);
+});
+$(".carouseltransition").click(function() {
+	$(".carouseltransition").addClass("active").not(this).removeClass("active");
+	$("#setting_carousel_transition").attr("value", this.value);
+});

@@ -3,6 +3,9 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 ready = ->
 	$("#main_settings_trigger").click().addClass("active");
+	$(".mainsettings").click ->
+	  	$(".mainsettings").addClass("active").not(this).removeClass "active"
+	return
 
 
 $(document).ready(ready)

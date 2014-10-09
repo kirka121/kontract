@@ -11,7 +11,7 @@ class Admin::SettingsController < ApplicationController
 	end
 
 	def edit_carousel
-
+		@settings = Setting.find(1)
 	end
 
 	def update
@@ -22,6 +22,16 @@ class Admin::SettingsController < ApplicationController
 			flash.now[:form_errors] = "Settings have NOT been updated, check for errors."
 		end
 	end
+
+	def update_carousel
+		@setting = Setting.find(1)
+		if @setting.update_attributes(setting_params)
+			flash.now[:form_success] = "Settings have been updated."
+		else
+			flash.now[:form_errors] = "Settings have NOT been updated, check for errors."
+		end
+	end
+
 
 	private
 		def check_if_admin

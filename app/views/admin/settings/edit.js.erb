@@ -10,7 +10,7 @@ var validate;
 validate = function(elementid) {
 	return judge.validate(document.getElementById(elementid), {
 		valid: function(element) {
-			element.style.border = "1px solid green";
+			element.style.border = "2px solid lightgreen";
 			$("td.table_error_message div#"+getsecond(elementid)).html("");
 		},
 		invalid: function(element, messages) {
