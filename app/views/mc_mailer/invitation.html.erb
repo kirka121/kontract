@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+	</head>
+	<body>
+		<h1>MCCM Registration Invitation</h1>
+		<p><%= @user.first_name.capitalize + " " + @user.last_name.capitalize %> has sent you an invitation to join MC Countermeasures Inc. community at their website: http://www.mc-cm.com<br/>
+		Please follow the link in order to complete your registration:<br/>
+
+		<%= "http://"+yield_settings.server_url+"/invited?id="+@id .to_s+"&key="+@key.to_s %>
+
+		</p>
+	</body>
+</html>

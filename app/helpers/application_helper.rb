@@ -1,5 +1,32 @@
 module ApplicationHelper
 
+	def display_carousel
+		result = false
+
+		if yield_site_settings.carousel_enabled
+			result = true
+		end
+		
+		if yield_site_settings.carousel_mode == 2
+			if !(controller_name == 'home' && params[:action] == 'index')
+				result = false
+			end
+		end
+
+		return result
+	end
+
+	def test
+		return controller_name + " | " + params[:action]
+	end
+
+	def display_more_than_one_image
+		if yield_site_settings.carousel_mode != 3 && yield_site_settings.carousel_mode != 4
+			return true
+		end
+	end
+
+
 	def yield_site_settings
 		return Setting.first
 	end

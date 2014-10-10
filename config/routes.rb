@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-	resources :services
+	mount Judge::Engine => '/judge'
 
 	devise_for :users
 
@@ -9,17 +9,27 @@ Rails.application.routes.draw do
 		delete 'logout' => 'devise/sessions#destroy'
 	end
 
+
 	root 'home#index'
 
 	get '/admin', to: 'admin#index', as: 'admin'
 	get '/contact', to: 'home#contact', as: 'contact'
 	get '/sp', to: 'sp#index', as: 'sp'
 	get '/sp/:id', to: 'sp#show', as: 'spid'
+	post '/contact' => "home#send_feedback", :as => "sendfeedback"
+	post '/tinymce_assets' => 'tinymce_assets#create'
 	
+	resources :services, only: [:index]
+
 	namespace :admin do
 		resources :subpages do
 			get 'delete'
 		end
+
+		resources :news do
+			get 'delete'
+		end
+
 		resources :subsections do
 			get 'delete'
 		end
@@ -34,9 +44,10 @@ Rails.application.routes.draw do
 		resources :teams
 		resources :services
 	end
+
+
 	
-	mount Judge::Engine => '/judge'
-	post '/tinymce_assets' => 'tinymce_assets#create'
+	
 	
 	# Example of regular route:
 	#   get 'products/:id' => 'catalog#view'

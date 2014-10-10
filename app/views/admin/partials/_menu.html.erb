@@ -1,8 +1,9 @@
 <ul>
-	<li><%= link_to 'Home', root_path %></li>
+	<li><%= link_to 'site home', root_path %></li>
 	<li><%= link_to 'status', admin_path %></li>
-	<li><%= link_to 'settings', admin_settings_path %></li>
+	<li><%= link_to 'general settings', admin_settings_path %></li>
 	<li><%= link_to 'subpages & sections', admin_subpages_path %></li>
+	<li><%= link_to 'news', admin_news_index_path%></li>
 	<li><%= link_to 'teams', admin_teams_path %></li>
 	<li><%= link_to 'services', admin_services_path %></li>
 	<li><%= link_to('logout', destroy_user_session_path, :method => :delete) %></li>

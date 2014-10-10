@@ -13,9 +13,6 @@ class HomeController < ApplicationController
 		# end
 
 		# led.off
-
-	
-
 	end
 
 	def home
@@ -25,6 +22,22 @@ class HomeController < ApplicationController
 	def contact
 
 	end
+
+	def send_feedback
+		email = params["/contact"][:email]
+		name = params["/contact"][:name]
+		content = params["/contact"][:content]
+		proj_name = params["/contact"][:proj_name]
+
+		if McMailer.contactus(email,name,content,proj_name).deliver
+			flash[:form_success] = "Your E-Mail has been sent."
+			render 'contact'
+		else
+			flash[:form_errors] = "Your E-Mail failed to send."
+			render 'contact'
+		end
+	end
+
 	def services
 
 	end

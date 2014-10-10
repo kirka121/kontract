@@ -8,7 +8,6 @@ ready = ->
 		autoPlay: true
 		pagination: false
 		singleItem: true
-
-	skrollr.init().refresh();
+	skrollr.init({ forceHeight: false}).refresh()
 
 $(document).ready(ready)

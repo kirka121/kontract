@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+	</head>
+	<body>
+		<h1><%= @name %> Sent you feedback</h1>
+		<p>
+		Their email: <%= @email %><br/>
+		Their project: <%= @proj  %> <br/><br/>
+		Their feedback: <br/><%= @content.html_safe %><br/>
+		</p>
+		<p>
+		To login to the site, just follow this link: <%= @url %>.
+		</p>
+		<p>Thanks for joining and have a great day!</p>
+	</body>
+</html>

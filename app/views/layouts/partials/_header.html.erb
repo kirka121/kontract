@@ -13,25 +13,6 @@
 			<div id="main_header_bottom_spacer"></div>
 		<% end %>
 	</div>
-
-<% 
-display_carousel = false
-display_more_than_one_image = false
-
-if yield_site_settings.carousel_enabled
-	display_carousel = true
-end
-
-if yield_site_settings.carousel_mode == 2 || yield_site_settings.carousel_mode == 4
-	if !(controller_name == 'home' && params[:action] == 'index')
-		display_carousel = false
-	end
-end
-
-if yield_site_settings.carousel_mode != 3 && yield_site_settings.carousel_mode != 4
-	display_more_than_one_image = true
-end
-%>
 	<% if display_carousel %>
 		<div id="owl-demo" class="owl-carousel owl-theme">
 			<div class="item"> <%= image_tag 'elegant_backgrounds/Elegant_Background-1.jpg' %> </div>
