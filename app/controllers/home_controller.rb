@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-
+	respond_to :html, :js
 
 	def index
 		#arduino connectivity
@@ -20,23 +20,29 @@ class HomeController < ApplicationController
 	end
 
 	def contact
-
+		@feedbacks = Feedback.new
 	end
 
-	def send_feedback
-		email = params["/contact"][:email]
-		name = params["/contact"][:name]
-		content = params["/contact"][:content]
-		proj_name = params["/contact"][:proj_name]
+	def send_feedback	
+		@feedback = Feedback.new
 
-		if McMailer.contactus(email,name,content,proj_name).deliver
-			flash.now[:form_success] = "Your E-Mail has been sent."
+		if @feedback.save(feedback_params)
+			if McMailer.contactus(feedback_params).deliver
+				flash.now[:form_success] = "Your E-Mail has been sent."
+			else
+				flash.now[:form_errors] = "Your E-Mail failed to send."
+			end
 		else
-			flash.now[:form_errors] = "Your E-Mail failed to send."
+			flash.now[:form_errors] = "Your feedback failed to save."
 		end
 	end
 
 	def services
 
 	end
+
+	private
+		def feedback_params
+			params.require(:feedback).permit(:name, :email, :proj_name, :content)
+		end
 end

@@ -3,13 +3,13 @@ class McMailer < ActionMailer::Base
 	default from: yield_site_settings.admin_email
 	
 
-	def contactus(email, name, content,proj)
-		@name = name
-		@email = email
-		@content = content
-		@proj = proj
+	def contactus(feedback_params)
+		@name = feedback_params[:name]
+		@email = feedback_params[:email]
+		@content = feedback_params[:content]
+		@proj = feedback_params[:proj]
 		@url  = 'http://www.kirka.ca'
-		mail(to: yield_site_settings.admin_email, subject: '[' + yield_site_settings.site_name+' FEEDBACK] ' + name + " - " + email, from: email)
+		mail(to: yield_site_settings.admin_email, subject: '[' + yield_site_settings.site_name+' FEEDBACK] ' + @name + " - " + @email, from: @email)
 	end
 
 	def invitation(email, user, id, key)

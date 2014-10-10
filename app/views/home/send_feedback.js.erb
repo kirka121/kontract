@@ -6,3 +6,10 @@ $("div#main_site_flashes").fadeIn('slow');
 
 var error_fadeout = window.setTimeout(function() { $("div#main_site_flashes").fadeOut('slow'); }, 5000); //set auto close for 5 seconds.
 var error_close = window.setTimeout(function() { $("div#main_site_flashes").html(''); }, 6000); //set auto close for 5 seconds.
+
+<% if @feedback.errors.any? %>
+	//failure to save -> show errors
+	<% @feedback.errors.each do |attribute, error| %>
+		$("td.table_error_message div#<%= attribute.to_s %>").html("<%= error.to_s.html_safe %>");
+	<% end %>
+<% end %>

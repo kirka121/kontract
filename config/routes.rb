@@ -14,9 +14,11 @@ Rails.application.routes.draw do
 
 	get '/admin', to: 'admin#index', as: 'admin'
 	get '/contact', to: 'home#contact', as: 'contact'
+	#patch '/contact', to: 'home#send_feedback', :as => "sendfeedback"
+	post '/contact' => "home#send_feedback", :as => "sendfeedback"
+
 	get '/sp', to: 'sp#index', as: 'sp'
 	get '/sp/:id', to: 'sp#show', as: 'spid'
-	post '/contact' => "home#send_feedback", :as => "sendfeedback"
 	post '/tinymce_assets' => 'tinymce_assets#create'
 	
 	resources :services, only: [:index]

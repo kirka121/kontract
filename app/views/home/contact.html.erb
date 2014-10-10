@@ -1,28 +1,46 @@
 <script>
-	tinymce.remove()
+	tinymce.remove();
+
 	$('.tinymce').each(function(elem) {tinyMCE.execCommand('mceAddControl',false,elem.id);});
+
+
+	var validate;
+	validate = function(elementid) {
+		return judge.validate(document.getElementById(elementid), {
+			valid: function(element) {
+				element.style.border = "2px solid lightgreen";
+				$("td.table_error_message div#"+getsecond(elementid)).html("");
+			},
+			invalid: function(element, messages) {
+				element.style.border = "1px solid red";
+			}
+		});
+	};
 </script>
 
 <h1>Contact <%= yield_site_settings.site_name %></h1>
 <p>We’re here to help with any questions or comments. If you just want to say hi, that's cool too.</p>
 <hr/>
-<%= form_for sendfeedback_path, remote: true do |f| %>
+<%= form_for @feedbacks, url: {action: 'send_feedback'}, remote: true, :builder => Judge::FormBuilder do |f| %>
 	<table class='standard_form_table'>
 		<tr>
 			<td class="table_input_label"><%= f.label :name,class: 'input_label' %></td>
-			<td class="table_input_checkbox"><%= f.text_field(:name, placeholder: 'Your Name', :class => 'register_user_input') %></td>
+			<td class="table_input_field"><%= f.text_field :name, placeholder: 'Your Name',validate: true %></td>
+			<td class="table_error_message"><div id="name"></div></td>
 		</tr>
 		<tr>
 			<td class="table_input_label"><%= f.label :email,class: 'input_label' %></td>
-			<td class="table_input_checkbox"><%= f.text_field(:email, placeholder: 'Your E-Mail', :class => 'register_user_input') %></td>
+			<td class="table_input_field"><%= f.text_field :email, placeholder: 'Your E-Mail',validate: true %></td>
+			<td class="table_error_message"><div id="email"></div></td>
 		</tr>
 		<tr>
 			<td class="table_input_label"><%= f.label :proj_name,class: 'input_label' %></td>
-			<td class="table_input_checkbox"><%= f.text_field(:proj_name, placeholder: 'Project Name', :class => 'register_user_input') %></td>
+			<td class="table_input_field"><%= f.text_field :proj_name, placeholder: 'Project Name',validate: true %></td>
+			<td class="table_error_message"><div id="proj_name"></div></td>
 		</tr>
 		<tr>
 			<td class="table_input_label"><%= f.label :content,class: 'input_label' %></td>
-			<td class="table_input_checkbox"><%= f.text_area :content,class: 'tinymce' %><%= tinymce plugins: "uploadimage" %></td>
+			<td class="table_input_field"><%= f.text_area :content,class: 'tinymce' %><%= tinymce plugins: "uploadimage" %></td>
 		</tr>
 		<tr>
 			<td class="table_button"colspan="100%"><%= f.submit "Send", class: "btn btn-large btn-submit" %></td>
