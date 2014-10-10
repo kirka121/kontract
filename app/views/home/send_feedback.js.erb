@@ -1,0 +1,8 @@
+window.clearTimeout(error_fadeout);
+window.clearTimeout(error_close);
+
+$("div#main_site_flashes").html("<%= escape_javascript(render 'layouts/partials/flashes') %>");
+$("div#main_site_flashes").fadeIn('slow');
+
+var error_fadeout = window.setTimeout(function() { $("div#main_site_flashes").fadeOut('slow'); }, 5000); //set auto close for 5 seconds.
+var error_close = window.setTimeout(function() { $("div#main_site_flashes").html(''); }, 6000); //set auto close for 5 seconds.

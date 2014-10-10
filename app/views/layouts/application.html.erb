@@ -16,26 +16,19 @@
 		<!-- admin cp -->
 
 		<%= render 'admin/partials/tophalf' %>
-		<div id="main_site_flashes">
-			<%= render 'layouts/partials/flashes' %>
-		</div>
+		<%= render 'layouts/partials/flashes' %>
 		<%= yield %>
 		<%= render 'admin/partials/bottomhalf' %>
 	<% elsif controller_name=='sessions' && action_name=='new'  %>
 		<!-- login page -->
-
-		<div id="main_site_flashes">
-			<%= render 'layouts/partials/flashes' %>
-		</div>
+		<%= render 'layouts/partials/flashes' %>
 		<%= yield %>
 	<% else %>
 		<!-- regular website -->
 		<div id="wrap">
 			<%= render 'layouts/partials/header' %>
 			<div id="main_contrainer" class="container">
-				<div id="main_site_flashes">
-					<%= render 'layouts/partials/flashes' %>
-				</div>
+				<%= render 'layouts/partials/flashes' %>
 				<%= yield %>
 			</div>
 			<div id="push"></div>

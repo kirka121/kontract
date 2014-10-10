@@ -1,28 +1,31 @@
-contact
+<script>
+	tinymce.remove()
+	$('.tinymce').each(function(elem) {tinyMCE.execCommand('mceAddControl',false,elem.id);});
+</script>
 
-<%= form_for sendfeedback_path do |f| %>
-	<table class="information_edit_form">
+<h1>Contact <%= yield_site_settings.site_name %></h1>
+<p>We’re here to help with any questions or comments. If you just want to say hi, that's cool too.</p>
+<hr/>
+<%= form_for sendfeedback_path, remote: true do |f| %>
+	<table class='standard_form_table'>
 		<tr>
-			<th colspan='2'><h3>Contact Us</h3></th>
+			<td class="table_input_label"><%= f.label :name,class: 'input_label' %></td>
+			<td class="table_input_checkbox"><%= f.text_field(:name, placeholder: 'Your Name', :class => 'register_user_input') %></td>
 		</tr>
 		<tr>
-			<td class="label">Your name:</td>
-			<td class="textfield"><%= f.text_field(:name, placeholder: 'Your Name', :class => 'register_user_input') %></td>
+			<td class="table_input_label"><%= f.label :email,class: 'input_label' %></td>
+			<td class="table_input_checkbox"><%= f.text_field(:email, placeholder: 'Your E-Mail', :class => 'register_user_input') %></td>
 		</tr>
 		<tr>
-			<td class="label">E-Mail:</td>
-			<td class="textfield"><%= f.text_field :email, placeholder: "Your E-Mail", :class => 'register_user_input' %></td>
+			<td class="table_input_label"><%= f.label :proj_name,class: 'input_label' %></td>
+			<td class="table_input_checkbox"><%= f.text_field(:proj_name, placeholder: 'Project Name', :class => 'register_user_input') %></td>
 		</tr>
 		<tr>
-		<td class="label">Project Name:</td>
-			<td class="textfield"><%= f.text_field :proj_name, placeholder: "Project Name", :class => 'register_user_input' %></td>
+			<td class="table_input_label"><%= f.label :content,class: 'input_label' %></td>
+			<td class="table_input_checkbox"><%= f.text_area :content,class: 'tinymce' %><%= tinymce plugins: "uploadimage" %></td>
 		</tr>
 		<tr>
-			<td class="label">Message:</td>
-			<td class="textfield"><%= f.text_area :content, :class => 'ckeditor' %></td></td>
-		</tr>
-		<tr>
-			<td colspan='2' class="button"> <%= f.submit "Send", class: "btn btn-default btn-lg btn-block" %> </td>
+			<td class="table_button"colspan="100%"><%= f.submit "Send", class: "btn btn-large btn-submit" %></td>
 		</tr>
 	</table>
 <% end %>

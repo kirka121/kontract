@@ -1,14 +1,15 @@
 class McMailer < ActionMailer::Base
-	default from: Setting.find(1).admin_email
-	add_template_helper(ApplicationHelper)
+	include ApplicationHelper
+	default from: yield_site_settings.admin_email
+	
 
 	def contactus(email, name, content,proj)
 		@name = name
 		@email = email
 		@content = content
 		@proj = proj
-		@url  = 'http://www.mc-cm.com'
-		mail(to: Setting.find(1).admin_email, subject: '[' + Setting.find(1).site_name+' FEEDBACK] ' + name + " - " + email)
+		@url  = 'http://www.kirka.ca'
+		mail(to: yield_site_settings.admin_email, subject: '[' + yield_site_settings.site_name+' FEEDBACK] ' + name + " - " + email, from: email)
 	end
 
 	def invitation(email, user, id, key)

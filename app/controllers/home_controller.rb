@@ -30,11 +30,9 @@ class HomeController < ApplicationController
 		proj_name = params["/contact"][:proj_name]
 
 		if McMailer.contactus(email,name,content,proj_name).deliver
-			flash[:form_success] = "Your E-Mail has been sent."
-			render 'contact'
+			flash.now[:form_success] = "Your E-Mail has been sent."
 		else
-			flash[:form_errors] = "Your E-Mail failed to send."
-			render 'contact'
+			flash.now[:form_errors] = "Your E-Mail failed to send."
 		end
 	end
 
