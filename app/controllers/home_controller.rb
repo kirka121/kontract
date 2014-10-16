@@ -26,7 +26,7 @@ class HomeController < ApplicationController
 	def send_feedback	
 		@feedback = Feedback.new
 
-		if @feedback.save(feedback_params)
+		if @feedback.sav(efeedback_params)
 			if McMailer.contactus(feedback_params).deliver
 				flash.now[:form_success] = "Your E-Mail has been sent."
 			else
